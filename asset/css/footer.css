@@ -1,0 +1,140 @@
+.container-footer{
+    max-width: 1140px;
+    margin: 0px auto;
+}
+#footer .wp-body-footer{
+    background-color: #002B54;
+    opacity: 0.96;
+    color: #fff;
+    padding-top: 40px;
+}
+#footer .body-footer{
+    display: flex;
+    flex-wrap: wrap;
+}
+#footer .body-footer a{
+    color: #fff;
+}
+.body-footer .logo-footer{
+    width: 100%;
+    padding: 0px 10px 30px 10px;
+    font-size: 15px;
+    color: #fff;
+}
+.body-footer .logo-footer .image-logo{
+    margin-bottom: 40px;
+}
+.body-footer .logo-footer .location .address{
+    margin-bottom: 15px;
+}
+.body-footer .logo-footer .register-email{
+    padding: 35px 15px 25px 0;
+}
+.body-footer .logo-footer .register-email h4{
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 10px;
+}
+.body-footer .logo-footer .register-email .form{
+    position: relative;
+}
+.logo-footer .register-email input{
+    padding: 10px;
+}
+.logo-footer .register-email .form button{
+    position: absolute;
+    padding: 10px;
+    border: none;
+    top: 5px;
+    right: 5px;
+    background-color: rgb(5, 17, 187);
+    border-radius: 5px;
+    color: #fff;
+}
+.body-footer .contact-menu{
+    width: 100%;
+    padding: 0 10px 20px 10px;
+}
+.body-footer .contact-menu .contact{
+    display: flex;
+    flex-wrap: wrap;
+}
+.body-footer .contact-menu .contact i{
+    font-size: 28px;
+}
+.body-footer .contact-menu .contact .hotline{
+    width: 100%;
+    padding-bottom: 30px;
+}
+.body-footer .contact-menu .contact .mail-support{
+    width: 100%;
+}
+.body-footer .contact-menu .contact .mail-support a{
+    width: 100%;
+    display: flex;
+    padding-bottom: 30px;
+}
+.body-footer .contact-menu .contact .mail-support a p{
+    margin-bottom: 10px;
+}
+.body-footer .contact-menu .menu-footer{
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 20px;
+}
+.body-footer .contact-menu .menu-footer .guide, .body-footer .contact-menu .menu-footer .regulations{
+    width: 100%;
+}
+.body-footer .contact-menu .menu-footer .title{
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 10px;
+}
+.contact-menu .menu-footer ul{
+    margin: 0;
+}
+.contact-menu .menu-footer ul li a{
+    display: block;
+    padding: 10px 0;
+    font-size: 15px;
+    color: #bbb !important;
+}
+.coppyright{
+    border-top: 1px solid #434a6e;
+    color: #bbb;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 400;
+    padding: 5px 0;
+}
+
+@media (min-width: 375px){
+    .body-footer .contact-menu .menu-footer .guide, .body-footer .contact-menu .menu-footer .regulations{
+        width: 50%;
+    }
+}
+
+@media (min-width: 568px){
+    .body-footer .contact-menu .contact .hotline{
+        width: 50%;
+    }
+    .body-footer .contact-menu .contact .mail-support{
+        width: 50%;
+        overflow: hidden;
+    }
+}
+
+@media (min-width: 768px){
+    .body-footer .logo-footer{
+        width: 35%;
+    }
+    .body-footer .contact-menu{
+        width: 65%;
+    }
+}
+
+
