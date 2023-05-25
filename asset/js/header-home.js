@@ -48,39 +48,113 @@ $(document).ready(function () {
     },
   });
 
-  $(".wp-select-option").scrollLock({
-    top: "top locked",
-  });
-  $(".wp-select-option-price").scrollLock({
-    top: "top locked",
+  $(".wp-select-option").scrollLock();
+  $(".wp-select-option-price").scrollLock();
+  $(".wp-select-option-size").scrollLock();
+
+  function initScrollBar() {
+    $(".wp-list-option-type-property").customScrollbar({
+      skin: "default-skin",
+      hScroll: false,
+      animationSpeed: 200,
+      wheelSpeed: 10,
+    });
+    $(".wp-list-option-type-property").customScrollbar({
+      skin: "default-skin",
+      hScroll: false,
+      animationSpeed: 200,
+      wheelSpeed: 10,
+    });
+    $(".wp-list-option-type-property").customScrollbar({
+      skin: "default-skin",
+      hScroll: false,
+      animationSpeed: 200,
+      wheelSpeed: 10,
+    });
+  }
+
+  $(".select-item").click(function () {
+    var element = $(this).data("element");
+    $(".select-filter-wrapper")
+      .not($(`.select-filter-wrapper${element}`))
+      .addClass("d-none");
+    $(`${element}`).toggleClass("d-none");
+    initScrollBar();
   });
 
-  $(".select-button").click(function () {
-    $(".wp-select-option").toggleClass("d-none");
-	$(".wp-list-option-type-property").customScrollbar({
-		skin: "default-skin",
-		hScroll: false,
-		animationSpeed: 200,
-		wheelSpeed: 10,
-	  });
-  });
-  $(".select-item-price").click(function () {
-    $(".wp-select-option-price").toggleClass("d-none");
-	$(".wp-list-option-type-property").customScrollbar({
-		skin: "default-skin",
-		hScroll: false,
-		animationSpeed: 200,
-		wheelSpeed: 10,
-	  });
-  });
-  $(".select-item-size").click(function () {
-    $(".wp-select-option-size").toggleClass("d-none");
-	$(".wp-list-option-type-property").customScrollbar({
-		skin: "default-skin",
-		hScroll: false,
-		animationSpeed: 200,
-		wheelSpeed: 10,
-	  });
+  $(document).click(function (event) {
+    var clickedElement = event.target;
+    var clickedElementNext = event.target.nextElementSibling;
+    if ($(clickedElementNext).is(".far.fa-caret-down")) {
+      clickedElement = event.target.parentElement;
+    }
+    if (
+      !$(clickedElement).is(".select-filter-wrapper") &&
+      !$(clickedElement).closest(".select-filter-wrapper").length &&
+      !$(clickedElement).is(".select-item") &&
+      !$(clickedElement).closest(".select-item").length &&
+      !$(clickedElement).is(".select2-dropdown") &&
+      !$(clickedElement).closest(".select2-dropdown").length
+    ) {
+      $(".select-filter-wrapper").addClass("d-none");
+    }
   });
 
+  $(".btn-apply").click(function () {
+    $(".select-filter-wrapper").addClass("d-none");
+  });
+
+  $(".single-select-field").select2({
+    theme: "bootstrap-5",
+    width: $(this).data("width")
+      ? $(this).data("width")
+      : $(this).hasClass("w-100")
+      ? "100%"
+      : "style",
+    placeholder: $(this).data("placeholder"),
+  });
+  $(".multi-select-field").select2({
+    theme: "bootstrap-5",
+    width: $(this).data("width")
+      ? $(this).data("width")
+      : $(this).hasClass("w-100")
+      ? "100%"
+      : "style",
+    placeholder: $(this).data("placeholder"),
+    closeOnSelect: false,
+  });
+
+  $("#list-option-province").change(function () {
+    var text = $(this).val();
+    var textDefault = $("#list-option-province option:eq(1)").val();
+    if (text != "") {
+      $(".select-item-location").find("span").text(text);
+    } else {
+      $(".select-item-location").find("span").text(textDefault);
+    }
+
+    if (text != "" && text != textDefault) {
+      $("#location-district-tab").removeClass("disabled");
+      $("#location-district-tab")
+        .closest("li")
+        .removeClass("cursor-not-allowed");
+      $("#location-street-tab").removeClass("disabled");
+      $("#location-street-tab")
+        .closest("li")
+        .removeClass("cursor-not-allowed");
+    }else{
+      $("#location-district-tab").addClass("disabled");
+      $("#location-district-tab")
+        .closest("li")
+        .addClass("cursor-not-allowed");
+      $("#location-street-tab").addClass("disabled");
+      $("#location-street-tab")
+        .closest("li")
+        .addClass("cursor-not-allowed");
+      $("#location-wards-tab").addClass("disabled");
+      $("#location-wards-tab")
+        .closest("li")
+        .addClass("cursor-not-allowed");
+    }
+  });
 });

@@ -351,7 +351,20 @@ a {
   box-shadow: 0px 8px 20px rgba(182, 182, 182, 0.42);
   border-radius: 8px;
 }
-.wp-select-option-price, .wp-select-option-size {
+.wp-select-option-location {
+  width: 500px;
+  padding: 15px;
+  position: absolute;
+  left: 0;
+  top: 105%;
+  z-index: 1111;
+  background: #fff;
+  color: #3c3c3c;
+  box-shadow: 0px 8px 20px rgba(182, 182, 182, 0.42);
+  border-radius: 8px;
+}
+.wp-select-option-price,
+.wp-select-option-size {
   width: 240px;
   padding: 5px;
   position: absolute;
@@ -363,14 +376,15 @@ a {
   box-shadow: 0px 8px 20px rgba(182, 182, 182, 0.42);
   border-radius: 8px;
 }
-.wp-select-option-size{
+.wp-select-option-size {
   left: 60%;
 }
 .wp-select-option .wp-list-option-type-property {
   width: 340px;
   height: 300px;
 }
-.wp-select-option-price .wp-list-option-type-property,  .wp-select-option-size .wp-list-option-type-property{
+.wp-select-option-price .wp-list-option-type-property,
+.wp-select-option-size .wp-list-option-type-property {
   width: 230px;
   height: 250px;
 }
@@ -380,9 +394,10 @@ a {
   width: 330px;
   cursor: pointer;
 }
-.wp-select-option-price .wp-list-option-type-property .wp-option-select, .wp-select-option-size .wp-list-option-type-property .wp-option-select {
+.wp-select-option-price .wp-list-option-type-property .wp-option-select,
+.wp-select-option-size .wp-list-option-type-property .wp-option-select {
   padding: 5px;
-  width: 230px;
+  width: 220px;
   cursor: pointer;
 }
 .wp-list-option-type-property .wp-option-select .option-select:hover {
@@ -457,7 +472,30 @@ a {
   background: #fff;
   color: #9d0f19;
 }
-
+#location-tab li {
+  width: 25% !important;
+  border-radius: 0px !important;
+}
+#location-tab li .nav-link {
+  width: 100%;
+  display: flex !important;
+  justify-content: center !important;
+  color: #222 !important;
+  font-weight: 500;
+  padding: 10px 0;
+  border-radius: 0px !important;
+}
+#location-tab {
+  margin-bottom: 10px !important;
+}
+#location-tab li .active {
+  border-bottom: 3px solid #9d0f19 !important;
+  color: #9d0f19 !important;
+  background: none !important;
+}
+.cursor-not-allowed{
+  cursor: not-allowed !important;
+}
 @media (min-width: 450px) {
   .header-mobile .logo a {
     width: 208px;
