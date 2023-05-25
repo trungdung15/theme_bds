@@ -15,6 +15,18 @@ $(document).ready(function () {
   $(".tab-item").click(function () {
     $(".tab-item").removeClass("active");
     $(this).addClass("active");
+    if ($(this).hasClass("tab-item-project")) {
+      $(".select-item-size").addClass("d-none");
+      $(".select-item-status").removeClass("d-none");
+      $(".select-button-default").addClass("d-none");
+      $(".select-button-project").removeClass("d-none");
+    } else {
+      $(".select-item-size").removeClass("d-none");
+      $(".select-item-status").addClass("d-none");
+      $(".select-button-default").removeClass("d-none");
+      $(".select-button-project").addClass("d-none");
+    }
+    initScrollBar();
   });
 
   $(".option-select .icon").click(function () {
@@ -48,23 +60,9 @@ $(document).ready(function () {
     },
   });
 
-  $(".wp-select-option").scrollLock();
-  $(".wp-select-option-price").scrollLock();
-  $(".wp-select-option-size").scrollLock();
+  $(".select-filter-wrapper").scrollLock();
 
   function initScrollBar() {
-    $(".wp-list-option-type-property").customScrollbar({
-      skin: "default-skin",
-      hScroll: false,
-      animationSpeed: 200,
-      wheelSpeed: 10,
-    });
-    $(".wp-list-option-type-property").customScrollbar({
-      skin: "default-skin",
-      hScroll: false,
-      animationSpeed: 200,
-      wheelSpeed: 10,
-    });
     $(".wp-list-option-type-property").customScrollbar({
       skin: "default-skin",
       hScroll: false,
@@ -94,10 +92,24 @@ $(document).ready(function () {
       !$(clickedElement).is(".select-item") &&
       !$(clickedElement).closest(".select-item").length &&
       !$(clickedElement).is(".select2-dropdown") &&
-      !$(clickedElement).closest(".select2-dropdown").length
+      !$(clickedElement).closest(".select2-dropdown").length &&
+      !$(clickedElement).is(".select2-selection__choice__remove")
     ) {
       $(".select-filter-wrapper").addClass("d-none");
     }
+  });
+
+  $(".clear-select-filter").click(function () {
+    $("input[type=checkbox]").prop("checked", false);
+    $("input[type=text]").val("");
+    $("select").val(null).trigger("change");
+  });
+
+  $(".btn-clear-select").click(function () {
+    var element = $(this).closest(".select-filter-wrapper");
+    element.find("input[type=checkbox]").prop("checked", false);
+    element.find("select").val(null).trigger("change");
+    $("#loaction-province-tab").click();
   });
 
   $(".btn-apply").click(function () {
@@ -139,22 +151,25 @@ $(document).ready(function () {
         .closest("li")
         .removeClass("cursor-not-allowed");
       $("#location-street-tab").removeClass("disabled");
-      $("#location-street-tab")
-        .closest("li")
-        .removeClass("cursor-not-allowed");
-    }else{
+      $("#location-street-tab").closest("li").removeClass("cursor-not-allowed");
+    } else {
       $("#location-district-tab").addClass("disabled");
-      $("#location-district-tab")
-        .closest("li")
-        .addClass("cursor-not-allowed");
+      $("#location-district-tab").closest("li").addClass("cursor-not-allowed");
       $("#location-street-tab").addClass("disabled");
-      $("#location-street-tab")
-        .closest("li")
-        .addClass("cursor-not-allowed");
+      $("#location-street-tab").closest("li").addClass("cursor-not-allowed");
       $("#location-wards-tab").addClass("disabled");
-      $("#location-wards-tab")
-        .closest("li")
-        .addClass("cursor-not-allowed");
+      $("#location-wards-tab").closest("li").addClass("cursor-not-allowed");
+    }
+  });
+
+  $("#list-option-district").change(function () {
+    var value = $(this).val();
+    if (value.length) {
+      $("#location-wards-tab").removeClass("disabled");
+      $("#location-wards-tab").closest("li").removeClass("cursor-not-allowed");
+    } else {
+      $("#location-wards-tab").addClass("disabled");
+      $("#location-wards-tab").closest("li").addClass("cursor-not-allowed");
     }
   });
 });

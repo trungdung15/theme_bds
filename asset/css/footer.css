@@ -3,7 +3,7 @@
     margin: 0px auto;
 }
 #footer .wp-body-footer{
-    background-color: #002B54;
+    background: var(--gradient);
     opacity: 0.96;
     color: #fff;
     padding-top: 40px;
@@ -23,6 +23,9 @@
 }
 .body-footer .logo-footer .image-logo{
     margin-bottom: 40px;
+}
+.body-footer .logo-footer .image-logo a img{
+    max-width: 192px;
 }
 .body-footer .logo-footer .location .address{
     margin-bottom: 15px;
@@ -49,7 +52,7 @@
     border: none;
     top: 5px;
     right: 5px;
-    background-color: rgb(5, 17, 187);
+    background: var(--gradient);
     border-radius: 5px;
     color: #fff;
 }
@@ -101,10 +104,10 @@
     display: block;
     padding: 10px 0;
     font-size: 15px;
-    color: #bbb !important;
+    color: #fff;
 }
 .coppyright{
-    border-top: 1px solid #434a6e;
+    border-top: 1px solid #ccc;
     color: #bbb;
     text-align: center;
     font-size: 15px;

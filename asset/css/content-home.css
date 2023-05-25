@@ -3,6 +3,9 @@ body {
   background-color: #f7f7f7;
   font-family: "Roboto", sans-serif;
   line-height: 1em;
+  --gradient: linear-gradient(135deg, #9d0f19 0%, #e31828 100%);
+  --color-left: #9d0f19;
+  --color-title: #3c3c3c;
 }
 
 #wp-content .wp-list-top,
@@ -258,22 +261,22 @@ li .wp-post .wp-detail .wp-author .action .box-action:hover {
   justify-content: center;
 }
 .show-category a.btn-redirect {
-  background-image: linear-gradient(to right, transparent 50%, #0073e1 50%);
+  background-image: linear-gradient(to right, transparent 50%, #9d0f19 50%);
   background-size: 200% 100%;
   background-position: right bottom;
   display: inline-block;
   font-weight: 500;
   padding: 15px 20px;
-  border: 1px solid #0073e6;
+  border: 1px solid #9d0f19;
   color: #ffffff;
-  background-color: #0073e1;
+  background-color: #9d0f19;
   border-radius: 5px;
 }
 .show-category a.btn-redirect:hover {
   background-color: transparent;
   background-position: left bottom;
-  color: #0073e6;
-  border: 1px solid #0073e6;
+  color: #9d0f19;
+  border: 1px solid #9d0f19;
   transition: all 300ms ease;
 }
 
@@ -459,7 +462,7 @@ li .wp-post .wp-detail .wp-author .action .box-action:hover {
   width: 100%;
   padding: 30px 0px;
   background-color: transparent;
-  background-image: linear-gradient(67deg, #ebfafd 0%, #edf8f8 100%);
+  background-image: linear-gradient(67deg, #e9e9e9 0%, #f1f1f1 100%);
 }
 .wp-list-news .list-news ul {
   display: flex;
@@ -476,6 +479,7 @@ li .wp-post .wp-detail .wp-author .action .box-action:hover {
   overflow: hidden;
   padding: 6px;
   background-color: #fff;
+  border-radius: 5px;
 }
 .wp-list-news .list-news ul li a .thumb-post {
   width: 100%;

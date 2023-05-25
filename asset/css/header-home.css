@@ -242,11 +242,9 @@ a {
   padding-bottom: 5px;
   color: #fff;
 }
-#slider_search {
-  position: relative;
-  margin-bottom: 100px;
-}
+
 #search_form {
+  display: none;
   z-index: 1000;
   position: absolute;
   top: 75%;
@@ -297,6 +295,27 @@ a {
 .search_form-box-content form {
   position: relative;
 }
+#search_form_mobile {
+  width: 90%;
+  margin: 30px auto;
+}
+#search_form_mobile form{
+  position: relative;
+}
+#search_form_mobile form .icon-search{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 20px;
+}
+#search_form_mobile .input-search-form{
+  width: 100%;
+  outline: none;
+  border: none;
+  padding: 15px 15px 15px 45px;
+  border-radius: 30px;
+  box-shadow: 0px 2px 4px rgb(245 133 133 / 52%);
+}
 .search_form-box-content .input-search-form {
   width: 100%;
   outline: none;
@@ -339,7 +358,8 @@ a {
   padding: 11px 21px;
   border: none;
 }
-.wp-select-option {
+.wp-select-option,
+.wp-select-option-project {
   width: 350px;
   padding: 5px;
   position: absolute;
@@ -364,7 +384,8 @@ a {
   border-radius: 8px;
 }
 .wp-select-option-price,
-.wp-select-option-size {
+.wp-select-option-size,
+.wp-select-option-status {
   width: 240px;
   padding: 5px;
   position: absolute;
@@ -376,26 +397,31 @@ a {
   box-shadow: 0px 8px 20px rgba(182, 182, 182, 0.42);
   border-radius: 8px;
 }
-.wp-select-option-size {
+.wp-select-option-size,
+.wp-select-option-status {
   left: 60%;
 }
-.wp-select-option .wp-list-option-type-property {
+.wp-select-option .wp-list-option-type-property,
+.wp-select-option-project .wp-list-option-type-property {
   width: 340px;
   height: 300px;
 }
 .wp-select-option-price .wp-list-option-type-property,
-.wp-select-option-size .wp-list-option-type-property {
+.wp-select-option-size .wp-list-option-type-property,
+.wp-select-option-status .wp-list-option-type-property {
   width: 230px;
   height: 250px;
 }
-.wp-select-option .wp-list-option-type-property .wp-option-select {
+.wp-select-option .wp-list-option-type-property .wp-option-select,
+.wp-select-option-project .wp-list-option-type-property .wp-option-select {
   padding: 5px;
   border-bottom: 1px solid #ccc;
   width: 330px;
   cursor: pointer;
 }
 .wp-select-option-price .wp-list-option-type-property .wp-option-select,
-.wp-select-option-size .wp-list-option-type-property .wp-option-select {
+.wp-select-option-size .wp-list-option-type-property .wp-option-select,
+.wp-select-option-status .wp-list-option-type-property .wp-option-select {
   padding: 5px;
   width: 220px;
   cursor: pointer;
@@ -493,12 +519,24 @@ a {
   color: #9d0f19 !important;
   background: none !important;
 }
-.cursor-not-allowed{
+.cursor-not-allowed {
   cursor: not-allowed !important;
 }
 @media (min-width: 450px) {
   .header-mobile .logo a {
     width: 208px;
+  }
+}
+@media (min-width: 980px) {
+  #search_form_mobile{
+    display: none;
+  }
+  #slider_search {
+    position: relative;
+    margin-bottom: 150px;
+  }
+  #search_form {
+    display: block;
   }
 }
 @media (min-width: 998px) {

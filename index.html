@@ -115,13 +115,20 @@
       </div>
 
       <div id="slider_search">
+        <div id="search_form_mobile">
+          <form action="">
+            <input type="text" class="input-search-form"  placeholder="Nhập tên sản phẩm cần tìm">
+            <span class="icon-search"><i class="far fa-search"></i></span>
+          </form>
+        </div>
+
         <div id="search_form">
           <div class="search_form-wp">
             <div class="search_form-box-tab">
               <ul class="wp-box-tab">
-                <li class="tab-item active">Nhà đất bán</li>
-                <li class="tab-item">Nhà đất cho thuê</li>
-                <li class="tab-item">Dự án</li>
+                <li class="tab-item tab-item-buy active">Nhà đất bán</li>
+                <li class="tab-item tab-item-rent">Nhà đất cho thuê</li>
+                <li class="tab-item tab-item-project">Dự án</li>
               </ul>
             </div>
 
@@ -132,7 +139,7 @@
                   class="input-search-form"
                   placeholder="Nhập tên sản phẩm cần tìm"
                 />
-                <div class="select-button select-item" data-element=".wp-select-option">
+                <div class="select-button select-button-default select-item" data-element=".wp-select-option">
                   <div class="select-value">
                     <i class="far fa-home"></i>
                     <span>Loại nhà đất</span>
@@ -346,6 +353,59 @@
                   </div>
                 </div>
 
+                <div class="select-button select-button-project select-item d-none" data-element=".wp-select-option-project">
+                  <div class="select-value">
+                    <i class="far fa-home"></i>
+                    <span>Loại hình</span>
+                    <i class="fal fa-caret-down"></i>
+                  </div>
+                </div>
+                <div class="wp-select-option-project select-filter-wrapper d-none">
+                  <div class="wp-list-option-type-property">
+                    <div class="list-option-type-property">
+                      <div class="wp-option-select">
+                        <div class="option-select">
+                          <span class="icon"><i class="fal fa-building"></i></span>
+                          <span class="text-option">Tất cả nhà đất</span>
+                        </div>
+                      </div>
+                      <div class="wp-option-select">
+                        <div class="option-select">
+                          <span class="icon"><i class="fal fa-building"></i></span>
+                          <span class="text-option">Căn hộ chung cư</span>
+                        </div>
+                      </div>
+                      <div class="wp-option-select">
+                        <div class="option-select">
+                          <span class="icon"><i class="fal fa-home-lg-alt"></i></span>
+                          <span class="text-option">Các loại nhà</span>
+                        </div>
+                      </div>
+                      <div class="wp-option-select">
+                        <div class="option-select">
+                          <span class="icon"><i class="fal fa-map-marked-alt"></i></span>
+                          <span class="text-option">Đất nền</span>
+                        </div>
+                      </div>
+                      <div class="wp-option-select">
+                        <div class="option-select">
+                          <span class="icon"><i class="fal fa-building"></i></span>
+                          <span class="text-option">Căn hộ chung cư</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="bottom-wp-option">
+                    <div class="btn-clear-select">
+                      <i class="fad fa-reply-all pe-1"></i>
+                      <span>Đặt lại</span>
+                    </div>
+                    <div class="btn-apply">
+                      <i class="far fa-check-double"></i>
+                    </div>
+                  </div>
+                </div>
+
                 <div class="wp-input-select-search">
                   <div class="select-item select-item-location" data-element=".wp-select-option-location">
                     <span>Trên toàn quốc</span>
@@ -457,7 +517,7 @@
                         >
                           <select
                             class="form-select multi-select-field"
-                            id=""
+                            id="list-option-district"
                             data-placeholder="Chọn Quận/Huyện" multiple
                           >
                             <option></option>
@@ -544,6 +604,15 @@
                         </div>
                       </div>
                     </div>
+                    <div class="bottom-wp-option mt-2">
+                      <div class="btn-clear-select">
+                        <i class="fad fa-reply-all pe-1"></i>
+                        <span>Đặt lại</span>
+                      </div>
+                      <div class="btn-apply">
+                        <i class="far fa-check-double"></i>
+                      </div>
+                    </div>
                   </div>
 
                   <div class="select-item select-item-price" data-element=".wp-select-option-price">
@@ -551,9 +620,7 @@
                     <i class="far fa-caret-down"></i>
                   </div>
 
-                  <div
-                    class="wp-select-option-price select-filter-wrapper d-none"
-                  >
+                  <div class="wp-select-option-price select-filter-wrapper d-none">
                     <ul class="wp-list-option-type-property">
                       <div class="list-option-type-property">
                         <div class="wp-option-select">
@@ -682,9 +749,7 @@
                     <i class="far fa-caret-down"></i>
                   </div>
 
-                  <div
-                    class="wp-select-option-size select-filter-wrapper d-none"
-                  >
+                  <div class="wp-select-option-size select-filter-wrapper d-none">
                     <ul class="wp-list-option-type-property">
                       <div class="list-option-type-property">
                         <div class="wp-option-select">
@@ -794,6 +859,51 @@
                                 type="checkbox"
                                 value=""
                               />
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </ul>
+                    <div class="bottom-wp-option">
+                      <div class="btn-clear-select">
+                        <i class="fad fa-reply-all pe-1"></i>
+                        <span>Đặt lại</span>
+                      </div>
+                      <div class="btn-apply">
+                        <i class="far fa-check-double"></i>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="select-item select-item-status d-none" data-element=".wp-select-option-status">
+                    <span>Trạng thái</span>
+                    <i class="far fa-caret-down"></i>
+                  </div>
+
+                  <div class="wp-select-option-status select-filter-wrapper d-none">
+                    <ul class="wp-list-option-type-property">
+                      <div class="list-option-type-property">
+                        <div class="wp-option-select">
+                          <div class="option-select">
+                            <span class="text-option">Sắp mở bán</span>
+                            <span class="check-box">
+                              <input class="form-check-input mt-0" type="checkbox" value="">
+                            </span>
+                          </div>
+                        </div>
+                        <div class="wp-option-select">
+                          <div class="option-select">
+                            <span class="text-option">Đang mở bán</span>
+                            <span class="check-box">
+                              <input class="form-check-input mt-0" type="checkbox" value="">
+                            </span>
+                          </div>
+                        </div>
+                        <div class="wp-option-select">
+                          <div class="option-select">
+                            <span class="text-option">Đã bàn giao</span>
+                            <span class="check-box">
+                              <input class="form-check-input mt-0" type="checkbox" value="">
                             </span>
                           </div>
                         </div>
@@ -1941,7 +2051,7 @@
               <div class="logo-footer">
                 <div class="image-logo">
                   <a href="">
-                    <img src="asset/images/logo-footer.png" alt="" />
+                    <img src="asset/images/logo-text-white.png" alt="" />
                   </a>
                 </div>
                 <div class="location">
