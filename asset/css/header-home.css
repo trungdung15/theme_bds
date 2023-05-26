@@ -4,7 +4,9 @@ body {
   font-family: "Roboto", sans-serif;
   line-height: 1em;
   --gradient: linear-gradient(135deg, #9d0f19 0%, #e31828 100%);
+  --gradient-y: linear-gradient(200deg, #9d0f19 0%, #e31828 100%);
   --color-left: #9d0f19;
+  --color-right: #e31828;
   --color-title: #3c3c3c;
 }
 
@@ -560,4 +562,72 @@ a {
   .owl-dots {
     display: block;
   }
+}
+
+.wp-menu-mobile{
+  padding: 10px;
+}
+.wp-menu-mobile .group-btn-login{
+  display: flex;
+  justify-content: space-between;
+}
+.group-btn-login .button-login, .group-btn-login .button-register{
+  width: 45%;
+  padding: 15px 8px;
+  border: 1px solid #9d0f19;
+  border-radius: 5px;
+  color: var(--color-left);
+  text-align: center;
+  font-weight: 500;
+}
+.wp-menu-mobile .wp-btn-post{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wp-menu-mobile .button-post{
+  display: inline-block;
+  padding: 16px 8px;
+  width: 100%;
+  margin: 20px auto;
+  background: var(--gradient);
+  color: #fff;
+  font-weight: 500;
+  text-align: center;
+  border-radius: 5px;
+}
+.wp-menu-mobile .wp-item-menu{
+  margin-bottom: 20px;
+  padding: 20px 0;
+}
+.wp-menu-mobile .wp-item-menu li{
+  margin-bottom: 10px;
+}
+.wp-menu-mobile .wp-item-menu li a{
+  display: flex;
+  padding: 10px 5px;
+  color: #111;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 400;
+}
+.wp-menu-mobile .wp-item-menu li a img{
+  width: 35px;
+  height: auto;
+  padding-right: 15px;
+}
+.button-close-menu{
+  margin-top: 30px;
+  display: block;
+  width: 100%;
+  padding: 15px 20px;
+  background: #aaaaaa;
+  color: #fff;
+  font-weight: 500;
+  text-align: center;
+  border-radius: 5px;
+  border: none;
+}
+#canvasMenuMobile{
+  width: 300px;
 }

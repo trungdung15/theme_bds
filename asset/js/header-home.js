@@ -97,6 +97,10 @@ $(document).ready(function () {
     ) {
       $(".select-filter-wrapper").addClass("d-none");
     }
+
+    if(!$(clickedElement).is(".share") &&
+    !$(clickedElement).closest(".share").length)
+    $(".share_unit").addClass("display-none");
   });
 
   $(".clear-select-filter").click(function () {
@@ -171,5 +175,76 @@ $(document).ready(function () {
       $("#location-wards-tab").addClass("disabled");
       $("#location-wards-tab").closest("li").addClass("cursor-not-allowed");
     }
+  });
+
+  $(".share").click(function () {
+    $(".share_unit").not($(this).closest(".action").find(".share_unit")).addClass("display-none");
+    $(this)
+      .closest(".action")
+      .find(".share_unit")
+      .toggleClass("display-none");
+  });
+  $(document).scroll(function () {
+    $(".share_unit").addClass("display-none");
+  });
+
+  $("#list-field").owlCarousel({
+    loop: true,
+    nav: false,
+    dots: false,
+    autoplay: true,
+    autoplayTimeout: 5000,
+    autoplayHoverPause: true,
+    responsive: {
+      0: {
+        items: 1,
+      },
+      600: {
+        items: 2,
+      },
+      900: {
+        items: 3,
+      },
+    },
+  });
+  $("#list-company").owlCarousel({
+    loop: true,
+    nav: false,
+    dots: true,
+    autoplay: false,
+    responsive: {
+      0: {
+        items: 1,
+      },
+      450: {
+        items: 2,
+      },
+      900: {
+        items: 3,
+      },
+      1350: {
+        items: 4,
+      },
+    },
+  });
+  $("#pills-tabContent").owlCarousel({
+    loop: true,
+    nav: false,
+    dots: true,
+    autoplay: true,
+    autoplayTimeout: 3000,
+    responsive: {
+      0: {
+        items: 1,
+      },
+    },
+  });
+
+  $('.taxonomy').click(function(){
+    $('.taxonomy').removeClass('active');
+    $(this).addClass('active');
+    var element = $(this).data('type');
+    $('.post-list').addClass('d-none');
+    $(`${element}`).removeClass('d-none');
   });
 });
