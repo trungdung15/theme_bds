@@ -98,9 +98,11 @@ $(document).ready(function () {
       $(".select-filter-wrapper").addClass("d-none");
     }
 
-    if(!$(clickedElement).is(".share") &&
-    !$(clickedElement).closest(".share").length)
-    $(".share_unit").addClass("display-none");
+    if (
+      !$(clickedElement).is(".share") &&
+      !$(clickedElement).closest(".share").length
+    )
+      $(".share_unit").addClass("display-none");
   });
 
   $(".clear-select-filter").click(function () {
@@ -178,11 +180,10 @@ $(document).ready(function () {
   });
 
   $(".share").click(function () {
-    $(".share_unit").not($(this).closest(".action").find(".share_unit")).addClass("display-none");
-    $(this)
-      .closest(".action")
-      .find(".share_unit")
-      .toggleClass("display-none");
+    $(".share_unit")
+      .not($(this).closest(".action").find(".share_unit"))
+      .addClass("display-none");
+    $(this).closest(".action").find(".share_unit").toggleClass("display-none");
   });
   $(document).scroll(function () {
     $(".share_unit").addClass("display-none");
@@ -227,24 +228,12 @@ $(document).ready(function () {
       },
     },
   });
-  $("#pills-tabContent").owlCarousel({
-    loop: true,
-    nav: false,
-    dots: true,
-    autoplay: true,
-    autoplayTimeout: 3000,
-    responsive: {
-      0: {
-        items: 1,
-      },
-    },
-  });
 
-  $('.taxonomy').click(function(){
-    $('.taxonomy').removeClass('active');
-    $(this).addClass('active');
-    var element = $(this).data('type');
-    $('.post-list').addClass('d-none');
-    $(`${element}`).removeClass('d-none');
+  $(".taxonomy").click(function () {
+    $(".taxonomy").removeClass("active");
+    $(this).addClass("active");
+    var element = $(this).data("type");
+    $(".post-list").addClass("d-none");
+    $(`${element}`).removeClass("d-none");
   });
 });
