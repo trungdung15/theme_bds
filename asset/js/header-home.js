@@ -115,7 +115,12 @@ $(document).ready(function () {
     var element = $(this).closest(".select-filter-wrapper");
     element.find("input[type=checkbox]").prop("checked", false);
     element.find("select").val(null).trigger("change");
-    $("#loaction-province-tab").click();
+    element
+      .find(".nav-item")
+      .not(".nav-location-province-tab")
+      .addClass("cursor-not-allowed");
+    $("#location-wards-tab").addClass("disabled");
+    $("#location-province-tab").click();
   });
 
   $(".btn-apply").click(function () {
@@ -192,18 +197,35 @@ $(document).ready(function () {
   $("#list-field").owlCarousel({
     loop: true,
     nav: false,
-    dots: false,
+    dots: true,
     autoplay: true,
-    autoplayTimeout: 5000,
-    autoplayHoverPause: true,
+    autoplayTimeout: 3000,
+    autoplayHoverPause: false,
     responsive: {
       0: {
         items: 1,
       },
-      600: {
+      400: {
         items: 2,
       },
-      900: {
+      800: {
+        items: 3,
+      },
+    },
+  });
+  $(".nav-best-prj-slider").owlCarousel({
+    loop: false,
+    nav: true,
+    dots: false,
+    autoplay: false,
+    responsive: {
+      0: {
+        items: 1,
+      },
+      400: {
+        items: 2,
+      },
+      800: {
         items: 3,
       },
     },
@@ -212,19 +234,20 @@ $(document).ready(function () {
     loop: true,
     nav: false,
     dots: true,
-    autoplay: false,
+    autoplay: true,
+    autoplayTimeout: 2000,
     responsive: {
       0: {
-        items: 1,
-      },
-      450: {
         items: 2,
       },
-      900: {
+      300: {
         items: 3,
       },
-      1350: {
+      500: {
         items: 4,
+      },
+      900: {
+        items: 5,
       },
     },
   });
@@ -235,5 +258,11 @@ $(document).ready(function () {
     var element = $(this).data("type");
     $(".post-list").addClass("d-none");
     $(`${element}`).removeClass("d-none");
+  });
+  $(".container-best-product .owl-item .nav-item .nav-link").click(function () {
+    $(".container-best-product .owl-item .nav-item .nav-link").removeClass(
+      "active"
+    );
+    $(this).addClass("active");
   });
 });
