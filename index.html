@@ -12,7 +12,10 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
-    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="asset/lib/newHome/main.min.css" />
     <link
       rel="stylesheet"
@@ -162,18 +165,38 @@
           <form action="">
             <input
               type="text"
-              class="input-search-form" id="input-search-mobile"
+              class="input-search-form"
+              id="input-search-mobile"
               placeholder="Nhập tên sản phẩm cần tìm"
             />
-            <span class="icon-search"><i class="far fa-search"></i></span>
           </form>
 
-          <button class="btn btn-primary btn-open-form-search-mobile d-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#wp-form-search-mobile" aria-controls="offcanvasBottom">Toggle bottom offcanvas</button>
+          <button
+            class="btn btn-primary btn-open-form-search-mobile d-none"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#wp-form-search-mobile"
+            aria-controls="offcanvasBottom"
+          >
+            Toggle bottom offcanvas
+          </button>
 
-          <div class="offcanvas offcanvas-bottom" tabindex="-1" id="wp-form-search-mobile" aria-labelledby="wp-form-search-mobile-lable">
+          <div
+            class="offcanvas offcanvas-bottom"
+            tabindex="-1"
+            id="wp-form-search-mobile"
+            aria-labelledby="wp-form-search-mobile-lable"
+          >
             <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="wp-form-search-mobile-lable">Tìm kiếm bất động sản</h5>
-              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              <h5 class="offcanvas-title" id="wp-form-search-mobile-lable">
+                Tìm kiếm bất động sản
+              </h5>
+              <button
+                type="button"
+                class="btn-close text-reset"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
               <div class="wp-nav-tab-mobile">
                 <div class="nav-tab-mobile">
                   <div class="item-nav-tab active">
@@ -191,7 +214,63 @@
             <div class="offcanvas-body">
               <div class="wp-form-search-mobile">
                 <div class="wp-tab-mobile">
-                  
+                  <form action="">
+                    <div class="group-input-search">
+                      <input
+                        type="text"
+                        class="input-search-mobile"
+                        placeholder="Tìm kiếm sản phẩm"
+                      />
+                      <span class="icon-search-mobile"
+                        ><i class="far fa-search"></i
+                      ></span>
+                    </div>
+                    <div class="type-wrapper-mb">
+                      <label class="label-input-select-mb" for="type-property">Loại nhà đất</label>
+                      <select
+                        class="form-select multi-select-field"
+                        id="list-option-type-mb"
+                        data-placeholder="Chọn loại nhà đất" multiple
+                      >
+                        <option></option>
+                        <option value="Trên toàn quốc">
+                          Tất cả nhà đất
+                        </option>
+                        <option value="Hồ Chí Minh">Căn hộ chung cư</option>
+                        <option value="Hải Phòng">Các loại nhà</option>
+                        <option value="Đà Nẵng">Đà Nẵng</option>
+                        <option value="Nha Trang">Nha Trang</option>
+                        <option>Tất cả Tỉnh/Thành phố</option>
+                        <option>Hà Nội</option>
+                        <option>Hồ Chí Minh</option>
+                        <option>Hải Phòng</option>
+                        <option>Đà Nẵng</option>
+                        <option>Nha Trang</option>
+                        <option>Tất cả Tỉnh/Thành phố</option>
+                        <option>Hà Nội</option>
+                        <option>Hồ Chí Minh</option>
+                        <option>Hải Phòng</option>
+                        <option>Đà Nẵng</option>
+                        <option>Nha Trang</option>
+                      </select>
+                    </div>
+                    <div class="location-wrapper-mb">
+                      <label class="label-input-select-mb" for="type-property">Địa điểm</label>
+                    
+                    </div>
+                    <div class="price-wrapper-mb">
+                      <label class="label-input-select-mb" for="type-property">Mức giá</label>
+                    
+                    </div>
+                    <div class="size-wrapper-mb">
+                      <label class="label-input-select-mb" for="type-property">Diện tích</label>
+                    
+                    </div>
+                  </form>
+                </div>
+                <div class="wp-button-submit-mb">
+                  <span class="btn-clear-mb">Đặt lại</span>
+                  <span class="btn-action-search"><i class="far fa-search"></i> Tìm kiếm</span>
                 </div>
               </div>
             </div>
@@ -518,7 +597,10 @@
                         id="location-tab"
                         role="tablist"
                       >
-                        <li class="nav-item nav-location-province-tab" role="presentation">
+                        <li
+                          class="nav-item nav-location-province-tab"
+                          role="presentation"
+                        >
                           <button
                             class="nav-link active"
                             id="location-province-tab"
@@ -1075,10 +1157,28 @@
         </div>
         <div id="slider_wp" class="owl-carousel owl-theme">
           <a href="#" class="d-block">
-            <img src="asset/images/slider-02.png" alt="" title="" />
+            <div
+              class="wp-img-slider"
+              style="background-image: url('/asset/images/slider-02.png')"
+            ></div>
+            <img
+              class="img-slider"
+              src="asset/images/slider-02.png"
+              alt=""
+              title=""
+            />
           </a>
           <a href="#" class="d-block">
-            <img src="asset/images/slider-01.png" alt="" title="" />
+            <div
+              class="wp-img-slider"
+              style="background-image: url('/asset/images/slider-01.png')"
+            ></div>
+            <img
+              class="img-slider"
+              src="asset/images/slider-01.png"
+              alt=""
+              title=""
+            />
           </a>
         </div>
       </div>
@@ -2773,7 +2873,10 @@
           <div class="wp-list-project">
             <div class="box-header">
               <div class="container-best-product">
-                <ul class="nav nav-pills mb-3 nav-best-prj-not-slider" role="tablist">
+                <ul
+                  class="nav nav-pills mb-3 nav-best-prj-not-slider"
+                  role="tablist"
+                >
                   <li class="nav-item" role="presentation">
                     <button
                       class="nav-link active"
@@ -2808,15 +2911,10 @@
                       aria-selected="false"
                     >
                       <span class="nav-logo"
-                        ><img
-                          src="/asset/images/novaworld.png"
-                          alt=""
+                        ><img src="/asset/images/novaworld.png" alt=""
                       /></span>
-                      <p
-                        class="text-nav-link"
-                        title="Novaworld Phan Thiết"
-                      >
-                      Novaworld Phan Thiết
+                      <p class="text-nav-link" title="Novaworld Phan Thiết">
+                        Novaworld Phan Thiết
                       </p>
                     </button>
                   </li>
@@ -2831,15 +2929,13 @@
                       aria-selected="false"
                     >
                       <span class="nav-logo"
-                        ><img
-                          src="/asset/images/doi-rong-do-son.png"
-                          alt=""
+                        ><img src="/asset/images/doi-rong-do-son.png" alt=""
                       /></span>
                       <p
                         class="text-nav-link"
                         title="Dự án Đồi Rồng Đồ Sơn - Dragon Ocean"
                       >
-                      Dự án Đồi Rồng Đồ Sơn - Dragon Ocean
+                        Dự án Đồi Rồng Đồ Sơn - Dragon Ocean
                       </p>
                     </button>
                   </li>
@@ -2854,20 +2950,18 @@
                       aria-selected="false"
                     >
                       <span class="nav-logo"
-                        ><img
-                          src="/asset/images/flamingo-tan-trao.png"
-                          alt=""
+                        ><img src="/asset/images/flamingo-tan-trao.png" alt=""
                       /></span>
-                      <p
-                        class="text-nav-link"
-                        title="Flamingo Tân Trào"
-                      >
+                      <p class="text-nav-link" title="Flamingo Tân Trào">
                         Flamingo Tân Trào
                       </p>
                     </button>
                   </li>
                 </ul>
-                <ul class="nav nav-pills mb-3 nav-best-prj-slider owl-carousel owl-theme" role="tablist">
+                <ul
+                  class="nav nav-pills mb-3 nav-best-prj-slider owl-carousel owl-theme"
+                  role="tablist"
+                >
                   <li class="nav-item" role="presentation">
                     <button
                       class="nav-link active"
@@ -2902,15 +2996,10 @@
                       aria-selected="false"
                     >
                       <span class="nav-logo"
-                        ><img
-                          src="/asset/images/novaworld.png"
-                          alt=""
+                        ><img src="/asset/images/novaworld.png" alt=""
                       /></span>
-                      <p
-                        class="text-nav-link"
-                        title="Novaworld Phan Thiết"
-                      >
-                      Novaworld Phan Thiết
+                      <p class="text-nav-link" title="Novaworld Phan Thiết">
+                        Novaworld Phan Thiết
                       </p>
                     </button>
                   </li>
@@ -2925,15 +3014,13 @@
                       aria-selected="false"
                     >
                       <span class="nav-logo"
-                        ><img
-                          src="/asset/images/doi-rong-do-son.png"
-                          alt=""
+                        ><img src="/asset/images/doi-rong-do-son.png" alt=""
                       /></span>
                       <p
                         class="text-nav-link"
                         title="Dự án Đồi Rồng Đồ Sơn - Dragon Ocean"
                       >
-                      Dự án Đồi Rồng Đồ Sơn - Dragon Ocean
+                        Dự án Đồi Rồng Đồ Sơn - Dragon Ocean
                       </p>
                     </button>
                   </li>
@@ -2948,14 +3035,9 @@
                       aria-selected="false"
                     >
                       <span class="nav-logo"
-                        ><img
-                          src="/asset/images/flamingo-tan-trao.png"
-                          alt=""
+                        ><img src="/asset/images/flamingo-tan-trao.png" alt=""
                       /></span>
-                      <p
-                        class="text-nav-link"
-                        title="Flamingo Tân Trào"
-                      >
+                      <p class="text-nav-link" title="Flamingo Tân Trào">
                         Flamingo Tân Trào
                       </p>
                     </button>

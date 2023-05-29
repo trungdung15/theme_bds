@@ -146,6 +146,16 @@ $(document).ready(function () {
     placeholder: $(this).data("placeholder"),
     closeOnSelect: false,
   });
+  $(".list-option-type-mb").select2({
+    theme: "bootstrap-5",
+    width: $(this).data("width")
+      ? $(this).data("width")
+      : $(this).hasClass("w-100")
+      ? "100%"
+      : "style",
+    placeholder: $(this).data("placeholder"),
+    closeOnSelect: false,
+  });
 
   $("#list-option-province").change(function () {
     var text = $(this).val();
@@ -203,12 +213,9 @@ $(document).ready(function () {
     autoplayHoverPause: false,
     responsive: {
       0: {
-        items: 1,
-      },
-      400: {
         items: 2,
       },
-      800: {
+      600: {
         items: 3,
       },
     },
