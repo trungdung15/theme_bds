@@ -19,12 +19,12 @@ body {
 .wp-list-news .head-news h2,
 .wp-best-project .wp-title h2,
 .wp-list-company .wp-title h2 {
-  margin-bottom: 30px;
+  margin-bottom: 15px;
   width: 100%;
-  font-family: "Roboto", sans-serif;
+  font-family: var(--font-lexend);
   text-align: center;
   color: #222222;
-  font-size: 24px;
+  font-size: 22px;
   font-weight: 600;
   letter-spacing: -0.5px;
   padding-left: 10px;
@@ -300,6 +300,7 @@ li .wp-post .wp-detail .wp-author .action .box-action:hover {
   display: block;
   padding-right: 10px;
   padding-left: 10px;
+  font-size: 14px;
 }
 .wp-list-post-area .list-area {
   display: flex;
@@ -380,11 +381,12 @@ li .wp-post .wp-detail .wp-author .action .box-action:hover {
   text-align: center;
 }
 #wp-content .wp-list-post-field .wp-title h2 {
+  font-family: var(--font-lexend);
   width: 100%;
   color: #222;
-  font-size: 24px;
+  font-size: 22px;
   font-weight: 700;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 #wp-content .wp-list-post-field .wp-list-field {
@@ -401,7 +403,7 @@ li .wp-post .wp-detail .wp-author .action .box-action:hover {
   width: 100%;
   text-align: center;
   color: #5c727d;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 400;
   line-height: 1.6em;
   margin-bottom: 20px;
@@ -570,6 +572,9 @@ li .wp-post .wp-detail .wp-author .action .box-action:hover {
 .wp-best-project .wp-title {
   padding: 30px 30px 0px 30px;
 }
+.wp-list-company .wp-title {
+  margin: 30px;
+}
 .wp-best-project .wp-title p,
 .wp-list-company .wp-title p {
   display: block;
@@ -577,6 +582,7 @@ li .wp-post .wp-detail .wp-author .action .box-action:hover {
   padding-right: 10px;
   text-align: center;
   line-height: 1.5em;
+  font-size: 14px;
 }
 .wp-best-project .container-best-product {
   max-width: 1140px;
@@ -637,14 +643,30 @@ li .wp-post .wp-detail .wp-author .action .box-action:hover {
   .container-best-product
   .nav-best-prj-slider
   .owl-nav {
+  margin: 0 !important;
+}
+.wp-list-project
+  .box-header
+  .container-best-product
+  .nav-best-prj-slider
+  .owl-nav
+  .owl-prev {
   position: absolute;
   left: 0;
   top: 50%;
-  width: 100%;
   transform: translateY(-50%);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  margin: 0 !important;
+}
+.wp-list-project
+  .box-header
+  .container-best-product
+  .nav-best-prj-slider
+  .owl-nav
+  .owl-next {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
   margin: 0 !important;
 }
 .wp-list-project
@@ -762,6 +784,13 @@ li .wp-post .wp-detail .wp-author .action .box-action:hover {
   .wp-list-top .wp-head .wp-control .taxonomy {
     margin: 0px 15px 20px 15px;
     padding: 2px 15px;
+  }
+  #wp-content .wp-list-post-area .wp-head p,
+  .wp-best-project .wp-title p,
+  .wp-list-company .wp-title p,
+  .wp-best-project .wp-title p,
+  .wp-list-company .wp-title p {
+    font-size: 16px;
   }
 }
 @media (min-width: 568px) {
@@ -883,7 +912,7 @@ li .wp-post .wp-detail .wp-author .action .box-action:hover {
   }
   .wp-best-project .wp-title p,
   .wp-list-company .wp-title p {
-    width: 50%;
+    width: 100%;
     margin: 0 auto;
   }
 }

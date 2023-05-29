@@ -265,4 +265,13 @@ $(document).ready(function () {
     );
     $(this).addClass("active");
   });
+
+  $('#input-search-mobile').focus(function(){
+    $('.btn-open-form-search-mobile').click();
+  });
+
+  $('.item-nav-tab').click(function(){
+    $('.item-nav-tab').removeClass('active');
+    $(this).addClass('active');
+  });
 });

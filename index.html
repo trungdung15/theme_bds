@@ -12,6 +12,7 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="asset/lib/newHome/main.min.css" />
     <link
       rel="stylesheet"
@@ -161,11 +162,40 @@
           <form action="">
             <input
               type="text"
-              class="input-search-form"
+              class="input-search-form" id="input-search-mobile"
               placeholder="Nhập tên sản phẩm cần tìm"
             />
             <span class="icon-search"><i class="far fa-search"></i></span>
           </form>
+
+          <button class="btn btn-primary btn-open-form-search-mobile d-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#wp-form-search-mobile" aria-controls="offcanvasBottom">Toggle bottom offcanvas</button>
+
+          <div class="offcanvas offcanvas-bottom" tabindex="-1" id="wp-form-search-mobile" aria-labelledby="wp-form-search-mobile-lable">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="wp-form-search-mobile-lable">Tìm kiếm bất động sản</h5>
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              <div class="wp-nav-tab-mobile">
+                <div class="nav-tab-mobile">
+                  <div class="item-nav-tab active">
+                    <span class="text-nav-tab">Nhà đất bán</span>
+                  </div>
+                  <div class="item-nav-tab">
+                    <span class="text-nav-tab">Nhà đất cho thuê</span>
+                  </div>
+                  <div class="item-nav-tab">
+                    <span class="text-nav-tab">Dự án</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="offcanvas-body">
+              <div class="wp-form-search-mobile">
+                <div class="wp-tab-mobile">
+                  
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
 
         <div id="search_form">
@@ -1086,7 +1116,7 @@
                 <li>
                   <a href="">
                     <div class="thumb-post">
-                      <img src="asset/images/house_nice-525x328.jpg" alt="" />
+                      <img src="asset/images/house_nice_2-525x328.jpg" alt="" />
                     </div>
                     <div class="detail-post">
                       <h3 class="title">
@@ -1110,7 +1140,7 @@
                 <li>
                   <a href="">
                     <div class="thumb-post">
-                      <img src="asset/images/house_nice-525x328.jpg" alt="" />
+                      <img src="asset/images/pexels-3.jpg" alt="" />
                     </div>
                     <div class="detail-post">
                       <h3 class="title">
@@ -1136,7 +1166,7 @@
                 <li>
                   <a href="">
                     <div class="thumb-post">
-                      <img src="asset/images/house_nice-525x328.jpg" alt="" />
+                      <img src="asset/images/house_nice_2-525x328.jpg" alt="" />
                     </div>
                     <div class="detail-post">
                       <h3 class="title">
@@ -1160,7 +1190,7 @@
                 <li>
                   <a href="">
                     <div class="thumb-post">
-                      <img src="asset/images/house_nice-525x328.jpg" alt="" />
+                      <img src="asset/images/pexels-3.jpg" alt="" />
                     </div>
                     <div class="detail-post">
                       <h3 class="title">
@@ -3276,5 +3306,6 @@
     <script src="asset/lib/jquery-scroll-lock/dist/jquery-scrollLock.min.js"></script>
     <script src="asset/lib/select2/select2.min.js"></script>
     <script src="asset/js/header-home.js"></script>
+    <script src="asset/js/placeholder-input.js"></script>
   </body>
 </html>
