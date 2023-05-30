@@ -848,9 +848,6 @@ li .wp-post .wp-detail .wp-author .action .box-action:hover {
     max-width: 1140px;
     margin: 50px auto;
   }
-  #wp-content .wp-list-news {
-    padding: 30px 0;
-  }
   .wp-list-post-field ul.list-field li a {
     height: 300px;
   }
@@ -907,6 +904,11 @@ li .wp-post .wp-detail .wp-author .action .box-action:hover {
   }
   .nav-best-prj-slider {
     display: none !important;
+  }
+}
+@media (min-width: 980px){
+  #wp-content .wp-list-news{
+    padding: 150px 0 10px 0;
   }
 }
 @media (min-width: 1024px) {

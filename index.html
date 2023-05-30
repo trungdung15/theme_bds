@@ -178,7 +178,7 @@
             data-bs-target="#wp-form-search-mobile"
             aria-controls="offcanvasBottom"
           >
-            Toggle bottom offcanvas
+            Toggle show
           </button>
 
           <div
@@ -226,16 +226,17 @@
                       ></span>
                     </div>
                     <div class="type-wrapper-mb">
-                      <label class="label-input-select-mb" for="type-property">Loại nhà đất</label>
+                      <label class="label-input-select-mb" for="type-property"
+                        >Loại nhà đất</label
+                      >
                       <select
                         class="form-select multi-select-field"
                         id="list-option-type-mb"
-                        data-placeholder="Chọn loại nhà đất" multiple
+                        data-placeholder="Chọn loại nhà đất"
+                        multiple
                       >
                         <option></option>
-                        <option value="Trên toàn quốc">
-                          Tất cả nhà đất
-                        </option>
+                        <option value="Trên toàn quốc">Tất cả nhà đất</option>
                         <option value="Hồ Chí Minh">Căn hộ chung cư</option>
                         <option value="Hải Phòng">Các loại nhà</option>
                         <option value="Đà Nẵng">Đà Nẵng</option>
@@ -255,22 +256,245 @@
                       </select>
                     </div>
                     <div class="location-wrapper-mb">
-                      <label class="label-input-select-mb" for="type-property">Địa điểm</label>
-                    
+                      <label
+                        class="label-input-select-mb"
+                        for="location-property"
+                        >Địa điểm</label
+                      >
+                      <span
+                        class="wp-button-select-location"
+                        data-bs-toggle="modal"
+                        data-bs-target="#modal-location-mb"
+                      >
+                        <span class="text-location-property"
+                          >Tất cả khu vực</span
+                        >
+                        <i class="fad fa-map-marker-edit"></i>
+                      </span>
+
+                      <!-- Modal -->
+                      <div
+                        class="modal fade"
+                        id="modal-location-mb"
+                        tabindex="-1"
+                        aria-labelledby="modal-location-mb-label"
+                        aria-hidden="true"
+                      >
+                        <div
+                          class="modal-dialog modal-dialog-scrollable modal-dialog-centered"
+                        >
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="modal-location-mb-label">
+                                Địa điểm
+                              </h5>
+                              <button
+                                type="button"
+                                class="btn-close"
+                                data-bs-dismiss="modal"
+                                aria-label="Close"
+                              ></button>
+                            </div>
+                            <div class="modal-body">
+                              <div class="wp-select">
+                                <label class="label-input-select-mb">
+                                  Tỉnh/Thành phố
+                                </label>
+                                <select
+                                  class="form-select single-select-field"
+                                  id="list-option-province-mb"
+                                  data-placeholder="Chọn Tỉnh/Thành phố"
+                                >
+                                  <option></option>
+                                  <option value="Trên toàn quốc">
+                                    Tất cả Tỉnh/Thành phố
+                                  </option>
+                                  <option value="Hà Nội">Hà Nội</option>
+                                  <option value="Hồ Chí Minh">Hồ Chí Minh</option>
+                                  <option value="Hải Phòng">Hải Phòng</option>
+                                  <option value="Đà Nẵng">Đà Nẵng</option>
+                                  <option value="Nha Trang">Nha Trang</option>
+                                  <option>Tất cả Tỉnh/Thành phố</option>
+                                  <option>Hà Nội</option>
+                                  <option>Hồ Chí Minh</option>
+                                  <option>Hải Phòng</option>
+                                  <option>Đà Nẵng</option>
+                                  <option>Nha Trang</option>
+                                  <option>Tất cả Tỉnh/Thành phố</option>
+                                  <option>Hà Nội</option>
+                                  <option>Hồ Chí Minh</option>
+                                  <option>Hải Phòng</option>
+                                  <option>Đà Nẵng</option>
+                                  <option>Nha Trang</option>
+                                </select>
+                              </div>
+                              <div class="wp-select">
+                                <label class="label-input-select-mb">
+                                  Quận/Huyện
+                                </label>
+                                <select
+                                  class="form-select multi-select-field"
+                                  id="list-option-district-mb"
+                                  data-placeholder="Chọn Quận/Huyện"
+                                  multiple disabled
+                                >
+                                  <option></option>
+                                  <option>Hà Nội</option>
+                                  <option>Hồ Chí Minh</option>
+                                  <option>Hải Phòng</option>
+                                  <option>Đà Nẵng</option>
+                                  <option>Nha Trang</option>
+                                  <option>Tất cả Tỉnh/Thành phố</option>
+                                  <option>Hà Nội</option>
+                                  <option>Hồ Chí Minh</option>
+                                  <option>Hải Phòng</option>
+                                  <option>Đà Nẵng</option>
+                                  <option>Nha Trang</option>
+                                  <option>Tất cả Tỉnh/Thành phố</option>
+                                  <option>Hà Nội</option>
+                                  <option>Hồ Chí Minh</option>
+                                  <option>Hải Phòng</option>
+                                  <option>Đà Nẵng</option>
+                                  <option>Nha Trang</option>
+                                </select>
+                              </div>
+                              <div class="wp-select">
+                                <label class="label-input-select-mb">
+                                  Xã/Phường
+                                </label>
+                                <select
+                                  class="form-select multi-select-field"
+                                  id="list-option-ward-mb"
+                                  data-placeholder="Chọn Xã/Phường"
+                                  multiple disabled
+                                >
+                                  <option></option>
+                                  <option>Hà Nội</option>
+                                  <option>Hồ Chí Minh</option>
+                                  <option>Hải Phòng</option>
+                                  <option>Đà Nẵng</option>
+                                  <option>Nha Trang</option>
+                                  <option>Tất cả Tỉnh/Thành phố</option>
+                                  <option>Hà Nội</option>
+                                  <option>Hồ Chí Minh</option>
+                                  <option>Hải Phòng</option>
+                                  <option>Đà Nẵng</option>
+                                  <option>Nha Trang</option>
+                                  <option>Tất cả Tỉnh/Thành phố</option>
+                                  <option>Hà Nội</option>
+                                  <option>Hồ Chí Minh</option>
+                                  <option>Hải Phòng</option>
+                                  <option>Đà Nẵng</option>
+                                  <option>Nha Trang</option>
+                                </select>
+                              </div>
+                              <div class="wp-select">
+                                <label class="label-input-select-mb">
+                                  Đường/Phố
+                                </label>
+                                <select
+                                  class="form-select multi-select-field"
+                                  id="list-option-street-mb"
+                                  data-placeholder="Chọn Đường/Phố"
+                                  multiple disabled
+                                >
+                                  <option></option>
+                                  <option>Hà Nội</option>
+                                  <option>Hồ Chí Minh</option>
+                                  <option>Hải Phòng</option>
+                                  <option>Đà Nẵng</option>
+                                  <option>Nha Trang</option>
+                                  <option>Tất cả Tỉnh/Thành phố</option>
+                                  <option>Hà Nội</option>
+                                  <option>Hồ Chí Minh</option>
+                                  <option>Hải Phòng</option>
+                                  <option>Đà Nẵng</option>
+                                  <option>Nha Trang</option>
+                                  <option>Tất cả Tỉnh/Thành phố</option>
+                                  <option>Hà Nội</option>
+                                  <option>Hồ Chí Minh</option>
+                                  <option>Hải Phòng</option>
+                                  <option>Đà Nẵng</option>
+                                  <option>Nha Trang</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="modal-footer">
+                              <div class="bottom-wp-option-mb">
+                                <div class="btn-clear-select me-3">
+                                  <i class="fad fa-reply-all pe-1"></i>
+                                  <span>Đặt lại</span>
+                                </div>
+                                <div class="btn-apply">
+                                  <i class="far fa-check-double"></i>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                     <div class="price-wrapper-mb">
-                      <label class="label-input-select-mb" for="type-property">Mức giá</label>
-                    
+                      <label class="label-input-select-mb" for="price-property"
+                        >Mức giá</label
+                      >
+                      <select
+                        class="form-select multi-select-field"
+                        id="list-option-price-mb"
+                        data-placeholder="Chọn mức giá"
+                        multiple
+                      >
+                        <option></option>
+                        <option>Tất cả mức giá</option>
+                        <option>20 - 30tr</option>
+                        <option>20 - 30tr</option>
+                        <option>20 - 30tr</option>
+                        <option>20 - 30tr</option>
+                        <option>20 - 30tr</option>
+                        <option>Hà Nội</option>
+                        <option>Hồ Chí Minh</option>
+                        <option>Hải Phòng</option>
+                        <option>Đà Nẵng</option>
+                        <option>Nha Trang</option>
+                        <option>Tất cả Tỉnh/Thành phố</option>
+                        <option>Hà Nội</option>
+                        <option>Hồ Chí Minh</option>
+                        <option>Hải Phòng</option>
+                        <option>Đà Nẵng</option>
+                      </select>
                     </div>
                     <div class="size-wrapper-mb">
-                      <label class="label-input-select-mb" for="type-property">Diện tích</label>
-                    
+                      <label class="label-input-select-mb" for="size-property"
+                        >Diện tích</label
+                      >
+                      <select
+                        class="form-select multi-select-field"
+                        id="list-option-size-mb"
+                        data-placeholder="Chọn diên tích"
+                        multiple
+                      >
+                        <option></option>
+                        <option>Tất cả các diện tích</option>
+                        <option>40 - 50 m2</option>
+                        <option>Hà Nội</option>
+                        <option>Hồ Chí Minh</option>
+                        <option>Hải Phòng</option>
+                        <option>Đà Nẵng</option>
+                        <option>Nha Trang</option>
+                        <option>Tất cả Tỉnh/Thành phố</option>
+                        <option>Hà Nội</option>
+                        <option>Hồ Chí Minh</option>
+                        <option>Hải Phòng</option>
+                        <option>Đà Nẵng</option>
+                      </select>
                     </div>
                   </form>
                 </div>
                 <div class="wp-button-submit-mb">
                   <span class="btn-clear-mb">Đặt lại</span>
-                  <span class="btn-action-search"><i class="far fa-search"></i> Tìm kiếm</span>
+                  <span class="btn-action-search"
+                    ><i class="far fa-search"></i> Tìm kiếm</span
+                  >
                 </div>
               </div>
             </div>

@@ -121,10 +121,12 @@ $(document).ready(function () {
       .addClass("cursor-not-allowed");
     $("#location-wards-tab").addClass("disabled");
     $("#location-province-tab").click();
+    $("#list-option-province-mb").val("Trên toàn quốc").trigger("change");
   });
 
   $(".btn-apply").click(function () {
     $(".select-filter-wrapper").addClass("d-none");
+    $("#modal-location-mb").modal('hide');
   });
 
   $(".single-select-field").select2({
@@ -273,12 +275,86 @@ $(document).ready(function () {
     $(this).addClass("active");
   });
 
-  $('#input-search-mobile').focus(function(){
-    $('.btn-open-form-search-mobile').click();
+  $("#input-search-mobile").focus(function () {
+    $(".btn-open-form-search-mobile").click();
   });
 
-  $('.item-nav-tab').click(function(){
-    $('.item-nav-tab').removeClass('active');
-    $(this).addClass('active');
+  $(".item-nav-tab").click(function () {
+    $(".item-nav-tab").removeClass("active");
+    $(this).addClass("active");
   });
+
+  var textProvince = "";
+  var textDistrict = "";
+  var textWard = "";
+  var textStreet = "";
+  $("#list-option-province-mb").change(function () {
+    var value = $(this).val();
+    if (value == "" || value == "Trên toàn quốc") {
+      $("#list-option-district-mb").attr("disabled", true);
+      $("#list-option-district-mb").val(null).trigger("change");
+      $('#select2-list-option-district-mb-container').html('');
+      $("#list-option-ward-mb").attr("disabled", true);
+      $("#list-option-ward-mb").val(null).trigger("change");
+      $('#select2-list-option-ward-mb-container').html('');
+      $("#list-option-street-mb").attr("disabled", true);
+      $("#list-option-street-mb").val(null).trigger("change");
+      $('#select2-list-option-street-mb-container').html('');
+      $('.text-location-property').text("Tất cả khu vực");
+    } else {
+      $("#list-option-district-mb").attr("disabled", false);
+      $("#list-option-street-mb").attr("disabled", false);
+      textProvince = $(this).val();
+      convertTextLocation();
+    }
+  });
+  $("#list-option-district-mb").change(function () {
+    var value = $(this).val();
+    if (value.length > 0) {
+      $("#list-option-ward-mb").attr("disabled", false);
+    } else {
+      $("#list-option-ward-mb").attr("disabled", true);
+      $("#list-option-ward-mb").val(null).trigger("change");
+      $('#select2-list-option-ward-mb-container').html('');
+    }
+    var filteredArray = $.grep(value, function(value) {
+      return value !== "";
+    });
+    textDistrict = filteredArray.join(' - ');
+    convertTextLocation();
+  });
+  $("#list-option-ward-mb").change(function () {
+    var value = $(this).val();
+    var filteredArray = $.grep(value, function(value) {
+      return value !== "";
+    });
+    textWard = filteredArray.join(' - ');
+    convertTextLocation();
+  });
+  $("#list-option-street-mb").change(function () {
+    var value = $(this).val();
+    var filteredArray = $.grep(value, function(value) {
+      return value !== "";
+    });
+    textStreet = filteredArray.join(' - ');
+    convertTextLocation();
+  });
+
+  function convertTextLocation() {
+    var arrayText = [];
+    if(textProvince){
+      arrayText.push(textProvince);
+    }
+    if(textDistrict){
+      arrayText.push(textDistrict);
+    }
+    if(textWard){
+      arrayText.push(textWard);
+    }
+    if(textStreet){
+      arrayText.push(textStreet);
+    }
+    var text = arrayText.join(', ');
+    $('.text-location-property').text(text);
+  }
 });
