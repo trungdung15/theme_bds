@@ -161,14 +161,866 @@
         </div>
 
         <div class="header_form_filter">
-            <div class="wp-form-filter">
-                <select name="" id="" class="select-type-sale">
-                    <option value="">Nhà đất bán</option>
-                    <option value="">Nhà đất thuê</option>
-                </select>
+          <div class="wp-form-filter">
+            <div class="wp-input-search-property">
+              <input
+                type="text"
+                class="input-search-property-list input-auto-text"
+                placeholder="Tìm kiếm bất động sản"
+              />
+              <span class="icon-search"><i class="far fa-search"></i></span>
             </div>
-        </div>
 
+            <div class="wp-select-sub-type-property">
+              <div class="select-item" data-element=".wp-select-option">
+                <span>Loại nhà đất</span>
+                <i class="fal fa-caret-down"></i>
+              </div>
+
+              <div class="wp-select-option select-filter-wrapper d-none">
+                <div class="wp-list-option-type-property">
+                  <div class="list-option-type-property">
+                    <div class="wp-option-select">
+                      <div class="option-select">
+                        <span class="icon"
+                          ><i class="fal fa-building"></i
+                        ></span>
+                        <span class="text-option">Tất cả nhà đất</span>
+                        <span class="check-box">
+                          <input
+                            class="form-check-input mt-0"
+                            type="checkbox"
+                            value=""
+                          />
+                        </span>
+                      </div>
+                    </div>
+                    <div class="wp-option-select">
+                      <div class="option-select">
+                        <span class="icon"
+                          ><i class="fal fa-building"></i
+                        ></span>
+                        <span class="text-option">Căn hộ chung cư</span>
+                        <span class="check-box">
+                          <input
+                            class="form-check-input mt-0"
+                            type="checkbox"
+                            value=""
+                          />
+                        </span>
+                      </div>
+                    </div>
+                    <div class="wp-option-select">
+                      <div class="option-select">
+                        <span class="icon"
+                          ><i class="fal fa-home-lg-alt"></i
+                        ></span>
+                        <span class="text-option">Các loại nhà</span>
+                        <span class="check-box">
+                          <input
+                            class="form-check-input mt-0"
+                            type="checkbox"
+                            value=""
+                          />
+                        </span>
+                      </div>
+                      <div class="list-option-type-property-1">
+                        <div class="wp-option-select-1">
+                          <div class="option-select">
+                            <span class="icon"></span>
+                            <span class="text-option">Nhà riêng</span>
+                            <span class="check-box">
+                              <input
+                                class="form-check-input mt-0"
+                                type="checkbox"
+                                value=""
+                              />
+                            </span>
+                          </div>
+                        </div>
+                        <div class="wp-option-select-1">
+                          <div class="option-select">
+                            <span class="icon"></span>
+                            <span class="text-option"
+                              >Nhà biệt thự, liền kề</span
+                            >
+                            <span class="check-box">
+                              <input
+                                class="form-check-input mt-0"
+                                type="checkbox"
+                                value=""
+                              />
+                            </span>
+                          </div>
+                        </div>
+                        <div class="wp-option-select-1">
+                          <div class="option-select">
+                            <span class="icon"></span>
+                            <span class="text-option">Nhà mặt phố</span>
+                            <span class="check-box">
+                              <input
+                                class="form-check-input mt-0"
+                                type="checkbox"
+                                value=""
+                              />
+                            </span>
+                          </div>
+                        </div>
+                        <div class="wp-option-select-1">
+                          <div class="option-select">
+                            <span class="icon"></span>
+                            <span class="text-option"
+                              >Shophouse, nhà phố thương mại</span
+                            >
+                            <span class="check-box">
+                              <input
+                                class="form-check-input mt-0"
+                                type="checkbox"
+                                value=""
+                              />
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="wp-option-select">
+                      <div class="option-select">
+                        <span class="icon"
+                          ><i class="fal fa-map-marked-alt"></i
+                        ></span>
+                        <span class="text-option">Đất nền</span>
+                        <span class="check-box">
+                          <input
+                            class="form-check-input mt-0"
+                            type="checkbox"
+                            value=""
+                          />
+                        </span>
+                      </div>
+                      <div class="list-option-type-property-1">
+                        <div class="wp-option-select-1">
+                          <div class="option-select">
+                            <span class="icon"></span>
+                            <span class="text-option">Nhà riêng</span>
+                            <span class="check-box">
+                              <input
+                                class="form-check-input mt-0"
+                                type="checkbox"
+                                value=""
+                              />
+                            </span>
+                          </div>
+                        </div>
+                        <div class="wp-option-select-1">
+                          <div class="option-select">
+                            <span class="icon"></span>
+                            <span class="text-option"
+                              >Nhà biệt thự, liền kề</span
+                            >
+                            <span class="check-box">
+                              <input
+                                class="form-check-input mt-0"
+                                type="checkbox"
+                                value=""
+                              />
+                            </span>
+                          </div>
+                        </div>
+                        <div class="wp-option-select-1">
+                          <div class="option-select">
+                            <span class="icon"></span>
+                            <span class="text-option">Nhà mặt phố</span>
+                            <span class="check-box">
+                              <input
+                                class="form-check-input mt-0"
+                                type="checkbox"
+                                value=""
+                              />
+                            </span>
+                          </div>
+                        </div>
+                        <div class="wp-option-select-1">
+                          <div class="option-select">
+                            <span class="icon"></span>
+                            <span class="text-option"
+                              >Shophouse, nhà phố thương mại</span
+                            >
+                            <span class="check-box">
+                              <input
+                                class="form-check-input mt-0"
+                                type="checkbox"
+                                value=""
+                              />
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="wp-option-select">
+                      <div class="option-select">
+                        <span class="icon"
+                          ><i class="fal fa-building"></i
+                        ></span>
+                        <span class="text-option">Căn hộ chung cư</span>
+                        <span class="check-box">
+                          <input
+                            class="form-check-input mt-0"
+                            type="checkbox"
+                            value=""
+                          />
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="bottom-wp-option">
+                  <div class="btn-clear-select">
+                    <i class="fad fa-reply-all pe-1"></i>
+                    <span>Đặt lại</span>
+                  </div>
+                  <div class="btn-apply">
+                    <i class="far fa-check-double"></i>
+                  </div>
+                </div>
+              </div>
+
+              <!-- type -->
+              <div
+                class="select-button select-button-project select-item d-none"
+                data-element=".wp-select-option-project"
+              >
+                <div class="select-value">
+                  <i class="far fa-home"></i>
+                  <span>Loại hình</span>
+                  <i class="fal fa-caret-down"></i>
+                </div>
+              </div>
+
+              <!-- type project -->
+              <div
+                class="wp-select-option-project select-filter-wrapper d-none"
+              >
+                <div class="wp-list-option-type-property">
+                  <div class="list-option-type-property">
+                    <div class="wp-option-select">
+                      <div class="option-select">
+                        <span class="icon"
+                          ><i class="fal fa-building"></i
+                        ></span>
+                        <span class="text-option">Tất cả nhà đất</span>
+                      </div>
+                    </div>
+                    <div class="wp-option-select">
+                      <div class="option-select">
+                        <span class="icon"
+                          ><i class="fal fa-building"></i
+                        ></span>
+                        <span class="text-option">Căn hộ chung cư</span>
+                      </div>
+                    </div>
+                    <div class="wp-option-select">
+                      <div class="option-select">
+                        <span class="icon"
+                          ><i class="fal fa-home-lg-alt"></i
+                        ></span>
+                        <span class="text-option">Các loại nhà</span>
+                      </div>
+                    </div>
+                    <div class="wp-option-select">
+                      <div class="option-select">
+                        <span class="icon"
+                          ><i class="fal fa-map-marked-alt"></i
+                        ></span>
+                        <span class="text-option">Đất nền</span>
+                      </div>
+                    </div>
+                    <div class="wp-option-select">
+                      <div class="option-select">
+                        <span class="icon"
+                          ><i class="fal fa-building"></i
+                        ></span>
+                        <span class="text-option">Căn hộ chung cư</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="bottom-wp-option">
+                  <div class="btn-clear-select">
+                    <i class="fad fa-reply-all pe-1"></i>
+                    <span>Đặt lại</span>
+                  </div>
+                  <div class="btn-apply">
+                    <i class="far fa-check-double"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="wp-select-location-property-list">
+              <div
+                class="select-item select-item-location"
+                data-element=".wp-select-option-location"
+              >
+                <span>Trên toàn quốc</span>
+                <i class="far fa-caret-down"></i>
+              </div>
+
+              <div
+                class="wp-select-option-location select-filter-wrapper d-none"
+              >
+                <div class="wp-select-location">
+                  <ul
+                    class="nav nav-pills mb-3"
+                    id="location-tab"
+                    role="tablist"
+                  >
+                    <li
+                      class="nav-item nav-location-province-tab"
+                      role="presentation"
+                    >
+                      <button
+                        class="nav-link active"
+                        id="location-province-tab"
+                        data-bs-toggle="pill"
+                        data-bs-target="#location-province"
+                        type="button"
+                        role="tab"
+                        aria-controls="location-province"
+                        aria-selected="true"
+                      >
+                        Tỉnh/Thành phố
+                      </button>
+                    </li>
+                    <li class="nav-item cursor-not-allowed" role="presentation">
+                      <button
+                        class="nav-link disabled"
+                        id="location-district-tab"
+                        data-bs-toggle="pill"
+                        data-bs-target="#location-district"
+                        type="button"
+                        role="tab"
+                        aria-controls="location-district"
+                        aria-selected="false"
+                      >
+                        Quận/Huyện
+                      </button>
+                    </li>
+                    <li class="nav-item cursor-not-allowed" role="presentation">
+                      <button
+                        class="nav-link disabled"
+                        id="location-wards-tab"
+                        data-bs-toggle="pill"
+                        data-bs-target="#location-wards"
+                        type="button"
+                        role="tab"
+                        aria-controls="location-wards"
+                        aria-selected="false"
+                      >
+                        Xã Phường
+                      </button>
+                    </li>
+                    <li class="nav-item cursor-not-allowed" role="presentation">
+                      <button
+                        class="nav-link disabled"
+                        id="location-street-tab"
+                        data-bs-toggle="pill"
+                        data-bs-target="#location-street"
+                        type="button"
+                        role="tab"
+                        aria-controls="location-street"
+                        aria-selected="false"
+                      >
+                        Đường/Phố
+                      </button>
+                    </li>
+                  </ul>
+                  <div class="tab-content" id="location-tabContent">
+                    <div
+                      class="tab-pane fade show active"
+                      id="loaction-province"
+                      role="tabpanel"
+                      aria-labelledby="location-province-tab"
+                    >
+                      <select
+                        class="form-select single-select-field"
+                        id="list-option-province"
+                        data-placeholder="Chọn Tỉnh/Thành phố"
+                      >
+                        <option></option>
+                        <option value="Trên toàn quốc">
+                          Tất cả Tỉnh/Thành phố
+                        </option>
+                        <option value="Hà Nội">Hà Nội</option>
+                        <option value="Hồ Chí Minh">Hồ Chí Minh</option>
+                        <option value="Hải Phòng">Hải Phòng</option>
+                        <option value="Đà Nẵng">Đà Nẵng</option>
+                        <option value="Nha Trang">Nha Trang</option>
+                        <option>Tất cả Tỉnh/Thành phố</option>
+                        <option>Hà Nội</option>
+                        <option>Hồ Chí Minh</option>
+                        <option>Hải Phòng</option>
+                        <option>Đà Nẵng</option>
+                        <option>Nha Trang</option>
+                        <option>Tất cả Tỉnh/Thành phố</option>
+                        <option>Hà Nội</option>
+                        <option>Hồ Chí Minh</option>
+                        <option>Hải Phòng</option>
+                        <option>Đà Nẵng</option>
+                        <option>Nha Trang</option>
+                      </select>
+                    </div>
+                    <div
+                      class="tab-pane fade"
+                      id="location-district"
+                      role="tabpanel"
+                      aria-labelledby="location-district-tab"
+                    >
+                      <select
+                        class="form-select multi-select-field"
+                        id="list-option-district"
+                        data-placeholder="Chọn Quận/Huyện"
+                        multiple
+                      >
+                        <option></option>
+                        <option>Hà Nội</option>
+                        <option>Hồ Chí Minh</option>
+                        <option>Hải Phòng</option>
+                        <option>Đà Nẵng</option>
+                        <option>Nha Trang</option>
+                        <option>Tất cả Tỉnh/Thành phố</option>
+                        <option>Hà Nội</option>
+                        <option>Hồ Chí Minh</option>
+                        <option>Hải Phòng</option>
+                        <option>Đà Nẵng</option>
+                        <option>Nha Trang</option>
+                        <option>Tất cả Tỉnh/Thành phố</option>
+                        <option>Hà Nội</option>
+                        <option>Hồ Chí Minh</option>
+                        <option>Hải Phòng</option>
+                        <option>Đà Nẵng</option>
+                        <option>Nha Trang</option>
+                      </select>
+                    </div>
+                    <div
+                      class="tab-pane fade"
+                      id="location-wards"
+                      role="tabpanel"
+                      aria-labelledby="location-wards-tab"
+                    >
+                      <select
+                        class="form-select multi-select-field"
+                        id=""
+                        data-placeholder="Chọn Xã/Phường"
+                        multiple
+                      >
+                        <option></option>
+                        <option>Hà Nội</option>
+                        <option>Hồ Chí Minh</option>
+                        <option>Hải Phòng</option>
+                        <option>Đà Nẵng</option>
+                        <option>Nha Trang</option>
+                        <option>Tất cả Tỉnh/Thành phố</option>
+                        <option>Hà Nội</option>
+                        <option>Hồ Chí Minh</option>
+                        <option>Hải Phòng</option>
+                        <option>Đà Nẵng</option>
+                        <option>Nha Trang</option>
+                        <option>Tất cả Tỉnh/Thành phố</option>
+                        <option>Hà Nội</option>
+                        <option>Hồ Chí Minh</option>
+                        <option>Hải Phòng</option>
+                        <option>Đà Nẵng</option>
+                        <option>Nha Trang</option>
+                      </select>
+                    </div>
+                    <div
+                      class="tab-pane fade"
+                      id="location-street"
+                      role="tabpanel"
+                      aria-labelledby="location-street-tab"
+                    >
+                      <select
+                        class="form-select multi-select-field"
+                        id=""
+                        data-placeholder="Chọn Đường/Phố"
+                        multiple
+                      >
+                        <option></option>
+                        <option>Hà Nội</option>
+                        <option>Hồ Chí Minh</option>
+                        <option>Hải Phòng</option>
+                        <option>Đà Nẵng</option>
+                        <option>Nha Trang</option>
+                        <option>Tất cả Tỉnh/Thành phố</option>
+                        <option>Hà Nội</option>
+                        <option>Hồ Chí Minh</option>
+                        <option>Hải Phòng</option>
+                        <option>Đà Nẵng</option>
+                        <option>Nha Trang</option>
+                        <option>Tất cả Tỉnh/Thành phố</option>
+                        <option>Hà Nội</option>
+                        <option>Hồ Chí Minh</option>
+                        <option>Hải Phòng</option>
+                        <option>Đà Nẵng</option>
+                        <option>Nha Trang</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="bottom-wp-option mt-2">
+                  <div class="btn-clear-select">
+                    <i class="fad fa-reply-all pe-1"></i>
+                    <span>Đặt lại</span>
+                  </div>
+                  <div class="btn-apply">
+                    <i class="far fa-check-double"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="wp-select-price-property-list">
+              <div
+                class="select-item select-item-price"
+                data-element=".wp-select-option-price"
+              >
+                <span>Tất cả mức giá</span>
+                <i class="far fa-caret-down"></i>
+              </div>
+
+              <div class="wp-select-option-price select-filter-wrapper d-none">
+                <ul class="wp-list-option-type-property">
+                  <div class="list-option-type-property">
+                    <div class="wp-option-select">
+                      <div class="option-select">
+                        <span class="text-option">Tất cả mức giá</span>
+                        <span class="check-box">
+                          <input
+                            class="form-check-input mt-0"
+                            type="checkbox"
+                            value=""
+                          />
+                        </span>
+                      </div>
+                    </div>
+                    <div class="wp-option-select">
+                      <div class="option-select">
+                        <span class="text-option">Dưới 500 triệu</span>
+                        <span class="check-box">
+                          <input
+                            class="form-check-input mt-0"
+                            type="checkbox"
+                            value=""
+                          />
+                        </span>
+                      </div>
+                    </div>
+                    <div class="wp-option-select">
+                      <div class="option-select">
+                        <span class="text-option">500 triệu - 1 tỷ</span>
+                        <span class="check-box">
+                          <input
+                            class="form-check-input mt-0"
+                            type="checkbox"
+                            value=""
+                          />
+                        </span>
+                      </div>
+                    </div>
+                    <div class="wp-option-select">
+                      <div class="option-select">
+                        <span class="text-option">1 - 2 tỷ</span>
+                        <span class="check-box">
+                          <input
+                            class="form-check-input mt-0"
+                            type="checkbox"
+                            value=""
+                          />
+                        </span>
+                      </div>
+                    </div>
+                    <div class="wp-option-select">
+                      <div class="option-select">
+                        <span class="text-option">2 - 3 tỷ</span>
+                        <span class="check-box">
+                          <input
+                            class="form-check-input mt-0"
+                            type="checkbox"
+                            value=""
+                          />
+                        </span>
+                      </div>
+                    </div>
+                    <div class="wp-option-select">
+                      <div class="option-select">
+                        <span class="text-option">3 - 4 tỷ</span>
+                        <span class="check-box">
+                          <input
+                            class="form-check-input mt-0"
+                            type="checkbox"
+                            value=""
+                          />
+                        </span>
+                      </div>
+                    </div>
+                    <div class="wp-option-select">
+                      <div class="option-select">
+                        <span class="text-option">4 - 5 tỷ</span>
+                        <span class="check-box">
+                          <input
+                            class="form-check-input mt-0"
+                            type="checkbox"
+                            value=""
+                          />
+                        </span>
+                      </div>
+                    </div>
+                    <div class="wp-option-select">
+                      <div class="option-select">
+                        <span class="text-option">5 - 10 tỷ</span>
+                        <span class="check-box">
+                          <input
+                            class="form-check-input mt-0"
+                            type="checkbox"
+                            value=""
+                          />
+                        </span>
+                      </div>
+                    </div>
+                    <div class="wp-option-select">
+                      <div class="option-select">
+                        <span class="text-option">Thoả thuận</span>
+                        <span class="check-box">
+                          <input
+                            class="form-check-input mt-0"
+                            type="checkbox"
+                            value=""
+                          />
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </ul>
+                <div class="bottom-wp-option">
+                  <div class="btn-clear-select">
+                    <i class="fad fa-reply-all pe-1"></i>
+                    <span>Đặt lại</span>
+                  </div>
+                  <div class="btn-apply">
+                    <i class="far fa-check-double"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="wp-select-size-property-list">
+              <div
+                class="select-item select-item-size"
+                data-element=".wp-select-option-size"
+              >
+                <span>Diện tích</span>
+                <i class="far fa-caret-down"></i>
+              </div>
+
+              <div class="wp-select-option-size select-filter-wrapper d-none">
+                <ul class="wp-list-option-type-property">
+                  <div class="list-option-type-property">
+                    <div class="wp-option-select">
+                      <div class="option-select">
+                        <span class="text-option">Tất cả các diện tích</span>
+                        <span class="check-box">
+                          <input
+                            class="form-check-input mt-0"
+                            type="checkbox"
+                            value=""
+                          />
+                        </span>
+                      </div>
+                    </div>
+                    <div class="wp-option-select">
+                      <div class="option-select">
+                        <span class="text-option">Dưới 20 m²</span>
+                        <span class="check-box">
+                          <input
+                            class="form-check-input mt-0"
+                            type="checkbox"
+                            value=""
+                          />
+                        </span>
+                      </div>
+                    </div>
+                    <div class="wp-option-select">
+                      <div class="option-select">
+                        <span class="text-option">20 - 30 m²</span>
+                        <span class="check-box">
+                          <input
+                            class="form-check-input mt-0"
+                            type="checkbox"
+                            value=""
+                          />
+                        </span>
+                      </div>
+                    </div>
+                    <div class="wp-option-select">
+                      <div class="option-select">
+                        <span class="text-option">30 - 40 m²</span>
+                        <span class="check-box">
+                          <input
+                            class="form-check-input mt-0"
+                            type="checkbox"
+                            value=""
+                          />
+                        </span>
+                      </div>
+                    </div>
+                    <div class="wp-option-select">
+                      <div class="option-select">
+                        <span class="text-option">40 - 50 m²</span>
+                        <span class="check-box">
+                          <input
+                            class="form-check-input mt-0"
+                            type="checkbox"
+                            value=""
+                          />
+                        </span>
+                      </div>
+                    </div>
+                    <div class="wp-option-select">
+                      <div class="option-select">
+                        <span class="text-option">50 - 60 m²</span>
+                        <span class="check-box">
+                          <input
+                            class="form-check-input mt-0"
+                            type="checkbox"
+                            value=""
+                          />
+                        </span>
+                      </div>
+                    </div>
+                    <div class="wp-option-select">
+                      <div class="option-select">
+                        <span class="text-option">60 - 80 m²</span>
+                        <span class="check-box">
+                          <input
+                            class="form-check-input mt-0"
+                            type="checkbox"
+                            value=""
+                          />
+                        </span>
+                      </div>
+                    </div>
+                    <div class="wp-option-select">
+                      <div class="option-select">
+                        <span class="text-option">80 - 100 m²</span>
+                        <span class="check-box">
+                          <input
+                            class="form-check-input mt-0"
+                            type="checkbox"
+                            value=""
+                          />
+                        </span>
+                      </div>
+                    </div>
+                    <div class="wp-option-select">
+                      <div class="option-select">
+                        <span class="text-option">100 - 150 m²</span>
+                        <span class="check-box">
+                          <input
+                            class="form-check-input mt-0"
+                            type="checkbox"
+                            value=""
+                          />
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </ul>
+                <div class="bottom-wp-option">
+                  <div class="btn-clear-select">
+                    <i class="fad fa-reply-all pe-1"></i>
+                    <span>Đặt lại</span>
+                  </div>
+                  <div class="btn-apply">
+                    <i class="far fa-check-double"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="wp-select-status-property-list d-none">
+              <div
+                class="select-item select-item-status d-none"
+                data-element=".wp-select-option-status"
+              >
+                <span>Trạng thái</span>
+                <i class="far fa-caret-down"></i>
+              </div>
+
+              <div class="wp-select-option-status select-filter-wrapper d-none">
+                <ul class="wp-list-option-type-property">
+                  <div class="list-option-type-property">
+                    <div class="wp-option-select">
+                      <div class="option-select">
+                        <span class="text-option">Sắp mở bán</span>
+                        <span class="check-box">
+                          <input
+                            class="form-check-input mt-0"
+                            type="checkbox"
+                            value=""
+                          />
+                        </span>
+                      </div>
+                    </div>
+                    <div class="wp-option-select">
+                      <div class="option-select">
+                        <span class="text-option">Đang mở bán</span>
+                        <span class="check-box">
+                          <input
+                            class="form-check-input mt-0"
+                            type="checkbox"
+                            value=""
+                          />
+                        </span>
+                      </div>
+                    </div>
+                    <div class="wp-option-select">
+                      <div class="option-select">
+                        <span class="text-option">Đã bàn giao</span>
+                        <span class="check-box">
+                          <input
+                            class="form-check-input mt-0"
+                            type="checkbox"
+                            value=""
+                          />
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </ul>
+                <div class="bottom-wp-option">
+                  <div class="btn-clear-select">
+                    <i class="fad fa-reply-all pe-1"></i>
+                    <span>Đặt lại</span>
+                  </div>
+                  <div class="btn-apply">
+                    <i class="far fa-check-double"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="wp-action-property">
+              <div class="clear-select-filter">
+                <i class="far fa-undo-alt"></i>
+                <span>Đặt lại</span>
+              </div>
+              <div class="action-search">
+                <i class="far fa-search"></i>
+                <span>Tìm kiếm</span>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
       <div id="slider_search">
@@ -177,7 +1029,7 @@
             <div class="wp-input-search-home-mb">
               <input
                 type="text"
-                class="input-search-form"
+                class="input-search-form input-auto-text"
                 id="input-search-mobile"
                 placeholder="Nhập tên sản phẩm cần tìm"
               />
@@ -622,448 +1474,448 @@
               </div>
             </div>
             <ul class="post-list list-property-sale">
-                <li>
-                  <div class="wp-post">
-                    <a href="" class="img-wp">
-                      <img src="asset/images/pexels.jpg" alt="" />
-                      <div class="location">
-                        <i class="fas fa-map-marker-alt me-1"></i>Thủy Nguyên, Hải
-                        Phòng
+              <li>
+                <div class="wp-post">
+                  <a href="" class="img-wp">
+                    <img src="asset/images/pexels.jpg" alt="" />
+                    <div class="location">
+                      <i class="fas fa-map-marker-alt me-1"></i>Thủy Nguyên, Hải
+                      Phòng
+                    </div>
+                    <div class="media"><i class="fas fa-camera"></i> 5</div>
+                  </a>
+                  <div class="wp-detail">
+                    <h4>
+                      <a href="">
+                        Bán căn hộ Royal DT 55m2 đến 430m2 từ 1-6PN, vay 70%,
+                        miễn phí DV. Thuê 11 tr/th, sổ đỏ vĩnh viễn</a
+                      >
+                    </h4>
+                    <span class="price"> Giá: 20 tỷ </span>
+                    <div class="description">
+                      Công ty chúng tôi độc quyền phân phối hàng ngoại giao biệt
+                      thự các dự Vinhomes. Tôi đang ở tại Royal City nên tôi tự
+                      tin mình là người tư vấn cũng như hỗ trợ cho bạn tốt nhất
+                      về những vấn đề liên qua
+                    </div>
+                    <div class="detail">
+                      <div class="info-room">
+                        <i class="fal fa-bed-alt"></i> 3
                       </div>
-                      <div class="media"><i class="fas fa-camera"></i> 5</div>
-                    </a>
-                    <div class="wp-detail">
-                      <h4>
-                        <a href="">
-                          Bán căn hộ Royal DT 55m2 đến 430m2 từ 1-6PN, vay 70%, miễn
-                          phí DV. Thuê 11 tr/th, sổ đỏ vĩnh viễn</a
-                        >
-                      </h4>
-                      <span class="price"> Giá: 20 tỷ </span>
-                      <div class="description">
-                        Công ty chúng tôi độc quyền phân phối hàng ngoại giao biệt
-                        thự các dự Vinhomes. Tôi đang ở tại Royal City nên tôi tự
-                        tin mình là người tư vấn cũng như hỗ trợ cho bạn tốt nhất về
-                        những vấn đề liên qua
+                      <div class="info-bath"><i class="fas fa-bath"></i> 2</div>
+                      <div class="info-size">
+                        <i class="fal fa-expand-wide"></i> 100 m2
                       </div>
-                      <div class="detail">
-                        <div class="info-room">
-                          <i class="fal fa-bed-alt"></i> 3
+                    </div>
+                    <div class="wp-author">
+                      <div class="author">
+                        <div class="avatar">
+                          <img src="asset/images/avt-user.png" alt="" />
                         </div>
-                        <div class="info-bath"><i class="fas fa-bath"></i> 2</div>
-                        <div class="info-size">
-                          <i class="fal fa-expand-wide"></i> 100 m2
-                        </div>
+                        <div class="name">Trung Dũng</div>
                       </div>
-                      <div class="wp-author">
-                        <div class="author">
-                          <div class="avatar">
-                            <img src="asset/images/avt-user.png" alt="" />
-                          </div>
-                          <div class="name">Trung Dũng</div>
+                      <div class="action">
+                        <div class="share_unit display-none">
+                          <a href=""><i class="fab fa-facebook"></i></a>
+                          <a href=""><i class="fas fa-envelope"></i></a>
+                          <a href=""><i class="fab fa-twitter"></i></a>
+                          <a href=""><i class="fab fa-viber"></i></a>
                         </div>
-                        <div class="action">
-                          <div class="share_unit display-none">
-                            <a href=""><i class="fab fa-facebook"></i></a>
-                            <a href=""><i class="fas fa-envelope"></i></a>
-                            <a href=""><i class="fab fa-twitter"></i></a>
-                            <a href=""><i class="fab fa-viber"></i></a>
-                          </div>
-                          <span
-                            class="share box-action"
-                            data-bs-toggle="tooltip"
-                            data-bs-placement="top"
-                            title="Chia sẻ"
-                            ><i class="fas fa-share-alt"></i
-                          ></span>
-                          <span
-                            class="wish box-action"
-                            data-bs-toggle="tooltip"
-                            data-bs-placement="top"
-                            title="Lưu tin"
-                            ><i class="far fa-heart"></i
-                          ></span>
-                          <span
-                            class="compare box-action"
-                            data-bs-toggle="tooltip"
-                            data-bs-placement="top"
-                            title="So sánh"
-                            ><i class="fas fa-plus"></i
-                          ></span>
-                        </div>
+                        <span
+                          class="share box-action"
+                          data-bs-toggle="tooltip"
+                          data-bs-placement="top"
+                          title="Chia sẻ"
+                          ><i class="fas fa-share-alt"></i
+                        ></span>
+                        <span
+                          class="wish box-action"
+                          data-bs-toggle="tooltip"
+                          data-bs-placement="top"
+                          title="Lưu tin"
+                          ><i class="far fa-heart"></i
+                        ></span>
+                        <span
+                          class="compare box-action"
+                          data-bs-toggle="tooltip"
+                          data-bs-placement="top"
+                          title="So sánh"
+                          ><i class="fas fa-plus"></i
+                        ></span>
                       </div>
                     </div>
                   </div>
-                </li>
-                <li>
-                  <div class="wp-post">
-                    <a href="" class="img-wp">
-                      <img src="asset/images/slider-01.png" alt="" />
-                      <div class="location">
-                        <i class="fas fa-map-marker-alt me-1"></i>Thủy Nguyên, Hải
-                        Phòng
+                </div>
+              </li>
+              <li>
+                <div class="wp-post">
+                  <a href="" class="img-wp">
+                    <img src="asset/images/slider-01.png" alt="" />
+                    <div class="location">
+                      <i class="fas fa-map-marker-alt me-1"></i>Thủy Nguyên, Hải
+                      Phòng
+                    </div>
+                    <div class="media"><i class="fas fa-camera"></i> 5</div>
+                  </a>
+                  <div class="wp-detail">
+                    <h4>
+                      <a href="">
+                        Bán căn hộ Royal DT 55m2 đến 430m2 từ 1-6PN, vay 70%,
+                        miễn phí DV. Thuê 11 tr/th, sổ đỏ vĩnh viễn</a
+                      >
+                    </h4>
+                    <span class="price"> Giá: 20 tỷ </span>
+                    <div class="description">
+                      Công ty chúng tôi độc quyền phân phối hàng ngoại giao biệt
+                      thự các dự Vinhomes. Tôi đang ở tại Royal City nên tôi tự
+                      tin mình là người tư vấn cũng như hỗ trợ cho bạn tốt nhất
+                      về những vấn đề liên qua
+                    </div>
+                    <div class="detail">
+                      <div class="info-room">
+                        <i class="fal fa-bed-alt"></i> 3
                       </div>
-                      <div class="media"><i class="fas fa-camera"></i> 5</div>
-                    </a>
-                    <div class="wp-detail">
-                      <h4>
-                        <a href="">
-                          Bán căn hộ Royal DT 55m2 đến 430m2 từ 1-6PN, vay 70%, miễn
-                          phí DV. Thuê 11 tr/th, sổ đỏ vĩnh viễn</a
-                        >
-                      </h4>
-                      <span class="price"> Giá: 20 tỷ </span>
-                      <div class="description">
-                        Công ty chúng tôi độc quyền phân phối hàng ngoại giao biệt
-                        thự các dự Vinhomes. Tôi đang ở tại Royal City nên tôi tự
-                        tin mình là người tư vấn cũng như hỗ trợ cho bạn tốt nhất về
-                        những vấn đề liên qua
+                      <div class="info-bath"><i class="fas fa-bath"></i> 2</div>
+                      <div class="info-size">
+                        <i class="fal fa-expand-wide"></i> 100 m2
                       </div>
-                      <div class="detail">
-                        <div class="info-room">
-                          <i class="fal fa-bed-alt"></i> 3
+                    </div>
+                    <div class="wp-author">
+                      <div class="author">
+                        <div class="avatar">
+                          <img src="asset/images/avt-user.png" alt="" />
                         </div>
-                        <div class="info-bath"><i class="fas fa-bath"></i> 2</div>
-                        <div class="info-size">
-                          <i class="fal fa-expand-wide"></i> 100 m2
-                        </div>
+                        <div class="name">Trung Dũng</div>
                       </div>
-                      <div class="wp-author">
-                        <div class="author">
-                          <div class="avatar">
-                            <img src="asset/images/avt-user.png" alt="" />
-                          </div>
-                          <div class="name">Trung Dũng</div>
+                      <div class="action">
+                        <div class="share_unit display-none">
+                          <a href=""><i class="fab fa-facebook"></i></a>
+                          <a href=""><i class="fas fa-envelope"></i></a>
+                          <a href=""><i class="fab fa-twitter"></i></a>
+                          <a href=""><i class="fab fa-viber"></i></a>
                         </div>
-                        <div class="action">
-                          <div class="share_unit display-none">
-                            <a href=""><i class="fab fa-facebook"></i></a>
-                            <a href=""><i class="fas fa-envelope"></i></a>
-                            <a href=""><i class="fab fa-twitter"></i></a>
-                            <a href=""><i class="fab fa-viber"></i></a>
-                          </div>
-                          <span
-                            class="share box-action"
-                            data-bs-toggle="tooltip"
-                            data-bs-placement="top"
-                            title="Chia sẻ"
-                            ><i class="fas fa-share-alt"></i
-                          ></span>
-                          <span
-                            class="wish box-action"
-                            data-bs-toggle="tooltip"
-                            data-bs-placement="top"
-                            title="Lưu tin"
-                            ><i class="far fa-heart"></i
-                          ></span>
-                          <span
-                            class="compare box-action"
-                            data-bs-toggle="tooltip"
-                            data-bs-placement="top"
-                            title="So sánh"
-                            ><i class="fas fa-plus"></i
-                          ></span>
-                        </div>
+                        <span
+                          class="share box-action"
+                          data-bs-toggle="tooltip"
+                          data-bs-placement="top"
+                          title="Chia sẻ"
+                          ><i class="fas fa-share-alt"></i
+                        ></span>
+                        <span
+                          class="wish box-action"
+                          data-bs-toggle="tooltip"
+                          data-bs-placement="top"
+                          title="Lưu tin"
+                          ><i class="far fa-heart"></i
+                        ></span>
+                        <span
+                          class="compare box-action"
+                          data-bs-toggle="tooltip"
+                          data-bs-placement="top"
+                          title="So sánh"
+                          ><i class="fas fa-plus"></i
+                        ></span>
                       </div>
                     </div>
                   </div>
-                </li>
-                <li>
-                  <div class="wp-post">
-                    <a href="" class="img-wp">
-                      <img src="asset/images/pexels-2.jpg" alt="" />
-                      <div class="location">
-                        <i class="fas fa-map-marker-alt me-1"></i>Thủy Nguyên, Hải
-                        Phòng
+                </div>
+              </li>
+              <li>
+                <div class="wp-post">
+                  <a href="" class="img-wp">
+                    <img src="asset/images/pexels-2.jpg" alt="" />
+                    <div class="location">
+                      <i class="fas fa-map-marker-alt me-1"></i>Thủy Nguyên, Hải
+                      Phòng
+                    </div>
+                    <div class="media"><i class="fas fa-camera"></i> 5</div>
+                  </a>
+                  <div class="wp-detail">
+                    <h4>
+                      <a href="">
+                        Bán căn hộ Royal DT 55m2 đến 430m2 từ 1-6PN, vay 70%,
+                        miễn phí DV. Thuê 11 tr/th, sổ đỏ vĩnh viễn</a
+                      >
+                    </h4>
+                    <span class="price"> Giá: 20 tỷ </span>
+                    <div class="description">
+                      Công ty chúng tôi độc quyền phân phối hàng ngoại giao biệt
+                      thự các dự Vinhomes. Tôi đang ở tại Royal City nên tôi tự
+                      tin mình là người tư vấn cũng như hỗ trợ cho bạn tốt nhất
+                      về những vấn đề liên qua
+                    </div>
+                    <div class="detail">
+                      <div class="info-room">
+                        <i class="fal fa-bed-alt"></i> 3
                       </div>
-                      <div class="media"><i class="fas fa-camera"></i> 5</div>
-                    </a>
-                    <div class="wp-detail">
-                      <h4>
-                        <a href="">
-                          Bán căn hộ Royal DT 55m2 đến 430m2 từ 1-6PN, vay 70%, miễn
-                          phí DV. Thuê 11 tr/th, sổ đỏ vĩnh viễn</a
-                        >
-                      </h4>
-                      <span class="price"> Giá: 20 tỷ </span>
-                      <div class="description">
-                        Công ty chúng tôi độc quyền phân phối hàng ngoại giao biệt
-                        thự các dự Vinhomes. Tôi đang ở tại Royal City nên tôi tự
-                        tin mình là người tư vấn cũng như hỗ trợ cho bạn tốt nhất về
-                        những vấn đề liên qua
+                      <div class="info-bath"><i class="fas fa-bath"></i> 2</div>
+                      <div class="info-size">
+                        <i class="fal fa-expand-wide"></i> 100 m2
                       </div>
-                      <div class="detail">
-                        <div class="info-room">
-                          <i class="fal fa-bed-alt"></i> 3
+                    </div>
+                    <div class="wp-author">
+                      <div class="author">
+                        <div class="avatar">
+                          <img src="asset/images/avt-user.png" alt="" />
                         </div>
-                        <div class="info-bath"><i class="fas fa-bath"></i> 2</div>
-                        <div class="info-size">
-                          <i class="fal fa-expand-wide"></i> 100 m2
-                        </div>
+                        <div class="name">Trung Dũng</div>
                       </div>
-                      <div class="wp-author">
-                        <div class="author">
-                          <div class="avatar">
-                            <img src="asset/images/avt-user.png" alt="" />
-                          </div>
-                          <div class="name">Trung Dũng</div>
+                      <div class="action">
+                        <div class="share_unit display-none">
+                          <a href=""><i class="fab fa-facebook"></i></a>
+                          <a href=""><i class="fas fa-envelope"></i></a>
+                          <a href=""><i class="fab fa-twitter"></i></a>
+                          <a href=""><i class="fab fa-viber"></i></a>
                         </div>
-                        <div class="action">
-                          <div class="share_unit display-none">
-                            <a href=""><i class="fab fa-facebook"></i></a>
-                            <a href=""><i class="fas fa-envelope"></i></a>
-                            <a href=""><i class="fab fa-twitter"></i></a>
-                            <a href=""><i class="fab fa-viber"></i></a>
-                          </div>
-                          <span
-                            class="share box-action"
-                            data-bs-toggle="tooltip"
-                            data-bs-placement="top"
-                            title="Chia sẻ"
-                            ><i class="fas fa-share-alt"></i
-                          ></span>
-                          <span
-                            class="wish box-action"
-                            data-bs-toggle="tooltip"
-                            data-bs-placement="top"
-                            title="Lưu tin"
-                            ><i class="far fa-heart"></i
-                          ></span>
-                          <span
-                            class="compare box-action"
-                            data-bs-toggle="tooltip"
-                            data-bs-placement="top"
-                            title="So sánh"
-                            ><i class="fas fa-plus"></i
-                          ></span>
-                        </div>
+                        <span
+                          class="share box-action"
+                          data-bs-toggle="tooltip"
+                          data-bs-placement="top"
+                          title="Chia sẻ"
+                          ><i class="fas fa-share-alt"></i
+                        ></span>
+                        <span
+                          class="wish box-action"
+                          data-bs-toggle="tooltip"
+                          data-bs-placement="top"
+                          title="Lưu tin"
+                          ><i class="far fa-heart"></i
+                        ></span>
+                        <span
+                          class="compare box-action"
+                          data-bs-toggle="tooltip"
+                          data-bs-placement="top"
+                          title="So sánh"
+                          ><i class="fas fa-plus"></i
+                        ></span>
                       </div>
                     </div>
                   </div>
-                </li>
-                <li>
-                  <div class="wp-post">
-                    <a href="" class="img-wp">
-                      <img src="asset/images/pexels-3.jpg" alt="" />
-                      <div class="location">
-                        <i class="fas fa-map-marker-alt me-1"></i>Thủy Nguyên, Hải
-                        Phòng
+                </div>
+              </li>
+              <li>
+                <div class="wp-post">
+                  <a href="" class="img-wp">
+                    <img src="asset/images/pexels-3.jpg" alt="" />
+                    <div class="location">
+                      <i class="fas fa-map-marker-alt me-1"></i>Thủy Nguyên, Hải
+                      Phòng
+                    </div>
+                    <div class="media"><i class="fas fa-camera"></i> 5</div>
+                  </a>
+                  <div class="wp-detail">
+                    <h4>
+                      <a href="">
+                        Bán căn hộ Royal DT 55m2 đến 430m2 từ 1-6PN, vay 70%,
+                        miễn phí DV. Thuê 11 tr/th, sổ đỏ vĩnh viễn</a
+                      >
+                    </h4>
+                    <span class="price"> Giá: 20 tỷ </span>
+                    <div class="description">
+                      Công ty chúng tôi độc quyền phân phối hàng ngoại giao biệt
+                      thự các dự Vinhomes. Tôi đang ở tại Royal City nên tôi tự
+                      tin mình là người tư vấn cũng như hỗ trợ cho bạn tốt nhất
+                      về những vấn đề liên qua
+                    </div>
+                    <div class="detail">
+                      <div class="info-room">
+                        <i class="fal fa-bed-alt"></i> 3
                       </div>
-                      <div class="media"><i class="fas fa-camera"></i> 5</div>
-                    </a>
-                    <div class="wp-detail">
-                      <h4>
-                        <a href="">
-                          Bán căn hộ Royal DT 55m2 đến 430m2 từ 1-6PN, vay 70%, miễn
-                          phí DV. Thuê 11 tr/th, sổ đỏ vĩnh viễn</a
-                        >
-                      </h4>
-                      <span class="price"> Giá: 20 tỷ </span>
-                      <div class="description">
-                        Công ty chúng tôi độc quyền phân phối hàng ngoại giao biệt
-                        thự các dự Vinhomes. Tôi đang ở tại Royal City nên tôi tự
-                        tin mình là người tư vấn cũng như hỗ trợ cho bạn tốt nhất về
-                        những vấn đề liên qua
+                      <div class="info-bath"><i class="fas fa-bath"></i> 2</div>
+                      <div class="info-size">
+                        <i class="fal fa-expand-wide"></i> 100 m2
                       </div>
-                      <div class="detail">
-                        <div class="info-room">
-                          <i class="fal fa-bed-alt"></i> 3
+                    </div>
+                    <div class="wp-author">
+                      <div class="author">
+                        <div class="avatar">
+                          <img src="asset/images/avt-user.png" alt="" />
                         </div>
-                        <div class="info-bath"><i class="fas fa-bath"></i> 2</div>
-                        <div class="info-size">
-                          <i class="fal fa-expand-wide"></i> 100 m2
-                        </div>
+                        <div class="name">Trung Dũng</div>
                       </div>
-                      <div class="wp-author">
-                        <div class="author">
-                          <div class="avatar">
-                            <img src="asset/images/avt-user.png" alt="" />
-                          </div>
-                          <div class="name">Trung Dũng</div>
+                      <div class="action">
+                        <div class="share_unit display-none">
+                          <a href=""><i class="fab fa-facebook"></i></a>
+                          <a href=""><i class="fas fa-envelope"></i></a>
+                          <a href=""><i class="fab fa-twitter"></i></a>
+                          <a href=""><i class="fab fa-viber"></i></a>
                         </div>
-                        <div class="action">
-                          <div class="share_unit display-none">
-                            <a href=""><i class="fab fa-facebook"></i></a>
-                            <a href=""><i class="fas fa-envelope"></i></a>
-                            <a href=""><i class="fab fa-twitter"></i></a>
-                            <a href=""><i class="fab fa-viber"></i></a>
-                          </div>
-                          <span
-                            class="share box-action"
-                            data-bs-toggle="tooltip"
-                            data-bs-placement="top"
-                            title="Chia sẻ"
-                            ><i class="fas fa-share-alt"></i
-                          ></span>
-                          <span
-                            class="wish box-action"
-                            data-bs-toggle="tooltip"
-                            data-bs-placement="top"
-                            title="Lưu tin"
-                            ><i class="far fa-heart"></i
-                          ></span>
-                          <span
-                            class="compare box-action"
-                            data-bs-toggle="tooltip"
-                            data-bs-placement="top"
-                            title="So sánh"
-                            ><i class="fas fa-plus"></i
-                          ></span>
-                        </div>
+                        <span
+                          class="share box-action"
+                          data-bs-toggle="tooltip"
+                          data-bs-placement="top"
+                          title="Chia sẻ"
+                          ><i class="fas fa-share-alt"></i
+                        ></span>
+                        <span
+                          class="wish box-action"
+                          data-bs-toggle="tooltip"
+                          data-bs-placement="top"
+                          title="Lưu tin"
+                          ><i class="far fa-heart"></i
+                        ></span>
+                        <span
+                          class="compare box-action"
+                          data-bs-toggle="tooltip"
+                          data-bs-placement="top"
+                          title="So sánh"
+                          ><i class="fas fa-plus"></i
+                        ></span>
                       </div>
                     </div>
                   </div>
-                </li>
-                <li>
-                  <div class="wp-post">
-                    <a href="" class="img-wp">
-                      <img src="asset/images/house_nice_2-525x328.jpg" alt="" />
-                      <div class="location">
-                        <i class="fas fa-map-marker-alt me-1"></i>Thủy Nguyên, Hải
-                        Phòng
+                </div>
+              </li>
+              <li>
+                <div class="wp-post">
+                  <a href="" class="img-wp">
+                    <img src="asset/images/house_nice_2-525x328.jpg" alt="" />
+                    <div class="location">
+                      <i class="fas fa-map-marker-alt me-1"></i>Thủy Nguyên, Hải
+                      Phòng
+                    </div>
+                    <div class="media"><i class="fas fa-camera"></i> 5</div>
+                  </a>
+                  <div class="wp-detail">
+                    <h4>
+                      <a href="">
+                        Bán căn hộ Royal DT 55m2 đến 430m2 từ 1-6PN, vay 70%,
+                        miễn phí DV. Thuê 11 tr/th, sổ đỏ vĩnh viễn</a
+                      >
+                    </h4>
+                    <span class="price"> Giá: 20 tỷ </span>
+                    <div class="description">
+                      Công ty chúng tôi độc quyền phân phối hàng ngoại giao biệt
+                      thự các dự Vinhomes. Tôi đang ở tại Royal City nên tôi tự
+                      tin mình là người tư vấn cũng như hỗ trợ cho bạn tốt nhất
+                      về những vấn đề liên qua
+                    </div>
+                    <div class="detail">
+                      <div class="info-room">
+                        <i class="fal fa-bed-alt"></i> 3
                       </div>
-                      <div class="media"><i class="fas fa-camera"></i> 5</div>
-                    </a>
-                    <div class="wp-detail">
-                      <h4>
-                        <a href="">
-                          Bán căn hộ Royal DT 55m2 đến 430m2 từ 1-6PN, vay 70%, miễn
-                          phí DV. Thuê 11 tr/th, sổ đỏ vĩnh viễn</a
-                        >
-                      </h4>
-                      <span class="price"> Giá: 20 tỷ </span>
-                      <div class="description">
-                        Công ty chúng tôi độc quyền phân phối hàng ngoại giao biệt
-                        thự các dự Vinhomes. Tôi đang ở tại Royal City nên tôi tự
-                        tin mình là người tư vấn cũng như hỗ trợ cho bạn tốt nhất về
-                        những vấn đề liên qua
+                      <div class="info-bath"><i class="fas fa-bath"></i> 2</div>
+                      <div class="info-size">
+                        <i class="fal fa-expand-wide"></i> 100 m2
                       </div>
-                      <div class="detail">
-                        <div class="info-room">
-                          <i class="fal fa-bed-alt"></i> 3
+                    </div>
+                    <div class="wp-author">
+                      <div class="author">
+                        <div class="avatar">
+                          <img src="asset/images/avt-user.png" alt="" />
                         </div>
-                        <div class="info-bath"><i class="fas fa-bath"></i> 2</div>
-                        <div class="info-size">
-                          <i class="fal fa-expand-wide"></i> 100 m2
-                        </div>
+                        <div class="name">Trung Dũng</div>
                       </div>
-                      <div class="wp-author">
-                        <div class="author">
-                          <div class="avatar">
-                            <img src="asset/images/avt-user.png" alt="" />
-                          </div>
-                          <div class="name">Trung Dũng</div>
+                      <div class="action">
+                        <div class="share_unit display-none">
+                          <a href=""><i class="fab fa-facebook"></i></a>
+                          <a href=""><i class="fas fa-envelope"></i></a>
+                          <a href=""><i class="fab fa-twitter"></i></a>
+                          <a href=""><i class="fab fa-viber"></i></a>
                         </div>
-                        <div class="action">
-                          <div class="share_unit display-none">
-                            <a href=""><i class="fab fa-facebook"></i></a>
-                            <a href=""><i class="fas fa-envelope"></i></a>
-                            <a href=""><i class="fab fa-twitter"></i></a>
-                            <a href=""><i class="fab fa-viber"></i></a>
-                          </div>
-                          <span
-                            class="share box-action"
-                            data-bs-toggle="tooltip"
-                            data-bs-placement="top"
-                            title="Chia sẻ"
-                            ><i class="fas fa-share-alt"></i
-                          ></span>
-                          <span
-                            class="wish box-action"
-                            data-bs-toggle="tooltip"
-                            data-bs-placement="top"
-                            title="Lưu tin"
-                            ><i class="far fa-heart"></i
-                          ></span>
-                          <span
-                            class="compare box-action"
-                            data-bs-toggle="tooltip"
-                            data-bs-placement="top"
-                            title="So sánh"
-                            ><i class="fas fa-plus"></i
-                          ></span>
-                        </div>
+                        <span
+                          class="share box-action"
+                          data-bs-toggle="tooltip"
+                          data-bs-placement="top"
+                          title="Chia sẻ"
+                          ><i class="fas fa-share-alt"></i
+                        ></span>
+                        <span
+                          class="wish box-action"
+                          data-bs-toggle="tooltip"
+                          data-bs-placement="top"
+                          title="Lưu tin"
+                          ><i class="far fa-heart"></i
+                        ></span>
+                        <span
+                          class="compare box-action"
+                          data-bs-toggle="tooltip"
+                          data-bs-placement="top"
+                          title="So sánh"
+                          ><i class="fas fa-plus"></i
+                        ></span>
                       </div>
                     </div>
                   </div>
-                </li>
-                <li>
-                  <div class="wp-post">
-                    <a href="" class="img-wp">
-                      <img
-                        src="asset/images/featured_property_large-525x328.jpg"
-                        alt=""
-                      />
-                      <div class="location">
-                        <i class="fas fa-map-marker-alt me-1"></i>Thủy Nguyên, Hải
-                        Phòng
+                </div>
+              </li>
+              <li>
+                <div class="wp-post">
+                  <a href="" class="img-wp">
+                    <img
+                      src="asset/images/featured_property_large-525x328.jpg"
+                      alt=""
+                    />
+                    <div class="location">
+                      <i class="fas fa-map-marker-alt me-1"></i>Thủy Nguyên, Hải
+                      Phòng
+                    </div>
+                    <div class="media"><i class="fas fa-camera"></i> 5</div>
+                  </a>
+                  <div class="wp-detail">
+                    <h4>
+                      <a href="">
+                        Bán căn hộ Royal DT 55m2 đến 430m2 từ 1-6PN, vay 70%,
+                        miễn phí DV. Thuê 11 tr/th, sổ đỏ vĩnh viễn</a
+                      >
+                    </h4>
+                    <span class="price"> Giá: 20 tỷ </span>
+                    <div class="description">
+                      Công ty chúng tôi độc quyền phân phối hàng ngoại giao biệt
+                      thự các dự Vinhomes. Tôi đang ở tại Royal City nên tôi tự
+                      tin mình là người tư vấn cũng như hỗ trợ cho bạn tốt nhất
+                      về những vấn đề liên qua
+                    </div>
+                    <div class="detail">
+                      <div class="info-room">
+                        <i class="fal fa-bed-alt"></i> 3
                       </div>
-                      <div class="media"><i class="fas fa-camera"></i> 5</div>
-                    </a>
-                    <div class="wp-detail">
-                      <h4>
-                        <a href="">
-                          Bán căn hộ Royal DT 55m2 đến 430m2 từ 1-6PN, vay 70%, miễn
-                          phí DV. Thuê 11 tr/th, sổ đỏ vĩnh viễn</a
-                        >
-                      </h4>
-                      <span class="price"> Giá: 20 tỷ </span>
-                      <div class="description">
-                        Công ty chúng tôi độc quyền phân phối hàng ngoại giao biệt
-                        thự các dự Vinhomes. Tôi đang ở tại Royal City nên tôi tự
-                        tin mình là người tư vấn cũng như hỗ trợ cho bạn tốt nhất về
-                        những vấn đề liên qua
+                      <div class="info-bath"><i class="fas fa-bath"></i> 2</div>
+                      <div class="info-size">
+                        <i class="fal fa-expand-wide"></i> 100 m2
                       </div>
-                      <div class="detail">
-                        <div class="info-room">
-                          <i class="fal fa-bed-alt"></i> 3
+                    </div>
+                    <div class="wp-author">
+                      <div class="author">
+                        <div class="avatar">
+                          <img src="asset/images/avt-user.png" alt="" />
                         </div>
-                        <div class="info-bath"><i class="fas fa-bath"></i> 2</div>
-                        <div class="info-size">
-                          <i class="fal fa-expand-wide"></i> 100 m2
-                        </div>
+                        <div class="name">Trung Dũng</div>
                       </div>
-                      <div class="wp-author">
-                        <div class="author">
-                          <div class="avatar">
-                            <img src="asset/images/avt-user.png" alt="" />
-                          </div>
-                          <div class="name">Trung Dũng</div>
+                      <div class="action">
+                        <div class="share_unit display-none">
+                          <a href=""><i class="fab fa-facebook"></i></a>
+                          <a href=""><i class="fas fa-envelope"></i></a>
+                          <a href=""><i class="fab fa-twitter"></i></a>
+                          <a href=""><i class="fab fa-viber"></i></a>
                         </div>
-                        <div class="action">
-                          <div class="share_unit display-none">
-                            <a href=""><i class="fab fa-facebook"></i></a>
-                            <a href=""><i class="fas fa-envelope"></i></a>
-                            <a href=""><i class="fab fa-twitter"></i></a>
-                            <a href=""><i class="fab fa-viber"></i></a>
-                          </div>
-                          <span
-                            class="share box-action"
-                            data-bs-toggle="tooltip"
-                            data-bs-placement="top"
-                            title="Chia sẻ"
-                            ><i class="fas fa-share-alt"></i
-                          ></span>
-                          <span
-                            class="wish box-action"
-                            data-bs-toggle="tooltip"
-                            data-bs-placement="top"
-                            title="Lưu tin"
-                            ><i class="far fa-heart"></i
-                          ></span>
-                          <span
-                            class="compare box-action"
-                            data-bs-toggle="tooltip"
-                            data-bs-placement="top"
-                            title="So sánh"
-                            ><i class="fas fa-plus"></i
-                          ></span>
-                        </div>
+                        <span
+                          class="share box-action"
+                          data-bs-toggle="tooltip"
+                          data-bs-placement="top"
+                          title="Chia sẻ"
+                          ><i class="fas fa-share-alt"></i
+                        ></span>
+                        <span
+                          class="wish box-action"
+                          data-bs-toggle="tooltip"
+                          data-bs-placement="top"
+                          title="Lưu tin"
+                          ><i class="far fa-heart"></i
+                        ></span>
+                        <span
+                          class="compare box-action"
+                          data-bs-toggle="tooltip"
+                          data-bs-placement="top"
+                          title="So sánh"
+                          ><i class="fas fa-plus"></i
+                        ></span>
                       </div>
                     </div>
                   </div>
-                </li>
-              </ul>
+                </div>
+              </li>
+            </ul>
             <div class="pagination">
               <nav class="pagination">
                 <ul class="page-numbers">

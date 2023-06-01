@@ -4,8 +4,7 @@ $(document).ready(function () {
       "Đường Láng",
       "Dự án Đồi Rồng Đồ Sơn"
     ];
-    var inputElement = $('#input-search-mobile');
-    var inputElementHome = $('.input-search-form');
+    var inputElement = $('.input-auto-text');
     var currentIndex = 0;
     var typingSpeed = 120;
   
@@ -18,7 +17,6 @@ $(document).ready(function () {
   
       function typeCharacter() {
         inputElement.attr('placeholder', currentText.substr(0, currentCharIndex));
-        inputElementHome.attr('placeholder', currentText.substr(0, currentCharIndex));
         currentCharIndex++;
   
         if (currentCharIndex <= placeholderLength) {
