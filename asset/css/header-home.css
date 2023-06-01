@@ -75,6 +75,7 @@ a {
   width: 100%;
   display: none;
   z-index: 999999;
+  background: #fff;
 }
 .background-scroll-header {
   background-color: #fff;
@@ -90,6 +91,9 @@ a {
 
 .header_wrapper_scroll {
   padding: 10px 0 !important;
+}
+.header_form_filter{
+  padding: 0 10px;
 }
 
 #access ul.menu {
@@ -123,7 +127,7 @@ a {
 .header_wrapper_inside .logo {
   width: 208px;
   display: flex;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
   overflow: hidden;
 }
@@ -176,15 +180,13 @@ a {
 .user_menu_wrapper .submit_listing {
   font-weight: 500;
   padding: 10px;
-  border: 1px solid var(--color-left);
+  background: linear-gradient(90deg, #9d0f19 0%, #e31828 50%, #9d0f19 100%);
+  background-size: 200% auto;
+  background-position: 0 100%;
+  animation: 3s linear infinite forwards gradient-box;
   border-radius: 5px;
   font-family: var(--font-lexend);
-}
-.user_menu_wrapper .submit_listing:hover {
-  background: var(--gradient);
   color: #fff;
-  padding: 11px;
-  border: none;
 }
 #wp-header-mobile {
   display: block;
@@ -302,28 +304,70 @@ a {
   font-family: var(--font-lexend);
 }
 .wp-box-tab .tab-item:hover {
-  /* background: #9d0f19ad; */
-  background: var(--gradient);
+  /* background: var(--gradient); */
+  background: linear-gradient(90deg, #9d0f19 0%, #e31828 50%, #9d0f19 100%);
+  background-size: 200% auto;
+  background-position: 0 100%;
+  animation: 4s linear infinite forwards gradient-box;
   color: #fff;
 }
+/* .wp-box-tab .tab-item:hover.tab-item-buy {
+  background: linear-gradient(135deg, #a90e1f 0%, #b41022 100%);
+  color: #fff;
+}
+.wp-box-tab .tab-item.active.tab-item-buy {
+  background: linear-gradient(135deg, #a90e1f 0%, #b41022 100%);
+  color: #fff;
+}
+.wp-box-tab .tab-item:hover.tab-item-rent {
+  background: linear-gradient(135deg, #b41022, #bf1124);
+  color: #fff;
+}
+.wp-box-tab .tab-item.active.tab-item-rent {
+  background: linear-gradient(135deg, #b41022, #bf1124);
+  color: #fff;
+}
+.wp-box-tab .tab-item:hover.tab-item-project {
+  background: linear-gradient(135deg, #bf1124, #ca1227);
+  color: #fff;
+}
+.wp-box-tab .tab-item.active.tab-item-project {
+  background: linear-gradient(135deg, #bf1124, #ca1227);
+  color: #fff; */
+/* } */
 .tab-item.active {
-  /* background: #9d0f19ad; */
-  background: var(--gradient);
+  /* background: var(--gradient); */
+  background: linear-gradient(90deg, #9d0f19 0%, #e31828 50%, #9d0f19 100%);
+  background-size: 200% auto;
+  background-position: 0 100%;
+  animation: 4s linear infinite forwards gradient-box;
   color: #fff;
 }
 .search_form-box-content {
   width: 900px;
   padding: 20px;
-  background: var(--gradient);
+  /* background: var(--gradient); */
+  background: linear-gradient(90deg, #9d0f19 0%, #e31828 50%, #9d0f19 100%);
+  background-size: 200% auto;
+  background-position: 0 100%;
+  animation: 3s linear infinite forwards gradient-box;
   border-radius: 5px;
   box-shadow: 0px 4px 8px rgba(131, 131, 131, 0.493);
 }
 .search_form-box-content form {
   position: relative;
 }
+@keyframes gradient-box {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
 #search_form_mobile {
   width: 90%;
-  margin: 30px auto;
+  margin: 15px auto;
 }
 #search_form_mobile form {
   position: relative;
@@ -602,6 +646,7 @@ a {
   border-bottom: 2px solid #fff;
   font-size: 14px;
   font-family: var(--font-lexend);
+  cursor: pointer;
 }
 .wp-nav-tab-mobile .nav-tab-mobile .item-nav-tab.active {
   color: var(--color-left);
@@ -705,6 +750,8 @@ a {
   right: 0;
 }
 .type-wrapper-mb,
+.type-project-wrapper-mb,
+.status-wrapper-mb,
 .location-wrapper-mb,
 .price-wrapper-mb,
 .size-wrapper-mb {
@@ -746,7 +793,7 @@ a {
   cursor: pointer;
 }
 .wp-button-select-location {
-  padding: 10px 50px 10px 10px;
+  padding: 10px 50px 10px 20px;
   border: 1px solid #ccc;
   border-radius: 20px;
   display: inline-block;
@@ -785,6 +832,89 @@ a {
   display: flex;
   justify-content: center;
 }
+#wp-sub-menu-mb {
+  display: flex;
+  width: 100%;
+  padding: 20px 10px;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+}
+#wp-sub-menu-mb .box-icon-sub-menu {
+  width: 100px;
+  height: 100px;
+  margin-right: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  /* background: linear-gradient(135deg, #f1f1f1 0%, transparent 100%); */
+  background: linear-gradient(90deg, #9d0f19 0%, #e31828 50%, #9d0f19 100%);
+  background-size: 200% auto;
+  background-position: 0 100%;
+  animation: 2s linear infinite forwards gradient-box;
+  border-radius: 10px;
+  box-shadow: 0px 2px 10px 2px rgba(182, 182, 182, 0.42);
+}
+#wp-sub-menu-mb .box-icon-sub-menu img {
+  width: 70%;
+  height: auto;
+}
+#wp-sub-menu-mb .box-icon-sub-menu span {
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  font-family: var(--font-lexend);
+}
+#container-content {
+  position: relative;
+}
+#back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35px;
+  height: 35px;
+  background: var(--gradient);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 50%;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  z-index: 9999;
+  animation-name: backToTopAnimation;
+}
+#back-to-top.back-to-top {
+  animation: backToTopAnimation 4s infinite;
+}
+.wp-input-search-home-mb{
+  position: relative;
+}
+.wp-input-search-home-mb .icon-search-home-mb{
+  position: absolute;
+  top: 0;
+  right: 5px;
+  width: 49px;
+  height: 49px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@keyframes backToTopAnimation {
+  0% {
+    bottom: 10px;
+  }
+  50% {
+    bottom: 40px;
+  }
+  100% {
+    bottom: 10px;
+  }
+}
 
 @media (min-width: 450px) {
   .header-mobile .logo a {
@@ -798,6 +928,12 @@ a {
   #slider_wp a {
     height: 220px;
   }
+  #wp-sub-menu-mb .box-icon-sub-menu {
+    margin-right: 20px;
+  }
+  #search_form_mobile {
+    margin: 30px auto;
+  }
 }
 @media (min-width: 768px) {
   #slider_wp a {
@@ -808,6 +944,9 @@ a {
   }
 }
 @media (min-width: 980px) {
+  #wp-sub-menu-mb {
+    display: none;
+  }
   #search_form_mobile {
     display: none;
   }
@@ -820,7 +959,6 @@ a {
 }
 @media (min-width: 998px) {
   #container-content {
-    position: relative;
     padding-top: 100px;
   }
   #wp-header {
@@ -838,5 +976,8 @@ a {
   }
   .owl-dots {
     display: block;
+  }
+  .header_form_filter{
+    padding: 0 55px;
   }
 }

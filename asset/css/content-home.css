@@ -837,7 +837,7 @@ li .wp-post .wp-detail .wp-author .action .box-action:hover {
   .wp-list-news .list-news ul li a .detail-post .desc {
     display: block !important;
   }
-  .wp-image-area a.image-background .content-area .count-post{
+  .wp-image-area a.image-background .content-area .count-post {
     font-size: 15px;
   }
 }
@@ -905,9 +905,17 @@ li .wp-post .wp-detail .wp-author .action .box-action:hover {
   .nav-best-prj-slider {
     display: none !important;
   }
+  #pills-tabContent {
+    background-color: #fff;
+    padding: 26px 26px 26px 26px;
+    box-shadow: 0px 0px 43px 0px rgb(7 152 255 / 25%);
+  }
+  #wp-content .wp-best-project {
+    padding-bottom: 20px;
+  }
 }
-@media (min-width: 980px){
-  #wp-content .wp-list-news{
+@media (min-width: 980px) {
+  #wp-content .wp-list-news {
     padding: 150px 0 10px 0;
   }
 }

@@ -10,6 +10,16 @@ $(document).ready(function () {
       $("#wp-header .header_wrapper").removeClass("header_wrapper_scroll");
       $("#wp-header .logo a").removeClass("logo-scroll");
     }
+    if (scrollTop > 200) {
+      $("#back-to-top").removeClass("d-none");
+    } else {
+      $("#back-to-top").addClass("d-none");
+    }
+  });
+
+  $("#back-to-top").click(function (e) {
+    e.preventDefault();
+    $("html, body").animate({ scrollTop: 0 }, 100);
   });
 
   $(".tab-item").click(function () {
@@ -20,11 +30,15 @@ $(document).ready(function () {
       $(".select-item-status").removeClass("d-none");
       $(".select-button-default").addClass("d-none");
       $(".select-button-project").removeClass("d-none");
+      $("#location-wards-tab").closest("li").addClass("d-none");
+      $("#location-street-tab").closest("li").addClass("d-none");
     } else {
       $(".select-item-size").removeClass("d-none");
       $(".select-item-status").addClass("d-none");
       $(".select-button-default").removeClass("d-none");
       $(".select-button-project").addClass("d-none");
+      $("#location-wards-tab").closest("li").removeClass("d-none");
+      $("#location-street-tab").closest("li").removeClass("d-none");
     }
     initScrollBar();
   });
@@ -110,6 +124,12 @@ $(document).ready(function () {
     $("input[type=text]").val("");
     $("select").val(null).trigger("change");
   });
+  $(".btn-clear-mb").click(function () {
+    $("input[type=text]").val("");
+    $("select").val(null).trigger("change");
+    $("#list-option-ward-mb").attr("disabled", true);
+    $(".text-location-property").text("Tất cả khu vực");
+  });
 
   $(".btn-clear-select").click(function () {
     var element = $(this).closest(".select-filter-wrapper");
@@ -126,7 +146,7 @@ $(document).ready(function () {
 
   $(".btn-apply").click(function () {
     $(".select-filter-wrapper").addClass("d-none");
-    $("#modal-location-mb").modal('hide');
+    $("#modal-location-mb").modal("hide");
   });
 
   $(".single-select-field").select2({
@@ -280,8 +300,31 @@ $(document).ready(function () {
   });
 
   $(".item-nav-tab").click(function () {
+    if (
+      !$(this).hasClass("active") &&
+      $(this).hasClass("item-nav-tab-project")
+    ) {
+      $("select").val(null).trigger("change");
+      $("#list-option-ward-mb").attr("disabled", true);
+      $(".text-location-property").text("Tất cả khu vực");
+    }
     $(".item-nav-tab").removeClass("active");
     $(this).addClass("active");
+    if ($(this).hasClass("item-nav-tab-project")) {
+      $(".type-wrapper-mb").addClass("d-none");
+      $(".size-wrapper-mb").addClass("d-none");
+      $(".type-project-wrapper-mb").removeClass("d-none");
+      $(".status-wrapper-mb").removeClass("d-none");
+      $("#list-option-ward-mb").closest(".wp-select").addClass("d-none");
+      $("#list-option-street-mb").closest(".wp-select").addClass("d-none");
+    } else {
+      $(".type-wrapper-mb").removeClass("d-none");
+      $(".size-wrapper-mb").removeClass("d-none");
+      $(".type-project-wrapper-mb").addClass("d-none");
+      $(".status-wrapper-mb").addClass("d-none");
+      $("#list-option-ward-mb").closest(".wp-select").removeClass("d-none");
+      $("#list-option-street-mb").closest(".wp-select").removeClass("d-none");
+    }
   });
 
   var textProvince = "";
@@ -293,14 +336,14 @@ $(document).ready(function () {
     if (value == "" || value == "Trên toàn quốc") {
       $("#list-option-district-mb").attr("disabled", true);
       $("#list-option-district-mb").val(null).trigger("change");
-      $('#select2-list-option-district-mb-container').html('');
+      $("#select2-list-option-district-mb-container").html("");
       $("#list-option-ward-mb").attr("disabled", true);
       $("#list-option-ward-mb").val(null).trigger("change");
-      $('#select2-list-option-ward-mb-container').html('');
+      $("#select2-list-option-ward-mb-container").html("");
       $("#list-option-street-mb").attr("disabled", true);
       $("#list-option-street-mb").val(null).trigger("change");
-      $('#select2-list-option-street-mb-container').html('');
-      $('.text-location-property').text("Tất cả khu vực");
+      $("#select2-list-option-street-mb-container").html("");
+      $(".text-location-property").text("Tất cả khu vực");
     } else {
       $("#list-option-district-mb").attr("disabled", false);
       $("#list-option-street-mb").attr("disabled", false);
@@ -315,46 +358,46 @@ $(document).ready(function () {
     } else {
       $("#list-option-ward-mb").attr("disabled", true);
       $("#list-option-ward-mb").val(null).trigger("change");
-      $('#select2-list-option-ward-mb-container').html('');
+      $("#select2-list-option-ward-mb-container").html("");
     }
-    var filteredArray = $.grep(value, function(value) {
+    var filteredArray = $.grep(value, function (value) {
       return value !== "";
     });
-    textDistrict = filteredArray.join(' - ');
+    textDistrict = filteredArray.join(" - ");
     convertTextLocation();
   });
   $("#list-option-ward-mb").change(function () {
     var value = $(this).val();
-    var filteredArray = $.grep(value, function(value) {
+    var filteredArray = $.grep(value, function (value) {
       return value !== "";
     });
-    textWard = filteredArray.join(' - ');
+    textWard = filteredArray.join(" - ");
     convertTextLocation();
   });
   $("#list-option-street-mb").change(function () {
     var value = $(this).val();
-    var filteredArray = $.grep(value, function(value) {
+    var filteredArray = $.grep(value, function (value) {
       return value !== "";
     });
-    textStreet = filteredArray.join(' - ');
+    textStreet = filteredArray.join(" - ");
     convertTextLocation();
   });
 
   function convertTextLocation() {
     var arrayText = [];
-    if(textProvince){
+    if (textProvince) {
       arrayText.push(textProvince);
     }
-    if(textDistrict){
+    if (textDistrict) {
       arrayText.push(textDistrict);
     }
-    if(textWard){
+    if (textWard) {
       arrayText.push(textWard);
     }
-    if(textStreet){
+    if (textStreet) {
       arrayText.push(textStreet);
     }
-    var text = arrayText.join(', ');
-    $('.text-location-property').text(text);
+    var text = arrayText.join(", ");
+    $(".text-location-property").text(text);
   }
 });
