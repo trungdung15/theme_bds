@@ -174,8 +174,8 @@
 
               <div class="wp-input-select-property-list">
                 <div class="wp-select-sub-type-property">
-                  <div class="select-item" data-element=".wp-select-option">
-                    <span>Loại nhà đất</span>
+                  <div class="select-item" data-element=".wp-select-option-project">
+                    <span class="text-type">Loại hình</span>
                     <i class="fal fa-caret-down"></i>
                   </div>
 
@@ -386,25 +386,13 @@
                     </div>
                   </div>
 
-                  <!-- type -->
-                  <div
-                    class="select-button select-button-project select-item d-none"
-                    data-element=".wp-select-option-project"
-                  >
-                    <div class="select-value">
-                      <i class="far fa-home"></i>
-                      <span>Loại hình</span>
-                      <i class="fal fa-caret-down"></i>
-                    </div>
-                  </div>
-
                   <!-- type project -->
                   <div
                     class="wp-select-option-project select-filter-wrapper d-none"
                   >
                     <div class="wp-list-option-type-property">
                       <div class="list-option-type-property">
-                        <div class="wp-option-select">
+                        <div class="wp-option-select wp-option-select-prj">
                           <div class="option-select">
                             <span class="icon"
                               ><i class="fal fa-building"></i
@@ -412,7 +400,7 @@
                             <span class="text-option">Tất cả nhà đất</span>
                           </div>
                         </div>
-                        <div class="wp-option-select">
+                        <div class="wp-option-select wp-option-select-prj">
                           <div class="option-select">
                             <span class="icon"
                               ><i class="fal fa-building"></i
@@ -420,7 +408,7 @@
                             <span class="text-option">Căn hộ chung cư</span>
                           </div>
                         </div>
-                        <div class="wp-option-select">
+                        <div class="wp-option-select wp-option-select-prj">
                           <div class="option-select">
                             <span class="icon"
                               ><i class="fal fa-home-lg-alt"></i
@@ -428,7 +416,7 @@
                             <span class="text-option">Các loại nhà</span>
                           </div>
                         </div>
-                        <div class="wp-option-select">
+                        <div class="wp-option-select wp-option-select-prj">
                           <div class="option-select">
                             <span class="icon"
                               ><i class="fal fa-map-marked-alt"></i
@@ -436,7 +424,7 @@
                             <span class="text-option">Đất nền</span>
                           </div>
                         </div>
-                        <div class="wp-option-select">
+                        <div class="wp-option-select wp-option-select-prj">
                           <div class="option-select">
                             <span class="icon"
                               ><i class="fal fa-building"></i
@@ -444,15 +432,6 @@
                             <span class="text-option">Căn hộ chung cư</span>
                           </div>
                         </div>
-                      </div>
-                    </div>
-                    <div class="bottom-wp-option">
-                      <div class="btn-clear-select">
-                        <i class="fad fa-reply-all pe-1"></i>
-                        <span>Đặt lại</span>
-                      </div>
-                      <div class="btn-apply">
-                        <i class="far fa-check-double"></i>
                       </div>
                     </div>
                   </div>
@@ -826,7 +805,7 @@
                   </div>
                 </div>
 
-                <div class="wp-select-size-property-list">
+                <div class="wp-select-size-property-list d-none">
                   <div
                     class="select-item select-item-size"
                     data-element=".wp-select-option-size"
@@ -835,12 +814,16 @@
                     <i class="far fa-caret-down"></i>
                   </div>
 
-                  <div class="wp-select-option-size select-filter-wrapper d-none">
+                  <div
+                    class="wp-select-option-size select-filter-wrapper d-none"
+                  >
                     <ul class="wp-list-option-type-property">
                       <div class="list-option-type-property">
                         <div class="wp-option-select">
                           <div class="option-select">
-                            <span class="text-option">Tất cả các diện tích</span>
+                            <span class="text-option"
+                              >Tất cả các diện tích</span
+                            >
                             <span class="check-box">
                               <input
                                 class="form-check-input mt-0"
@@ -960,9 +943,9 @@
                   </div>
                 </div>
 
-                <div class="wp-select-status-property-list d-none">
+                <div class="wp-select-status-property-list">
                   <div
-                    class="select-item select-item-status d-none"
+                    class="select-item select-item-status"
                     data-element=".wp-select-option-status"
                   >
                     <span>Trạng thái</span>
@@ -1447,6 +1430,63 @@
       </div>
 
       <div id="wp-content">
+        <div id="wp_slider_project">
+          <div class="list-slider-project owl-carousel owl-theme">
+            <a
+              href="#"
+              class="wp-item-slider"
+              style="background-image: url('/asset/images/du-an-icon40.jpg')"
+            >
+              <div class="item-slider-img">
+                <div class="wp-desc-project-slider">
+                  <div class="desc-project-slider">
+                    <div class="status-property">
+                      <span class="status-property-item badge bg-success"
+                        >Sắp mở bán</span
+                      >
+                    </div>
+                    <div class="title-name">
+                      <h3>Dự án Icon40 - BIM GROUP</h3>
+                    </div>
+                    <div class="location-property">
+                      <p>
+                        <i class="fas fa-map-marker-check"></i> Đ. Hoàng Quốc
+                        Việt, Hùng Thắng, Thành phố Hạ Long, Quảng Ninh
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a
+              href="#"
+              class="wp-item-slider"
+              style="background-image: url('/asset/images/du-an-doi-rong.jpg')"
+            >
+              <div class="item-slider-img">
+                <div class="wp-desc-project-slider">
+                  <div class="desc-project-slider">
+                    <div class="status-property">
+                      <span class="status-property-item badge bg-danger"
+                        >Đang mở bán</span
+                      >
+                    </div>
+                    <div class="title-name">
+                      <h3>Dự án Đồi Rồng Đồ Sơn - Dragon Ocean</h3>
+                    </div>
+                    <div class="location-property">
+                      <p>
+                        <i class="fas fa-map-marker-check"></i> Đồi rồng, Đồ
+                        Sơn, Hải Phòng
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+
         <div class="bread-crumb">
           <ul class="container-breadcrumb">
             <li><a href="">Bất động sản bán</a></li>
@@ -1457,20 +1497,20 @@
         </div>
         <div class="content">
           <!-- {{-- ==== CONTENT ===== --}} -->
-          <div class="wp-list-top">
+          <div class="wp-list-top wp-list-project">
             <div class="wp-head">
-              <h2 class="title">Bất động sản đang bán</h2>
+              <h2 class="title">Dự án toàn quốc</h2>
             </div>
             <div class="count-filter">
               <div class="count">
                 <p>Hiện có 195,624 bất động sản.</p>
               </div>
-              <div class="filter">
+              <div class="filter dropdown-type-project">
                 <div class="dropdown">
                   <button
                     class="btn dropdown-toggle"
                     type="button"
-                    id="dropdownMenuButton1"
+                    id="dropdownMenuTypeProject"
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
                   >
@@ -1478,7 +1518,7 @@
                   </button>
                   <ul
                     class="dropdown-menu"
-                    aria-labelledby="dropdownMenuButton1"
+                    aria-labelledby="dropdownMenuTypeProject"
                   >
                     <li>
                       <a class="dropdown-item" href="#">Tin thông thường</a>
@@ -1490,447 +1530,43 @@
                 </div>
               </div>
             </div>
-            <ul class="post-list list-property-sale">
+            <ul class="project-list">
               <li>
-                <div class="wp-post">
-                  <a href="" class="img-wp">
-                    <img src="asset/images/pexels.jpg" alt="" />
-                    <div class="location">
-                      <i class="fas fa-map-marker-alt me-1"></i>Thủy Nguyên, Hải
-                      Phòng
-                    </div>
-                    <div class="media"><i class="fas fa-camera"></i> 5</div>
-                  </a>
-                  <div class="wp-detail">
-                    <h4>
-                      <a href="">
-                        Bán căn hộ Royal DT 55m2 đến 430m2 từ 1-6PN, vay 70%,
-                        miễn phí DV. Thuê 11 tr/th, sổ đỏ vĩnh viễn</a
-                      >
-                    </h4>
-                    <span class="price"> Giá: 20 tỷ </span>
-                    <div class="description">
-                      Công ty chúng tôi độc quyền phân phối hàng ngoại giao biệt
-                      thự các dự Vinhomes. Tôi đang ở tại Royal City nên tôi tự
-                      tin mình là người tư vấn cũng như hỗ trợ cho bạn tốt nhất
-                      về những vấn đề liên qua
-                    </div>
-                    <div class="detail">
-                      <div class="info-room">
-                        <i class="fal fa-bed-alt"></i> 3
-                      </div>
-                      <div class="info-bath"><i class="fas fa-bath"></i> 2</div>
-                      <div class="info-size">
-                        <i class="fal fa-expand-wide"></i> 100 m2
-                      </div>
-                    </div>
-                    <div class="wp-author">
-                      <div class="author">
-                        <div class="avatar">
-                          <img src="asset/images/avt-user.png" alt="" />
+                <a href="#" class="wp-property">
+                    <div class="wp-image-property">
+                        <div class="wp-box-img">
+                            <div class="box-img">
+                                <div>
+                                    <img src="asset/images/du-an-doi-rong.jpg" alt="">
+                                </div>
+                            </div>
                         </div>
-                        <div class="name">Trung Dũng</div>
-                      </div>
-                      <div class="action">
-                        <div class="share_unit display-none">
-                          <a href=""><i class="fab fa-facebook"></i></a>
-                          <a href=""><i class="fas fa-envelope"></i></a>
-                          <a href=""><i class="fab fa-twitter"></i></a>
-                          <a href=""><i class="fab fa-viber"></i></a>
+                        <div class="wp-box-img wp-box-img-1">
+                            <div class="box-img box-img-1">
+                                <div>
+                                    <img src="asset/images/biet-th.jpg" alt="">
+                                </div>
+                            </div>
                         </div>
-                        <span
-                          class="share box-action"
-                          data-bs-toggle="tooltip"
-                          data-bs-placement="top"
-                          title="Chia sẻ"
-                          ><i class="fas fa-share-alt"></i
-                        ></span>
-                        <span
-                          class="wish box-action"
-                          data-bs-toggle="tooltip"
-                          data-bs-placement="top"
-                          title="Lưu tin"
-                          ><i class="far fa-heart"></i
-                        ></span>
-                        <span
-                          class="compare box-action"
-                          data-bs-toggle="tooltip"
-                          data-bs-placement="top"
-                          title="So sánh"
-                          ><i class="fas fa-plus"></i
-                        ></span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="wp-post">
-                  <a href="" class="img-wp">
-                    <img src="asset/images/slider-01.png" alt="" />
-                    <div class="location">
-                      <i class="fas fa-map-marker-alt me-1"></i>Thủy Nguyên, Hải
-                      Phòng
-                    </div>
-                    <div class="media"><i class="fas fa-camera"></i> 5</div>
-                  </a>
-                  <div class="wp-detail">
-                    <h4>
-                      <a href="">
-                        Bán căn hộ Royal DT 55m2 đến 430m2 từ 1-6PN, vay 70%,
-                        miễn phí DV. Thuê 11 tr/th, sổ đỏ vĩnh viễn</a
-                      >
-                    </h4>
-                    <span class="price"> Giá: 20 tỷ </span>
-                    <div class="description">
-                      Công ty chúng tôi độc quyền phân phối hàng ngoại giao biệt
-                      thự các dự Vinhomes. Tôi đang ở tại Royal City nên tôi tự
-                      tin mình là người tư vấn cũng như hỗ trợ cho bạn tốt nhất
-                      về những vấn đề liên qua
-                    </div>
-                    <div class="detail">
-                      <div class="info-room">
-                        <i class="fal fa-bed-alt"></i> 3
-                      </div>
-                      <div class="info-bath"><i class="fas fa-bath"></i> 2</div>
-                      <div class="info-size">
-                        <i class="fal fa-expand-wide"></i> 100 m2
-                      </div>
-                    </div>
-                    <div class="wp-author">
-                      <div class="author">
-                        <div class="avatar">
-                          <img src="asset/images/avt-user.png" alt="" />
+                        <div class="wp-box-img wp-box-img-2">
+                            <div class="box-img box-img-2 box-img-2-1">
+                                <div>
+                                    <img src="asset/images/biet-th.jpg" alt="">
+                                </div>
+                            </div>
                         </div>
-                        <div class="name">Trung Dũng</div>
-                      </div>
-                      <div class="action">
-                        <div class="share_unit display-none">
-                          <a href=""><i class="fab fa-facebook"></i></a>
-                          <a href=""><i class="fas fa-envelope"></i></a>
-                          <a href=""><i class="fab fa-twitter"></i></a>
-                          <a href=""><i class="fab fa-viber"></i></a>
+                        <div class="wp-box-img wp-box-img-2">
+                            <div class="box-img box-img-2">
+                                <div>
+                                    <img src="asset/images/can-ho-chung-cu.jpg" alt="">
+                                </div>
+                            </div>
                         </div>
-                        <span
-                          class="share box-action"
-                          data-bs-toggle="tooltip"
-                          data-bs-placement="top"
-                          title="Chia sẻ"
-                          ><i class="fas fa-share-alt"></i
-                        ></span>
-                        <span
-                          class="wish box-action"
-                          data-bs-toggle="tooltip"
-                          data-bs-placement="top"
-                          title="Lưu tin"
-                          ><i class="far fa-heart"></i
-                        ></span>
-                        <span
-                          class="compare box-action"
-                          data-bs-toggle="tooltip"
-                          data-bs-placement="top"
-                          title="So sánh"
-                          ><i class="fas fa-plus"></i
-                        ></span>
-                      </div>
                     </div>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="wp-post">
-                  <a href="" class="img-wp">
-                    <img src="asset/images/pexels-2.jpg" alt="" />
-                    <div class="location">
-                      <i class="fas fa-map-marker-alt me-1"></i>Thủy Nguyên, Hải
-                      Phòng
-                    </div>
-                    <div class="media"><i class="fas fa-camera"></i> 5</div>
-                  </a>
-                  <div class="wp-detail">
-                    <h4>
-                      <a href="">
-                        Bán căn hộ Royal DT 55m2 đến 430m2 từ 1-6PN, vay 70%,
-                        miễn phí DV. Thuê 11 tr/th, sổ đỏ vĩnh viễn</a
-                      >
-                    </h4>
-                    <span class="price"> Giá: 20 tỷ </span>
-                    <div class="description">
-                      Công ty chúng tôi độc quyền phân phối hàng ngoại giao biệt
-                      thự các dự Vinhomes. Tôi đang ở tại Royal City nên tôi tự
-                      tin mình là người tư vấn cũng như hỗ trợ cho bạn tốt nhất
-                      về những vấn đề liên qua
-                    </div>
-                    <div class="detail">
-                      <div class="info-room">
-                        <i class="fal fa-bed-alt"></i> 3
-                      </div>
-                      <div class="info-bath"><i class="fas fa-bath"></i> 2</div>
-                      <div class="info-size">
-                        <i class="fal fa-expand-wide"></i> 100 m2
-                      </div>
-                    </div>
-                    <div class="wp-author">
-                      <div class="author">
-                        <div class="avatar">
-                          <img src="asset/images/avt-user.png" alt="" />
-                        </div>
-                        <div class="name">Trung Dũng</div>
-                      </div>
-                      <div class="action">
-                        <div class="share_unit display-none">
-                          <a href=""><i class="fab fa-facebook"></i></a>
-                          <a href=""><i class="fas fa-envelope"></i></a>
-                          <a href=""><i class="fab fa-twitter"></i></a>
-                          <a href=""><i class="fab fa-viber"></i></a>
-                        </div>
-                        <span
-                          class="share box-action"
-                          data-bs-toggle="tooltip"
-                          data-bs-placement="top"
-                          title="Chia sẻ"
-                          ><i class="fas fa-share-alt"></i
-                        ></span>
-                        <span
-                          class="wish box-action"
-                          data-bs-toggle="tooltip"
-                          data-bs-placement="top"
-                          title="Lưu tin"
-                          ><i class="far fa-heart"></i
-                        ></span>
-                        <span
-                          class="compare box-action"
-                          data-bs-toggle="tooltip"
-                          data-bs-placement="top"
-                          title="So sánh"
-                          ><i class="fas fa-plus"></i
-                        ></span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="wp-post">
-                  <a href="" class="img-wp">
-                    <img src="asset/images/pexels-3.jpg" alt="" />
-                    <div class="location">
-                      <i class="fas fa-map-marker-alt me-1"></i>Thủy Nguyên, Hải
-                      Phòng
-                    </div>
-                    <div class="media"><i class="fas fa-camera"></i> 5</div>
-                  </a>
-                  <div class="wp-detail">
-                    <h4>
-                      <a href="">
-                        Bán căn hộ Royal DT 55m2 đến 430m2 từ 1-6PN, vay 70%,
-                        miễn phí DV. Thuê 11 tr/th, sổ đỏ vĩnh viễn</a
-                      >
-                    </h4>
-                    <span class="price"> Giá: 20 tỷ </span>
-                    <div class="description">
-                      Công ty chúng tôi độc quyền phân phối hàng ngoại giao biệt
-                      thự các dự Vinhomes. Tôi đang ở tại Royal City nên tôi tự
-                      tin mình là người tư vấn cũng như hỗ trợ cho bạn tốt nhất
-                      về những vấn đề liên qua
-                    </div>
-                    <div class="detail">
-                      <div class="info-room">
-                        <i class="fal fa-bed-alt"></i> 3
-                      </div>
-                      <div class="info-bath"><i class="fas fa-bath"></i> 2</div>
-                      <div class="info-size">
-                        <i class="fal fa-expand-wide"></i> 100 m2
-                      </div>
-                    </div>
-                    <div class="wp-author">
-                      <div class="author">
-                        <div class="avatar">
-                          <img src="asset/images/avt-user.png" alt="" />
-                        </div>
-                        <div class="name">Trung Dũng</div>
-                      </div>
-                      <div class="action">
-                        <div class="share_unit display-none">
-                          <a href=""><i class="fab fa-facebook"></i></a>
-                          <a href=""><i class="fas fa-envelope"></i></a>
-                          <a href=""><i class="fab fa-twitter"></i></a>
-                          <a href=""><i class="fab fa-viber"></i></a>
-                        </div>
-                        <span
-                          class="share box-action"
-                          data-bs-toggle="tooltip"
-                          data-bs-placement="top"
-                          title="Chia sẻ"
-                          ><i class="fas fa-share-alt"></i
-                        ></span>
-                        <span
-                          class="wish box-action"
-                          data-bs-toggle="tooltip"
-                          data-bs-placement="top"
-                          title="Lưu tin"
-                          ><i class="far fa-heart"></i
-                        ></span>
-                        <span
-                          class="compare box-action"
-                          data-bs-toggle="tooltip"
-                          data-bs-placement="top"
-                          title="So sánh"
-                          ><i class="fas fa-plus"></i
-                        ></span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="wp-post">
-                  <a href="" class="img-wp">
-                    <img src="asset/images/house_nice_2-525x328.jpg" alt="" />
-                    <div class="location">
-                      <i class="fas fa-map-marker-alt me-1"></i>Thủy Nguyên, Hải
-                      Phòng
-                    </div>
-                    <div class="media"><i class="fas fa-camera"></i> 5</div>
-                  </a>
-                  <div class="wp-detail">
-                    <h4>
-                      <a href="">
-                        Bán căn hộ Royal DT 55m2 đến 430m2 từ 1-6PN, vay 70%,
-                        miễn phí DV. Thuê 11 tr/th, sổ đỏ vĩnh viễn</a
-                      >
-                    </h4>
-                    <span class="price"> Giá: 20 tỷ </span>
-                    <div class="description">
-                      Công ty chúng tôi độc quyền phân phối hàng ngoại giao biệt
-                      thự các dự Vinhomes. Tôi đang ở tại Royal City nên tôi tự
-                      tin mình là người tư vấn cũng như hỗ trợ cho bạn tốt nhất
-                      về những vấn đề liên qua
-                    </div>
-                    <div class="detail">
-                      <div class="info-room">
-                        <i class="fal fa-bed-alt"></i> 3
-                      </div>
-                      <div class="info-bath"><i class="fas fa-bath"></i> 2</div>
-                      <div class="info-size">
-                        <i class="fal fa-expand-wide"></i> 100 m2
-                      </div>
-                    </div>
-                    <div class="wp-author">
-                      <div class="author">
-                        <div class="avatar">
-                          <img src="asset/images/avt-user.png" alt="" />
-                        </div>
-                        <div class="name">Trung Dũng</div>
-                      </div>
-                      <div class="action">
-                        <div class="share_unit display-none">
-                          <a href=""><i class="fab fa-facebook"></i></a>
-                          <a href=""><i class="fas fa-envelope"></i></a>
-                          <a href=""><i class="fab fa-twitter"></i></a>
-                          <a href=""><i class="fab fa-viber"></i></a>
-                        </div>
-                        <span
-                          class="share box-action"
-                          data-bs-toggle="tooltip"
-                          data-bs-placement="top"
-                          title="Chia sẻ"
-                          ><i class="fas fa-share-alt"></i
-                        ></span>
-                        <span
-                          class="wish box-action"
-                          data-bs-toggle="tooltip"
-                          data-bs-placement="top"
-                          title="Lưu tin"
-                          ><i class="far fa-heart"></i
-                        ></span>
-                        <span
-                          class="compare box-action"
-                          data-bs-toggle="tooltip"
-                          data-bs-placement="top"
-                          title="So sánh"
-                          ><i class="fas fa-plus"></i
-                        ></span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="wp-post">
-                  <a href="" class="img-wp">
-                    <img
-                      src="asset/images/featured_property_large-525x328.jpg"
-                      alt=""
-                    />
-                    <div class="location">
-                      <i class="fas fa-map-marker-alt me-1"></i>Thủy Nguyên, Hải
-                      Phòng
-                    </div>
-                    <div class="media"><i class="fas fa-camera"></i> 5</div>
-                  </a>
-                  <div class="wp-detail">
-                    <h4>
-                      <a href="">
-                        Bán căn hộ Royal DT 55m2 đến 430m2 từ 1-6PN, vay 70%,
-                        miễn phí DV. Thuê 11 tr/th, sổ đỏ vĩnh viễn</a
-                      >
-                    </h4>
-                    <span class="price"> Giá: 20 tỷ </span>
-                    <div class="description">
-                      Công ty chúng tôi độc quyền phân phối hàng ngoại giao biệt
-                      thự các dự Vinhomes. Tôi đang ở tại Royal City nên tôi tự
-                      tin mình là người tư vấn cũng như hỗ trợ cho bạn tốt nhất
-                      về những vấn đề liên qua
-                    </div>
-                    <div class="detail">
-                      <div class="info-room">
-                        <i class="fal fa-bed-alt"></i> 3
-                      </div>
-                      <div class="info-bath"><i class="fas fa-bath"></i> 2</div>
-                      <div class="info-size">
-                        <i class="fal fa-expand-wide"></i> 100 m2
-                      </div>
-                    </div>
-                    <div class="wp-author">
-                      <div class="author">
-                        <div class="avatar">
-                          <img src="asset/images/avt-user.png" alt="" />
-                        </div>
-                        <div class="name">Trung Dũng</div>
-                      </div>
-                      <div class="action">
-                        <div class="share_unit display-none">
-                          <a href=""><i class="fab fa-facebook"></i></a>
-                          <a href=""><i class="fas fa-envelope"></i></a>
-                          <a href=""><i class="fab fa-twitter"></i></a>
-                          <a href=""><i class="fab fa-viber"></i></a>
-                        </div>
-                        <span
-                          class="share box-action"
-                          data-bs-toggle="tooltip"
-                          data-bs-placement="top"
-                          title="Chia sẻ"
-                          ><i class="fas fa-share-alt"></i
-                        ></span>
-                        <span
-                          class="wish box-action"
-                          data-bs-toggle="tooltip"
-                          data-bs-placement="top"
-                          title="Lưu tin"
-                          ><i class="far fa-heart"></i
-                        ></span>
-                        <span
-                          class="compare box-action"
-                          data-bs-toggle="tooltip"
-                          data-bs-placement="top"
-                          title="So sánh"
-                          ><i class="fas fa-plus"></i
-                        ></span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                </a>
+                <a href="#" class="wp-desc-property">
+                    <h2>Dự án Đồi Rồng Đồ Sơn - Dragon Ocean</h2>
+                </a>
               </li>
             </ul>
             <div class="pagination">
@@ -1955,54 +1591,6 @@
                   </li>
                 </ul>
               </nav>
-            </div>
-          </div>
-
-          <!-- {{-- ===== SIDEBAR ===== --}} -->
-          <div class="sidebar-right">
-            <div class="filter-price filter-sidebar">
-              <h4>Lọc theo khoảng giá</h4>
-              <ul>
-                <li><a href="#">Thỏa thuận</a></li>
-                <li><a href="#"> < 500 triệu </a></li>
-                <li><a href="#">500 - 800 triệu</a></li>
-                <li><a href="#"> 800 triệu - 1 tỷ</a></li>
-                <li><a href="#"> 1 tỷ - 2 tỷ</a></li>
-                <li><a href="#"> 2 tỷ - 3 tỷ</a></li>
-                <li><a href="#"> 3 tỷ - 4 tỷ</a></li>
-                <li><a href="#"> > 4 tỷ</a></li>
-              </ul>
-            </div>
-            <div class="filter-size filter-sidebar">
-              <h4>Lọc theo diện tích</h4>
-              <ul>
-                <li><a href="#"> ≤ 30 m²</a></li>
-                <li><a href="#"> 30 - 50 m² </a></li>
-                <li><a href="#"> 50 - 80 m²</a></li>
-                <li><a href="#"> 80 - 100 m²</a></li>
-                <li><a href="#"> 100 - 150 m²</a></li>
-                <li><a href="#"> 150 - 200 m²</a></li>
-                <li><a href="#"> 200 - 300 m²</a></li>
-                <li><a href="#"> 300 - 400 m²</a></li>
-                <li><a href="#"> 400 - 500 m²</a></li>
-                <li><a href="#"> > 500 m²</a></li>
-              </ul>
-            </div>
-            <div class="filter-price filter-sidebar">
-              <h4>Lọc theo khu vực</h4>
-              <ul>
-                <li><a href="#">Hồ Chí Minh</a></li>
-                <li><a href="#"> Hà Nội </a></li>
-                <li><a href="#"> Hải Phòng</a></li>
-                <li><a href="#"> Đà Nẵng</a></li>
-                <li><a href="#"> Quảng Ninh</a></li>
-                <li><a href="#"> Phú Quốc</a></li>
-                <li><a href="#"> Bình Dương</a></li>
-                <li><a href="#"> Thái Nguyên</a></li>
-                <li><a href="#"> Bắc Ninh</a></li>
-                <li><a href="#"> Thanh Hóa</a></li>
-                <li><a href="#"> Vũng Tàu</a></li>
-              </ul>
             </div>
           </div>
         </div>

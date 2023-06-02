@@ -123,6 +123,14 @@ $(document).ready(function () {
     $("input[type=checkbox]").prop("checked", false);
     $("input[type=text]").val("");
     $("select").val(null).trigger("change");
+    $("#location-wards-tab").addClass("disabled");
+    $("#location-wards-tab").closest(".nav-item").addClass("cursor-not-allowed");
+    var type = $('.wp-select-sub-type-property').find('.select-item').data('element');
+    if(type == '.wp-select-option'){
+      $('.wp-select-sub-type-property').find('.text-type').text('Loại nhà đất');
+    }else{
+      $('.wp-select-sub-type-property').find('.text-type').text('Loại hình');
+    }
   });
   $(".btn-clear-mb").click(function () {
     $("input[type=text]").val("");
@@ -400,4 +408,25 @@ $(document).ready(function () {
     var text = arrayText.join(", ");
     $(".text-location-property").text(text);
   }
+
+  $(".list-slider-project").owlCarousel({
+    loop: true,
+    nav: true,
+    dots: false,
+    autoplay: true,
+    autoplayTimeout: 5000,
+    responsive: {
+      0: {
+        items: 1,
+      },
+    },
+  });
+
+  $('.wp-option-select-prj').click(function(){
+    var text = $(this).find('.text-option').text();
+    $('.wp-select-sub-type-property').find('.text-type').text(text);
+    $('.wp-option-select-prj').find('.option-select').removeClass('option-active');
+    $(this).find('.option-select').addClass('option-active');
+    $(this).closest('.select-filter-wrapper').addClass('d-none');
+  });
 });
