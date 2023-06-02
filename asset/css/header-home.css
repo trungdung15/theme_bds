@@ -164,6 +164,10 @@ a {
   background: var(--gradient);
   color: #fff;
 }
+#access ul.menu li a.active {
+  background: var(--gradient);
+  color: #fff;
+}
 .user_menu_wrapper {
   width: 15%;
   display: flex;

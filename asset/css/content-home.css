@@ -76,8 +76,8 @@ body {
   display: block;
   width: 100%;
   overflow: hidden;
-  box-shadow: 0 10px 31px 0 rgb(7 152 255 / 9%);
-  border-radius: 2px;
+  box-shadow: 0 5px 10px 2px #b1eafcce;
+  border-radius: 5px;
   position: relative;
 }
 .wp-list-top ul.post-list li .wp-post a.img-wp {

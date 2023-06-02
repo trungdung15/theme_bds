@@ -81,7 +81,6 @@
 }
 .wp-list-top {
   margin-top: 0 !important;
-  background: #fff;
   padding-top: 20px;
   padding-bottom: 10px;
   border-radius: 5px;
@@ -410,6 +409,7 @@
 }
 .wp-list-project {
   width: 100% !important;
+  background: #f7f7f7;
 }
 .project-list li {
   margin-bottom: 20px;
@@ -423,6 +423,12 @@
   float: left;
   display: block;
   overflow: initial;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 5px 10px 2px #b1eafcce;
+}
+.project-list li:not(:last-child) .wp-property{
+  margin-bottom: 40px;
 }
 .wp-property .wp-image-property {
   width: calc(100% + 1px);
@@ -478,6 +484,56 @@
 }
 .wp-image-property .wp-box-img.wp-box-img-2 .box-img-2-1{
   padding-top: 34.5%;
+}
+.wp-desc-property{
+  float: left;
+  color: #4e4e4e;
+  padding: 15px 15px 25px 15px;
+  line-height: 20px;
+  font-size: 14px;
+}
+.wp-desc-property h3.title{
+  font-size: 18px;
+  color: #222;
+  font-family: var(--font-lexend);
+  margin-bottom: 10px;
+}
+.wp-desc-property .status-property{
+  margin-bottom: 10px;
+}
+.status-on-sale{
+  padding: 6px 15px;
+  background: linear-gradient(90deg, #02610e 0%, #2ba720 50%, #02610e 100%);
+  background-size: 200% auto;
+  background-position: 0 100%;
+  animation: 3s linear infinite forwards gradient-box;
+  color: #fff;
+  border-radius: 20px;
+  display: inline-block;
+  font-family: var(--font-lexend);
+}
+.status-going-to-sale{
+  padding: 6px 15px;
+  background: linear-gradient(90deg, #ad5502 0%, #dd9f2c 50%, #ad5502 100%);
+  background-size: 200% auto;
+  background-position: 0 100%;
+  animation: 3s linear infinite forwards gradient-box;
+  color: #fff;
+  border-radius: 20px;
+  display: inline-block;
+  font-family: var(--font-lexend);
+}
+.wp-desc-property .location-property{
+  margin-bottom: 10px;
+  font-style: italic;
+  font-family: var(--font-lexend);
+}
+.wp-desc-property .desc{
+  line-height: 24px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  -webkit-line-clamp: 5;
 }
 
 @media (min-width: 568px) {
@@ -573,6 +629,12 @@
   #wp_slider_project .owl-nav .owl-prev span,
   #wp_slider_project .owl-nav .owl-next span {
     padding-bottom: 5px;
+  }
+  .wp-desc-property h3.title{
+    font-size: 24px;
+  }
+  .wp-desc-property{
+    font-size: 16px;
   }
 }
 @media (min-width: 980px) {

@@ -29,6 +29,7 @@
     <link rel="stylesheet" href="asset/css/header-home.css" />
     <link rel="stylesheet" href="asset/css/content-home.css" />
     <link rel="stylesheet" href="asset/css/content-property-list.css" />
+    <link rel="stylesheet" href="asset/css/property.css" />
     <link rel="stylesheet" href="asset/css/footer.css" />
     <link
       rel="stylesheet"
@@ -145,9 +146,15 @@
             </div>
             <div id="access">
               <ul class="menu">
-                <li><a href="property-list.html" class="menu-item-link">Mua bán nhà đất</a></li>
-                <li><a href="property-list.html" class="menu-item-link">Cho thuê nhà đất</a></li>
-                <li><a href="#" class="menu-item-link active">Dự án</a></li>
+                <li>
+                  <a href="#" class="menu-item-link active">Mua bán nhà đất</a>
+                </li>
+                <li><a href="#" class="menu-item-link">Cho thuê nhà đất</a></li>
+                <li>
+                  <a href="property-project.html" class="menu-item-link"
+                    >Dự án</a
+                  >
+                </li>
                 <li><a href="#" class="menu-item-link">Tin tức</a></li>
               </ul>
             </div>
@@ -174,11 +181,8 @@
 
               <div class="wp-input-select-property-list">
                 <div class="wp-select-sub-type-property">
-                  <div
-                    class="select-item"
-                    data-element=".wp-select-option-project"
-                  >
-                    <span class="text-type">Loại hình</span>
+                  <div class="select-item" data-element=".wp-select-option">
+                    <span>Loại nhà đất</span>
                     <i class="fal fa-caret-down"></i>
                   </div>
 
@@ -389,13 +393,25 @@
                     </div>
                   </div>
 
+                  <!-- type -->
+                  <div
+                    class="select-button select-button-project select-item d-none"
+                    data-element=".wp-select-option-project"
+                  >
+                    <div class="select-value">
+                      <i class="far fa-home"></i>
+                      <span>Loại hình</span>
+                      <i class="fal fa-caret-down"></i>
+                    </div>
+                  </div>
+
                   <!-- type project -->
                   <div
                     class="wp-select-option-project select-filter-wrapper d-none"
                   >
                     <div class="wp-list-option-type-property">
                       <div class="list-option-type-property">
-                        <div class="wp-option-select wp-option-select-prj">
+                        <div class="wp-option-select">
                           <div class="option-select">
                             <span class="icon"
                               ><i class="fal fa-building"></i
@@ -403,7 +419,7 @@
                             <span class="text-option">Tất cả nhà đất</span>
                           </div>
                         </div>
-                        <div class="wp-option-select wp-option-select-prj">
+                        <div class="wp-option-select">
                           <div class="option-select">
                             <span class="icon"
                               ><i class="fal fa-building"></i
@@ -411,7 +427,7 @@
                             <span class="text-option">Căn hộ chung cư</span>
                           </div>
                         </div>
-                        <div class="wp-option-select wp-option-select-prj">
+                        <div class="wp-option-select">
                           <div class="option-select">
                             <span class="icon"
                               ><i class="fal fa-home-lg-alt"></i
@@ -419,7 +435,7 @@
                             <span class="text-option">Các loại nhà</span>
                           </div>
                         </div>
-                        <div class="wp-option-select wp-option-select-prj">
+                        <div class="wp-option-select">
                           <div class="option-select">
                             <span class="icon"
                               ><i class="fal fa-map-marked-alt"></i
@@ -427,7 +443,7 @@
                             <span class="text-option">Đất nền</span>
                           </div>
                         </div>
-                        <div class="wp-option-select wp-option-select-prj">
+                        <div class="wp-option-select">
                           <div class="option-select">
                             <span class="icon"
                               ><i class="fal fa-building"></i
@@ -435,6 +451,15 @@
                             <span class="text-option">Căn hộ chung cư</span>
                           </div>
                         </div>
+                      </div>
+                    </div>
+                    <div class="bottom-wp-option">
+                      <div class="btn-clear-select">
+                        <i class="fad fa-reply-all pe-1"></i>
+                        <span>Đặt lại</span>
+                      </div>
+                      <div class="btn-apply">
+                        <i class="far fa-check-double"></i>
                       </div>
                     </div>
                   </div>
@@ -808,7 +833,7 @@
                   </div>
                 </div>
 
-                <div class="wp-select-size-property-list d-none">
+                <div class="wp-select-size-property-list">
                   <div
                     class="select-item select-item-size"
                     data-element=".wp-select-option-size"
@@ -946,9 +971,9 @@
                   </div>
                 </div>
 
-                <div class="wp-select-status-property-list">
+                <div class="wp-select-status-property-list d-none">
                   <div
-                    class="select-item select-item-status"
+                    class="select-item select-item-status d-none"
                     data-element=".wp-select-option-status"
                   >
                     <span>Trạng thái</span>
@@ -1433,307 +1458,89 @@
       </div>
 
       <div id="wp-content">
-        <div id="wp_slider_project">
-          <div class="list-slider-project owl-carousel owl-theme">
-            <a
-              href="#"
-              class="wp-item-slider"
-              style="background-image: url('/asset/images/du-an-icon40.jpg')"
-            >
-              <div class="item-slider-img">
-                <div class="wp-desc-project-slider">
-                  <div class="desc-project-slider">
-                    <div class="status-property">
-                      <span class="status-going-to-sale mb-2"
-                        >Sắp mở bán</span
-                      >
-                    </div>
-                    <div class="title-name">
-                      <h3>Dự án Icon40 - BIM GROUP</h3>
-                    </div>
-                    <div class="location-property">
-                      <p>
-                        <i class="fas fa-map-marker-check"></i> Đ. Hoàng Quốc
-                        Việt, Hùng Thắng, Thành phố Hạ Long, Quảng Ninh
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </a>
-            <a
-              href="#"
-              class="wp-item-slider"
-              style="background-image: url('/asset/images/du-an-doi-rong.jpg')"
-            >
-              <div class="item-slider-img">
-                <div class="wp-desc-project-slider">
-                  <div class="desc-project-slider">
-                    <div class="status-property">
-                      <span class="status-on-sale mb-2"
-                        >Đang mở bán</span
-                      >
-                    </div>
-                    <div class="title-name">
-                      <h3>Dự án Đồi Rồng Đồ Sơn - Dragon Ocean</h3>
-                    </div>
-                    <div class="location-property">
-                      <p>
-                        <i class="fas fa-map-marker-check"></i> Đồi rồng, Đồ
-                        Sơn, Hải Phòng
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-
-        <div class="bread-crumb">
-          <ul class="container-breadcrumb">
-            <li><a href="">Bất động sản bán</a></li>
-            <li>
-              <i class="fal fa-angle-right"></i> Bất động sản bán toàn quốc
-            </li>
-          </ul>
-        </div>
         <div class="content">
-          <!-- {{-- ==== CONTENT ===== --}} -->
-          <div class="wp-list-top wp-list-project">
-            <div class="wp-head">
-              <h2 class="title">Dự án toàn quốc</h2>
-            </div>
-            <div class="count-filter">
-              <div class="count">
-                <p>Hiện có 195,624 bất động sản.</p>
-              </div>
-              <div class="filter dropdown-type-project">
-                <div class="dropdown">
-                  <button
-                    class="btn dropdown-toggle"
-                    type="button"
-                    id="dropdownMenuTypeProject"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    Thông thường
-                  </button>
-                  <ul
-                    class="dropdown-menu"
-                    aria-labelledby="dropdownMenuTypeProject"
-                  >
-                    <li>
-                      <a class="dropdown-item" href="#">Tin thông thường</a>
-                    </li>
-                    <li><a class="dropdown-item" href="#">Tin mới nhất</a></li>
-                    <li><a class="dropdown-item" href="#">Giá tăng dần</a></li>
-                    <li><a class="dropdown-item" href="#">Giá giảm dần</a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <ul class="project-list">
+          <div class="bread-crumb">
+            <ul class="container-breadcrumb">
+              <li><a href="">Bất động sản bán</a></li>
               <li>
-                <a href="#" class="wp-property">
-                  <div class="wp-image-property">
-                    <div class="wp-box-img">
-                      <div class="box-img">
-                        <div>
-                          <img src="asset/images/du-an-doi-rong.jpg" alt="" />
-                        </div>
-                      </div>
-                    </div>
-                    <div class="wp-box-img wp-box-img-1">
-                      <div class="box-img box-img-1">
-                        <div>
-                          <img src="asset/images/biet-th.jpg" alt="" />
-                        </div>
-                      </div>
-                    </div>
-                    <div class="wp-box-img wp-box-img-2">
-                      <div class="box-img box-img-2 box-img-2-1">
-                        <div>
-                          <img src="asset/images/biet-th.jpg" alt="" />
-                        </div>
-                      </div>
-                    </div>
-                    <div class="wp-box-img wp-box-img-2">
-                      <div class="box-img box-img-2">
-                        <div>
-                          <img src="asset/images/can-ho-chung-cu.jpg" alt="" />
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="wp-desc-property">
-                    <h3 class="title">Dự án Đồi Rồng Đồ Sơn - Dragon Ocean</h3>
-                    <div class="status-property">
-                      <span class="status-on-sale">Đang mở bán</span>
-                    </div>
-                    <div class="location-property">
-                      <p>
-                        <i class="fas fa-map-marker-check pe-2"></i> Đ. Hoàng Quốc
-                        Việt, Hùng Thắng, Thành phố Hạ Long, Quảng Ninh
-                      </p>
-                    </div>
-                    <div class="desc">
-                      <p>
-                        Dự án Đồi Rồng Hải Phòng - Dragon Ocean Là dự án mới ra
-                        mắt và HOT nhất nhì tại thành phố Cảng, Đồi Rồng Đồ Sơn
-                        hiện đang là công trình trọng điểm số 1 đang được chủ đầu
-                        tư Geleximco dốc toàn lực thực hiện. Dự án mang tham vọng
-                        nâng cấp Đồ Sơn trở thành trọng điểm đến du lịch hàng đầu
-                        Việt Nam. Khu du lịch nghỉ dưỡng Đồi Rồng Đồ Sơn trong
-                        tương lai hứa hẹn cùng các nhà đầu tư đón đầu xu thế mới
-                        trong ngành du lịch và cuộc sống nghỉ dưỡng với những cơ
-                        hội đầu tư cực kỳ hấp dẫn.
-                      </p>
-                    </div>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="#" class="wp-property">
-                  <div class="wp-image-property">
-                    <div class="wp-box-img">
-                      <div class="box-img">
-                        <div>
-                          <img src="asset/images/du-an-doi-rong.jpg" alt="" />
-                        </div>
-                      </div>
-                    </div>
-                    <div class="wp-box-img wp-box-img-1">
-                      <div class="box-img box-img-1">
-                        <div>
-                          <img src="asset/images/biet-th.jpg" alt="" />
-                        </div>
-                      </div>
-                    </div>
-                    <div class="wp-box-img wp-box-img-2">
-                      <div class="box-img box-img-2 box-img-2-1">
-                        <div>
-                          <img src="asset/images/biet-th.jpg" alt="" />
-                        </div>
-                      </div>
-                    </div>
-                    <div class="wp-box-img wp-box-img-2">
-                      <div class="box-img box-img-2">
-                        <div>
-                          <img src="asset/images/can-ho-chung-cu.jpg" alt="" />
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="wp-desc-property">
-                    <h3 class="title">Dự án Đồi Rồng Đồ Sơn - Dragon Ocean</h3>
-                    <div class="status-property">
-                      <span class="status-going-to-sale">Sắp mở bán</span>
-                    </div>
-                    <div class="location-property">
-                      <p>
-                        <i class="fas fa-map-marker-check pe-2"></i> Đ. Hoàng Quốc
-                        Việt, Hùng Thắng, Thành phố Hạ Long, Quảng Ninh
-                      </p>
-                    </div>
-                    <div class="desc">
-                      <p>
-                        Dự án Đồi Rồng Hải Phòng - Dragon Ocean Là dự án mới ra
-                        mắt và HOT nhất nhì tại thành phố Cảng, Đồi Rồng Đồ Sơn
-                        hiện đang là công trình trọng điểm số 1 đang được chủ đầu
-                        tư Geleximco dốc toàn lực thực hiện. Dự án mang tham vọng
-                        nâng cấp Đồ Sơn trở thành trọng điểm đến du lịch hàng đầu
-                        Việt Nam. Khu du lịch nghỉ dưỡng Đồi Rồng Đồ Sơn trong
-                        tương lai hứa hẹn cùng các nhà đầu tư đón đầu xu thế mới
-                        trong ngành du lịch và cuộc sống nghỉ dưỡng với những cơ
-                        hội đầu tư cực kỳ hấp dẫn.
-                      </p>
-                    </div>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="#" class="wp-property">
-                  <div class="wp-image-property">
-                    <div class="wp-box-img">
-                      <div class="box-img">
-                        <div>
-                          <img src="asset/images/du-an-doi-rong.jpg" alt="" />
-                        </div>
-                      </div>
-                    </div>
-                    <div class="wp-box-img wp-box-img-1">
-                      <div class="box-img box-img-1">
-                        <div>
-                          <img src="asset/images/biet-th.jpg" alt="" />
-                        </div>
-                      </div>
-                    </div>
-                    <div class="wp-box-img wp-box-img-2">
-                      <div class="box-img box-img-2 box-img-2-1">
-                        <div>
-                          <img src="asset/images/biet-th.jpg" alt="" />
-                        </div>
-                      </div>
-                    </div>
-                    <div class="wp-box-img wp-box-img-2">
-                      <div class="box-img box-img-2">
-                        <div>
-                          <img src="asset/images/can-ho-chung-cu.jpg" alt="" />
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="wp-desc-property">
-                    <h3 class="title">Dự án Đồi Rồng Đồ Sơn - Dragon Ocean</h3>
-                    <div class="status-property">
-                      <span class="status-on-sale">Đang mở bán</span>
-                    </div>
-                    <div class="location-property">
-                      <p>
-                        <i class="fas fa-map-marker-check pe-2"></i> Đ. Hoàng Quốc
-                        Việt, Hùng Thắng, Thành phố Hạ Long, Quảng Ninh
-                      </p>
-                    </div>
-                    <div class="desc">
-                      <p>
-                        Dự án Đồi Rồng Hải Phòng - Dragon Ocean Là dự án mới ra
-                        mắt và HOT nhất nhì tại thành phố Cảng, Đồi Rồng Đồ Sơn
-                        hiện đang là công trình trọng điểm số 1 đang được chủ đầu
-                        tư Geleximco dốc toàn lực thực hiện. Dự án mang tham vọng
-                        nâng cấp Đồ Sơn trở thành trọng điểm đến du lịch hàng đầu
-                        Việt Nam. Khu du lịch nghỉ dưỡng Đồi Rồng Đồ Sơn trong
-                        tương lai hứa hẹn cùng các nhà đầu tư đón đầu xu thế mới
-                        trong ngành du lịch và cuộc sống nghỉ dưỡng với những cơ
-                        hội đầu tư cực kỳ hấp dẫn.
-                      </p>
-                    </div>
-                  </div>
-                </a>
+                <i class="fal fa-angle-right"></i> Bất động sản bán toàn quốc
               </li>
             </ul>
-            <div class="pagination">
-              <nav class="pagination">
-                <ul class="page-numbers">
-                  <li>
-                    <span class="page-numbers current">1</span>
-                  </li>
-                  <li>
-                    <a href="#" class="page-numbers">2</a>
-                  </li>
-                  <li>
-                    <a href="#" class="page-numbers">3</a>
-                  </li>
-                  <li>
-                    <a href="#" class="page-numbers">...</a>
-                  </li>
-                  <li>
-                    <a href="#" class="next page-numbers">
-                      <i class="fas fa-angle-right"></i>
+          </div>
+          <!-- {{-- ==== CONTENT ===== --}} -->
+          <div class="sidebar-left">
+            <h1 class="title">
+              Quỹ hàng chuyển nhượng rẻ nhất thị trường ,các thể loại
+              1PN;2PN;3PN Vinhome Smart City Tây Mỗ
+            </h1>
+            <div class="location-property">
+              <p>
+                <i class="fas fa-map-marker-alt me-1"></i>Dự án Vinhomes Smart
+                City , Quận Nam Từ Liêm, Hà Nội
+              </p>
+            </div>
+            <div class="wp-slider-img">
+              <div id="carousel-listing">
+                <div class="carousel-inner owl-carousel owl-theme "
+                  id="property_slider_carousel">
+                    <a href="#" id="item1">
+                        <img src="asset/images/property-slider-1.jpg" alt="">
                     </a>
-                  </li>
-                </ul>
-              </nav>
+                    <a href="#" id="item2">
+                        <img src="asset/images/property-slider-2.jpg" alt="">
+                    </a>
+                    <a href="#" id="item3">
+                        <img src="asset/images/property-slider-3.jpg" alt="">
+                    </a>
+                    <a href="#" id="item4">
+                        <img src="asset/images/property-slider-4.jpg" alt="">
+                    </a>
+                    <a href="#" id="item5">
+                        <img src="asset/images/property-slider-5.jpg" alt="">
+                    </a>
+                    <a href="#" id="item6">
+                        <img src="asset/images/property-slider-6.jpg" alt="">
+                    </a>
+                    <a href="#" id="item7">
+                        <img src="asset/images/property-slider-7.jpg" alt="">
+                    </a>
+                    <a href="#" id="item8">
+                        <img src="asset/images/property-slider-8.jpg" alt="">
+                    </a>
+                    <a href="#" id="item1">
+                        <img src="asset/images/property-slider-9.jpg" alt="">
+                    </a>
+                </div>
+                <ol id="carousel-indicators-vertical" class="carousel-indicators-vertical">
+                    <li data-target="#carousel-listing" class="">
+                        <a href="#item1" class=""><img src="asset/images/property-slider-1.jpg" alt="image"></a>
+                    </li>
+                    <li data-target="#carousel-listing" class="">
+                        <a href="#item2" class=""><img src="asset/images/property-slider-2.jpg" alt="image"></a>
+                    </li>
+                    <li data-target="#carousel-listing" class="">
+                        <a href="#item3" class=""><img src="asset/images/property-slider-3.jpg" alt="image"></a>
+                    </li>
+                    <li data-target="#carousel-listing" class="">
+                        <a href="#item4" class=""><img src="asset/images/property-slider-4.jpg" alt="image"></a>
+                    </li>
+                    <li data-target="#carousel-listing" class="">
+                        <a href="#item5" class=""><img src="asset/images/property-slider-5.jpg" alt="image"></a>
+                    </li>
+                    <li data-target="#carousel-listing" class="">
+                        <a href="#item6" class=""><img src="asset/images/property-slider-6.jpg" alt="image"></a>
+                    </li>
+                    <li data-target="#carousel-listing" class="">
+                        <a href="#item7" class=""><img src="asset/images/property-slider-7.jpg" alt="image"></a>
+                    </li>
+                    <li data-target="#carousel-listing" class="">
+                        <a href="#item8" class=""><img src="asset/images/property-slider-8.jpg" alt="image"></a>
+                    </li>
+                    <li data-target="#carousel-listing"  class="">
+                        <a href="#item9" class=""><img src="asset/images/property-slider-9.jpg" alt="image"></a>
+                    </li>
+                </ol>
+              </div>
             </div>
           </div>
         </div>
@@ -1836,5 +1643,6 @@
     <script src="asset/lib/select2/select2.min.js"></script>
     <script src="asset/js/header-home.js"></script>
     <script src="asset/js/placeholder-input.js"></script>
+    <script src="asset/js/property.js"></script>
   </body>
 </html>
