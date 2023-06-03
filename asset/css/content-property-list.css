@@ -423,7 +423,7 @@
   overflow: initial;
   border-radius: 5px;
   overflow: hidden;
-  box-shadow: 0 5px 10px 2px #b1eafcce;
+  box-shadow: 0 5px 10px 2px #b1eafc6b;
 }
 .project-list li:not(:last-child) .wp-property{
   margin-bottom: 40px;
