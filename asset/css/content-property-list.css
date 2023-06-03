@@ -1,14 +1,12 @@
-.bread-crumb {
-  padding: 10px;
-}
+
 .bread-crumb .container-breadcrumb {
   max-width: 1140px;
   margin: 0 auto;
+  padding: 5px 10px;
 }
 .bread-crumb ul {
   margin: 0px;
   display: flex;
-  padding-left: 5px;
 }
 .bread-crumb ul li {
   padding: 5px;
@@ -592,6 +590,9 @@
   }
 }
 @media (min-width: 768px) {
+  .bread-crumb .container-breadcrumb {
+    padding: 15px 10px;
+  }
   #wp-content .wp-list-top .count-filter .count {
     font-size: 16px;
   }
