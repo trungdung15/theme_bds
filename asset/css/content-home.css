@@ -590,7 +590,11 @@ li .wp-post .wp-detail .wp-author .action .box-action:hover {
   border-top: 1px solid #eaeaea;
   border-bottom: 1px solid #eaeaea;
 }
+.mr-mb{
+  margin-top: 10px;
+}
 .container-best-product ul {
+  font-family: var(--font-lexend);
   margin: 0px !important;
   align-items: center;
 }
@@ -723,6 +727,7 @@ li .wp-post .wp-detail .wp-author .action .box-action:hover {
   color: #fff;
 }
 .wp-list-project .wp-info-product .wp-detail h2 {
+  font-family: var(--font-lexend);
   color: #222;
   font-size: 24px;
   margin-bottom: 15px;
@@ -791,6 +796,9 @@ li .wp-post .wp-detail .wp-author .action .box-action:hover {
   }
 }
 @media (min-width: 568px) {
+  .mr-mb{
+    margin-top: 50px;
+  }
   #wp-content .wp-list-top .wp-head h2.title,
   .wp-list-post-area .wp-head h2.title,
   .wp-list-news .head-news h2,
