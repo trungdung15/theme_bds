@@ -6,6 +6,20 @@ $(document).ready(function () {
     autoHeight: true,
     items: 1,
   });
+  $(".list-property-relate").owlCarousel({
+    loop: false,
+    nav: true,
+    dots: false,
+    autoHeight: true,
+    responsive: {
+      0: {
+        items: 2,
+      },
+      600: {
+        items: 3,
+      },
+    },
+  });
 
   $(".item-sub-slider").click(function () {
     $(".item-sub-slider").removeClass("active");
