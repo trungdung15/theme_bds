@@ -1638,7 +1638,7 @@
                 <span class="lable-panel">Diện tích:</span>
                 <span class="detail-panel">150 m²</span>
               </div>
-              <div class="box-panel">
+              <div class="box-panel box-panel-date">
                 <span class="lable-panel">Ngày đăng tin:</span>
                 <span class="detail-panel">01/06/2023</span>
               </div>
@@ -1772,7 +1772,13 @@
                   <div class="info">
                     <p class="name">Trung Dũng</p>
                     <div class="phone-number">0988666888</div>
-                    <div class="rep-please">Yêu cầu liên hệ lại</div>
+                    <div
+                      class="rep-please"
+                      data-bs-toggle="modal"
+                      data-bs-target="#contactAgain"
+                    >
+                      Yêu cầu liên hệ lại
+                    </div>
                   </div>
                 </div>
                 <div class="box-category">
@@ -1795,21 +1801,26 @@
               </div>
             </div>
             <div class="wp-property-relate">
+              <div class="box-head">
+                <p class="label-box">Bất động sản liên quan</p>
+              </div>
               <div class="list-property-relate owl-carousel owl-theme">
                 <div class="box-property">
-                  <a href="#" class="wp-post">
-                    <div class="img-wp">
-                      <img src="asset/images/pexels.jpg" alt="" />
+                  <div class="wp-post">
+                    <a href="" class="img-wp">
+                      <img src="asset/images/slider-01.png" alt="" />
                       <div class="location">
                         <i class="fas fa-map-marker-alt me-1"></i>Thủy Nguyên,
                         Hải Phòng
                       </div>
                       <div class="media"><i class="fas fa-camera"></i> 5</div>
-                    </div>
+                    </a>
                     <div class="wp-detail">
                       <h4>
-                        Bán căn hộ Royal DT 55m2 đến 430m2 từ 1-6PN, vay 70%,
-                        miễn phí DV. Thuê 11 tr/th, sổ đỏ vĩnh viễn
+                        <a href="">
+                          Bán căn hộ Royal DT 55m2 đến 430m2 từ 1-6PN, vay 70%,
+                          miễn phí DV. Thuê 11 tr/th, sổ đỏ vĩnh viễn</a
+                        >
                       </h4>
                       <span class="price"> Giá: 20 tỷ </span>
                       <div class="description">
@@ -1867,7 +1878,270 @@
                         </div>
                       </div>
                     </div>
-                  </a>
+                  </div>
+                </div>
+                <div class="box-property">
+                  <div class="wp-post">
+                    <a href="" class="img-wp">
+                      <img src="asset/images/house_nice_2-525x328.jpg" alt="" />
+                      <div class="location">
+                        <i class="fas fa-map-marker-alt me-1"></i>Thủy Nguyên,
+                        Hải Phòng
+                      </div>
+                      <div class="media"><i class="fas fa-camera"></i> 5</div>
+                    </a>
+                    <div class="wp-detail">
+                      <h4>
+                        <a href="">
+                          Bán căn hộ Royal DT 55m2 đến 430m2 từ 1-6PN, vay 70%,
+                          miễn phí DV. Thuê 11 tr/th, sổ đỏ vĩnh viễn</a
+                        >
+                      </h4>
+                      <span class="price"> Giá: 20 tỷ </span>
+                      <div class="description">
+                        Công ty chúng tôi độc quyền phân phối hàng ngoại giao
+                        biệt thự các dự Vinhomes. Tôi đang ở tại Royal City nên
+                        tôi tự tin mình là người tư vấn cũng như hỗ trợ cho bạn
+                        tốt nhất về những vấn đề liên qua
+                      </div>
+                      <div class="detail">
+                        <div class="info-room">
+                          <i class="fal fa-bed-alt"></i> 3
+                        </div>
+                        <div class="info-bath">
+                          <i class="fas fa-bath"></i> 2
+                        </div>
+                        <div class="info-size">
+                          <i class="fal fa-expand-wide"></i> 100 m2
+                        </div>
+                      </div>
+                      <div class="wp-author">
+                        <div class="author">
+                          <div class="avatar">
+                            <img src="asset/images/avt-user.png" alt="" />
+                          </div>
+                          <div class="name">Trung Dũng</div>
+                        </div>
+                        <div class="action">
+                          <div class="share_unit display-none">
+                            <a href=""><i class="fab fa-facebook"></i></a>
+                            <a href=""><i class="fas fa-envelope"></i></a>
+                            <a href=""><i class="fab fa-twitter"></i></a>
+                            <a href=""><i class="fab fa-viber"></i></a>
+                          </div>
+                          <span
+                            class="share box-action"
+                            data-bs-toggle="tooltip"
+                            data-bs-placement="top"
+                            title="Chia sẻ"
+                            ><i class="fas fa-share-alt"></i
+                          ></span>
+                          <span
+                            class="wish box-action"
+                            data-bs-toggle="tooltip"
+                            data-bs-placement="top"
+                            title="Lưu tin"
+                            ><i class="far fa-heart"></i
+                          ></span>
+                          <span
+                            class="compare box-action"
+                            data-bs-toggle="tooltip"
+                            data-bs-placement="top"
+                            title="So sánh"
+                            ><i class="fas fa-plus"></i
+                          ></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="box-property">
+                  <div class="wp-post">
+                    <a href="" class="img-wp">
+                      <img
+                        src="asset/images/featured_property_large-525x328.jpg"
+                        alt=""
+                      />
+                      <div class="location">
+                        <i class="fas fa-map-marker-alt me-1"></i>Thủy Nguyên,
+                        Hải Phòng
+                      </div>
+                      <div class="media"><i class="fas fa-camera"></i> 5</div>
+                    </a>
+                    <div class="wp-detail">
+                      <h4>
+                        <a href="">
+                          Bán căn hộ Royal DT 55m2 đến 430m2 từ 1-6PN, vay 70%,
+                          miễn phí DV. Thuê 11 tr/th, sổ đỏ vĩnh viễn</a
+                        >
+                      </h4>
+                      <span class="price"> Giá: 20 tỷ </span>
+                      <div class="description">
+                        Công ty chúng tôi độc quyền phân phối hàng ngoại giao
+                        biệt thự các dự Vinhomes. Tôi đang ở tại Royal City nên
+                        tôi tự tin mình là người tư vấn cũng như hỗ trợ cho bạn
+                        tốt nhất về những vấn đề liên qua
+                      </div>
+                      <div class="detail">
+                        <div class="info-room">
+                          <i class="fal fa-bed-alt"></i> 3
+                        </div>
+                        <div class="info-bath">
+                          <i class="fas fa-bath"></i> 2
+                        </div>
+                        <div class="info-size">
+                          <i class="fal fa-expand-wide"></i> 100 m2
+                        </div>
+                      </div>
+                      <div class="wp-author">
+                        <div class="author">
+                          <div class="avatar">
+                            <img src="asset/images/avt-user.png" alt="" />
+                          </div>
+                          <div class="name">Trung Dũng</div>
+                        </div>
+                        <div class="action">
+                          <div class="share_unit display-none">
+                            <a href=""><i class="fab fa-facebook"></i></a>
+                            <a href=""><i class="fas fa-envelope"></i></a>
+                            <a href=""><i class="fab fa-twitter"></i></a>
+                            <a href=""><i class="fab fa-viber"></i></a>
+                          </div>
+                          <span
+                            class="share box-action"
+                            data-bs-toggle="tooltip"
+                            data-bs-placement="top"
+                            title="Chia sẻ"
+                            ><i class="fas fa-share-alt"></i
+                          ></span>
+                          <span
+                            class="wish box-action"
+                            data-bs-toggle="tooltip"
+                            data-bs-placement="top"
+                            title="Lưu tin"
+                            ><i class="far fa-heart"></i
+                          ></span>
+                          <span
+                            class="compare box-action"
+                            data-bs-toggle="tooltip"
+                            data-bs-placement="top"
+                            title="So sánh"
+                            ><i class="fas fa-plus"></i
+                          ></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="box-property">
+                  <div class="wp-post">
+                    <a href="" class="img-wp">
+                      <img src="asset/images/slider-01.png" alt="" />
+                      <div class="location">
+                        <i class="fas fa-map-marker-alt me-1"></i>Thủy Nguyên,
+                        Hải Phòng
+                      </div>
+                      <div class="media"><i class="fas fa-camera"></i> 5</div>
+                    </a>
+                    <div class="wp-detail">
+                      <h4>
+                        <a href="">
+                          Bán căn hộ Royal DT 55m2 đến 430m2 từ 1-6PN, vay 70%,
+                          miễn phí DV. Thuê 11 tr/th, sổ đỏ vĩnh viễn</a
+                        >
+                      </h4>
+                      <span class="price"> Giá: 20 tỷ </span>
+                      <div class="description">
+                        Công ty chúng tôi độc quyền phân phối hàng ngoại giao
+                        biệt thự các dự Vinhomes. Tôi đang ở tại Royal City nên
+                        tôi tự tin mình là người tư vấn cũng như hỗ trợ cho bạn
+                        tốt nhất về những vấn đề liên qua
+                      </div>
+                      <div class="detail">
+                        <div class="info-room">
+                          <i class="fal fa-bed-alt"></i> 3
+                        </div>
+                        <div class="info-bath">
+                          <i class="fas fa-bath"></i> 2
+                        </div>
+                        <div class="info-size">
+                          <i class="fal fa-expand-wide"></i> 100 m2
+                        </div>
+                      </div>
+                      <div class="wp-author">
+                        <div class="author">
+                          <div class="avatar">
+                            <img src="asset/images/avt-user.png" alt="" />
+                          </div>
+                          <div class="name">Trung Dũng</div>
+                        </div>
+                        <div class="action">
+                          <div class="share_unit display-none">
+                            <a href=""><i class="fab fa-facebook"></i></a>
+                            <a href=""><i class="fas fa-envelope"></i></a>
+                            <a href=""><i class="fab fa-twitter"></i></a>
+                            <a href=""><i class="fab fa-viber"></i></a>
+                          </div>
+                          <span
+                            class="share box-action"
+                            data-bs-toggle="tooltip"
+                            data-bs-placement="top"
+                            title="Chia sẻ"
+                            ><i class="fas fa-share-alt"></i
+                          ></span>
+                          <span
+                            class="wish box-action"
+                            data-bs-toggle="tooltip"
+                            data-bs-placement="top"
+                            title="Lưu tin"
+                            ><i class="far fa-heart"></i
+                          ></span>
+                          <span
+                            class="compare box-action"
+                            data-bs-toggle="tooltip"
+                            data-bs-placement="top"
+                            title="So sánh"
+                            ><i class="fas fa-plus"></i
+                          ></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="wp-note-property">
+              <div class="note-property">
+                * Lưu ý:
+                <strong>
+                  Bài viết “<a href=""
+                    >Bán nhà phân lô Trung Yên 8. Vị trí quá đẹp và hiếm, ô tô
+                    tránh, kinh doanh, 90m2, 6t, mt 5m, 34 tỷ</a
+                  >” - Mã tin 102851934</strong
+                >
+                là do người đăng tin đăng tải và chịu trách nhiệm. Newhome.com
+                không đảm bảo và không chịu trách nhiệm về bất kỳ thông tin, nội
+                dung nào liên quan tới tin rao này. Trường hợp phát hiện nội
+                dung tin đăng không chính xác, Quý vị hãy thông báo và cung cấp
+                thông tin cho Ban quản trịNewhome.com theo số Hotline
+                <a href="tel:0869092929">0869 092 929</a> để được hỗ trợ nhanh
+                chóng và kịp thời nhất.
+              </div>
+              <div class="code-view-spam">
+                <div class="code">
+                  <p class="head">Mã tin đăng</p>
+                  <p class="value">102851934</p>
+                </div>
+                <div class="view">
+                  <p class="head">Lượt xem</p>
+                  <p class="value">100</p>
+                </div>
+                <div class="spam" data-bs-toggle="modal"
+                data-bs-target="#formReport">
+                  <span
+                    ><i class="far fa-exclamation-triangle pe-2"></i> Báo cáo
+                    tin đăng</span
+                  >
                 </div>
               </div>
             </div>
@@ -1962,6 +2236,112 @@
       <a href="#" id="back-to-top" class="back-to-top d-none"
         ><i class="far fa-chevron-double-up"></i
       ></a>
+
+      <!-- Modal contact again -->
+      <div
+        class="modal fade"
+        id="contactAgain"
+        data-bs-backdrop="static"
+        data-bs-keyboard="false"
+        tabindex="-1"
+        aria-labelledby="contactAgainLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="contactAgainLabel">Yêu cầu liên hệ lại</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <form action="">
+                <p class="head">Yêu cầu người đăng tin liên hệ lại theo thông tin sau:</p>
+                <input type="text" name="name_contact" id="name-contact" placeholder="Họ và tên">
+                <input type="text" name="phone_number_contact" id="phone-number-contact" placeholder="Số điện thoại *" required>
+                <label for="">Lời nhắn</label>
+                <textarea name="" id="" cols="30" rows="10">Tôi cần tư vấn thêm.</textarea>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn-contact-again">Gửi yêu cầu</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal report -->
+      <div
+        class="modal fade"
+        id="formReport"
+        data-bs-backdrop="static"
+        data-bs-keyboard="false"
+        tabindex="-1"
+        aria-labelledby="formReportLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="formReportLabel">Báo cáo vấn đề của bất động sản</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <form action="">
+                <div class="mb-3">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="checkbox1">
+                    <label class="form-check-label" for="checkbox1">
+                      Thông tin không có thật
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="checkbox2">
+                    <label class="form-check-label" for="checkbox2">
+                      Địa chỉ không chính xác
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="checkbox3">
+                    <label class="form-check-label" for="checkbox3">
+                      Không liên lạc được với người đăng
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="checkbox4">
+                    <label class="form-check-label" for="checkbox4">
+                      Bất động sản đã bán/thuê
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="checkbox5">
+                    <label class="form-check-label" for="checkbox5">
+                      Trùng với tin rao khác
+                    </label>
+                  </div>
+                </div>
+                <label for="">Nội dung khác</label>
+                <textarea name="" id="" cols="30" rows="10" class="mb-3" placeholder="Nội dung phản hồi"></textarea>
+                <label for="">Thông tin của bạn</label>
+                <input type="text" name="name_contact" id="name-report" placeholder="Họ và tên">
+                <input type="text" name="phone_number_contact" id="phone-report" placeholder="Số điện thoại *" required>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn-report-property">Gửi phản ánh</button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <script src="asset/lib/newHome/jquery.min.js"></script>

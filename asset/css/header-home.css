@@ -663,6 +663,7 @@ a {
 }
 .wp-menu-mobile {
   padding: 10px;
+  font-family: var(--font-lexend);
 }
 .wp-menu-mobile .group-btn-login {
   display: flex;

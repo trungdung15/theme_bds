@@ -13,9 +13,12 @@ $(document).ready(function () {
     autoHeight: true,
     responsive: {
       0: {
+        items: 1,
+      },
+      568: {
         items: 2,
       },
-      600: {
+      1024: {
         items: 3,
       },
     },
