@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/asset/images/logo-new-home.png" rel="icon" type="image/png" />
+    <title>Tin tức bất động sản - Đăng tin mua bán, cho thuê nhà đất</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="asset/lib/newHome/main.min.css" />
+    <link
+      rel="stylesheet"
+      href="asset/lib/newHomeCarousel/dist/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="asset/lib/newHomeCarousel/dist/assets/owl.theme.default.min.css"
+    />
+    <link rel="stylesheet" href="asset/lib/newHomeIcon/css/all.min.css" />
+    <link rel="stylesheet" href="asset/css/header-home.css" />
+    <link rel="stylesheet" href="asset/css/content-home.css" />
+    <link rel="stylesheet" href="asset/css/footer.css" />
+    <link
+      rel="stylesheet"
+      href="asset/lib/jquery-custom-scrollbar-0.5.5/jquery.custom-scrollbar.css"
+    />
+    <link rel="stylesheet" href="asset/lib/select2/select2.min.css" />
+    <link
+      rel="stylesheet"
+      href="asset/lib/select2/select2-bootstrap-5-theme.min.css"
+    />
+  </head>
+
+  <body>
+    <div id="container-content">
+      <div id="wp-header-mobile">
+        <div class="header-mobile">
+          <div class="box-left"></div>
+          <div class="logo">
+            <a href="#" title="Trang chủ NewHome">
+              <img
+                class="logo_image"
+                src="asset/images/logo-text.png"
+                alt="Tin tức bất động sản - Đăng tin mua bán, cho thuê nhà đất"
+                title="NewHome"
+              />
+            </a>
+          </div>
+          <div class="mobile-trigger">
+            <span
+              data-bs-toggle="offcanvas"
+              data-bs-target="#canvasMenuMobile"
+              aria-controls="canvasMenuMobile"
+            >
+              <i class="fad fa-bars"></i>
+            </span>
+          </div>
+        </div>
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="canvasMenuMobile"
+          aria-labelledby="canvasMenuMobileLabel"
+        >
+          <div class="offcanvas-body">
+            <div class="wp-menu-mobile">
+              <div class="group-btn-login">
+                <a href="#" class="button-login">Đăng nhập</a>
+                <a href="#" class="button-register">Đăng ký</a>
+              </div>
+              <div class="wp-btn-post">
+                <a href="#" class="button-post">Đăng tin</a>
+              </div>
+              <ul class="wp-item-menu">
+                <li>
+                  <a href="#">
+                    <img src="asset/icon/home.png" alt="Trang chủ" />
+                    Trang chủ
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#">
+                    <img src="asset/icon/house.png" alt="Bất động sản bán" />
+                    Mua bán nhà đất
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img
+                      src="asset/icon/house-rent.png"
+                      alt="Bất động sản cho thuê"
+                    />
+                    Cho thuê nhà đất
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="asset/icon/home-project.png" alt="Dự án" />
+                    Dự án
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="asset/icon/newspaper.png" alt="Tin tức" />
+                    Tin tức
+                  </a>
+                </li>
+              </ul>
+              <button
+                type="button"
+                class="button-close-menu"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              >
+                Đóng
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="wp-header">
+        <div class="header_wrapper">
+          <div class="header_wrapper_inside">
+            <div class="logo">
+              <a href="#" title="Trang chủ NewHome">
+                <img
+                  class="logo_image"
+                  src="asset/images/logo-text.png"
+                  alt="Tin tức bất động sản - Đăng tin mua bán, cho thuê nhà đất"
+                  title="NewHome"
+                />
+              </a>
+            </div>
+            <div id="access">
+              <ul class="menu">
+                <li><a href="property-list.html" class="menu-item-link">Mua bán nhà đất</a></li>
+                <li><a href="property-list.html" class="menu-item-link">Cho thuê nhà đất</a></li>
+                <li><a href="property-project.html" class="menu-item-link">Dự án</a></li>
+                <li><a href="#" class="menu-item-link">Tin tức</a></li>
+              </ul>
+            </div>
+            <div class="user_menu_wrapper">
+              <div class="submit_action">
+                <i class="fas fa-user-circle"></i>
+              </div>
+              <a href="#" class="submit_listing">Đăng tin</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="slider_search">
+        <div id="search_form_mobile">
+          <form action="">
+            <div class="wp-input-search-home-mb">
+              <input
+              type="text"
+              class="input-search-form input-auto-text"
+              id="input-search-mobile"
+              placeholder="Nhập tên sản phẩm cần tìm"
+            />
+            <span class="icon-search-home-mb"><i class="far fa-search"></i></span>
+            </div>
+          </form>
+
+          <button
+            class="btn btn-primary btn-open-form-search-mobile d-none"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#wp-form-search-mobile"
+            aria-controls="offcanvasBottom"
+          >
+            Toggle show
+          </button>
+
+          <div
+            class="offcanvas offcanvas-bottom"
+            tabindex="-1"
+            id="wp-form-search-mobile"
+            aria-labelledby="wp-form-search-mobile-lable"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="wp-form-search-mobile-lable">
+                Tìm kiếm bất động sản
+              </h5>
+              <button
+                type="button"
+                class="btn-close text-reset"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+              <div class="wp-nav-tab-mobile">
+                <div class="nav-tab-mobile">
+                  <div class="item-nav-tab active">
+                    <span class="text-nav-tab">Nhà đất bán</span>
+                  </div>
+                  <div class="item-nav-tab">
+                    <span class="text-nav-tab">Nhà đất cho thuê</span>
+                  </div>
+                  <div class="item-nav-tab item-nav-tab-project">
+                    <span class="text-nav-tab">Dự án</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="offcanvas-body">
+              <div class="wp-form-search-mobile">
+                <div class="wp-tab-mobile">
+                  <form action="">
+                    <div class="group-input-search">
+                      <input
+                        type="text"
+                        class="input-search-mobile"
+                        placeholder="Tìm kiếm sản phẩm"
+                      />
+                      <span class="icon-search-mobile"
+                        ><i class="far fa-search"></i
+                      ></span>
+                    </div>
+
+                    <div class="type-wrapper-mb">
+                      <label class="label-input-select-mb" for="type-property"
+                        >Loại nhà đất</label
+                      >
+                      <select
+                        class="form-select multi-select-field"
+                        id="list-option-type-mb"
+                        data-placeholder="Chọn loại nhà đất"
+                        multiple
+                      >
+                        <option></option>
+                        <option value="Trên toàn quốc">Tất cả nhà đất</option>
+                        <option value="Hồ Chí Minh">Căn hộ chung cư</option>
+                        <option value="Hải Phòng">Các loại nhà</option>
+                        <option value="Đà Nẵng">Đà Nẵng</option>
+                        <option value="Nha Trang">Nha Trang</option>
+                        <option>Tất cả Tỉnh/Thành phố</option>
+                        <option>Hà Nội</option>
+                        <option>Hồ Chí Minh</option>
+                        <option>Hải Phòng</option>
+                        <option>Đà Nẵng</option>
+                        <option>Nha Trang</option>
+                        <option>Tất cả Tỉnh/Thành phố</option>
+                        <option>Hà Nội</option>
+                        <option>Hồ Chí Minh</option>
+                        <option>Hải Phòng</option>
+                        <option>Đà Nẵng</option>
+                        <option>Nha Trang</option>
+                      </select>
+                    </div>
+
+                    <div class="type-project-wrapper-mb d-none">
+                      <label class="label-input-select-mb" for="type-property"
+                        >Loại hình</label
+                      >
+                      <select
+                        class="form-select multi-select-field"
+                        id="list-option-type-project-mb"
+                        data-placeholder="Chọn loại hình dự án"
+                        multiple
+                      >
+                        <option></option>
+                        <option value="Trên toàn quốc">Tất cả nhà đất</option>
+                        <option value="Hồ Chí Minh">Căn hộ chung cư</option>
+                        <option value="Hải Phòng">Các loại nhà</option>
+                        <option value="Đà Nẵng">Đà Nẵng</option>
+                        <option value="Nha Trang">Nha Trang</option>
+                        <option>Tất cả Tỉnh/Thành phố</option>
+                        <option>Hà Nội</option>
+                        <option>Hồ Chí Minh</option>
+                        <option>Hải Phòng</option>
+                        <option>Đà Nẵng</option>
+                        <option>Nha Trang</option>
+                        <option>Tất cả Tỉnh/Thành phố</option>
+                        <option>Hà Nội</option>
+                        <option>Hồ Chí Minh</option>
+                        <option>Hải Phòng</option>
+                        <option>Đà Nẵng</option>
+                        <option>Nha Trang</option>
+                      </select>
+                    </div>
+
+                    <div class="location-wrapper-mb">
+                      <label
+                        class="label-input-select-mb"
+                        for="location-property"
+                        >Địa điểm</label
+                      >
+                      <span
+                        class="wp-button-select-location"
+                        data-bs-toggle="modal"
+                        data-bs-target="#modal-location-mb"
+                      >
+                        <span class="text-location-property"
+                          >Tất cả khu vực</span
+                        >
+                        <i class="fad fa-map-marker-edit"></i>
+                      </span>
+
+                      <!-- Modal -->
+                      <div
+                        class="modal fade"
+                        id="modal-location-mb"
+                        tabindex="-1"
+                        aria-labelledby="modal-location-mb-label"
+                        aria-hidden="true"
+                      >
+                        <div
+                          class="modal-dialog modal-dialog-scrollable modal-dialog-centered"
+                        >
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="modal-location-mb-label">
+                                Địa điểm
+                              </h5>
+                              <button
+                                type="button"
+                                class="btn-close"
+                                data-bs-dismiss="modal"
+                                aria-label="Close"
+                              ></button>
+                            </div>
+                            <div class="modal-body">
+                              <div class="wp-select">
+                                <label class="label-input-select-mb">
+                                  Tỉnh/Thành phố
+                                </label>
+                                <select
+                                  class="form-select single-select-field"
+                                  id="list-option-province-mb"
+                                  data-placeholder="Chọn Tỉnh/Thành phố"
+                                >
+                                  <option></option>
+                                  <option value="Trên toàn quốc">
+                                    Tất cả Tỉnh/Thành phố
+                                  </option>
+                                  <option value="Hà Nội">Hà Nội</option>
+                                  <option value="Hồ Chí Minh">Hồ Chí Minh</option>
+                                  <option value="Hải Phòng">Hải Phòng</option>
+                                  <option value="Đà Nẵng">Đà Nẵng</option>
+                                  <option value="Nha Trang">Nha Trang</option>
+                                  <option>Tất cả Tỉnh/Thành phố</option>
+                                  <option>Hà Nội</option>
+                                  <option>Hồ Chí Minh</option>
+                                  <option>Hải Phòng</option>
+                                  <option>Đà Nẵng</option>
+                                  <option>Nha Trang</option>
+                                  <option>Tất cả Tỉnh/Thành phố</option>
+                                  <option>Hà Nội</option>
+                                  <option>Hồ Chí Minh</option>
+                                  <option>Hải Phòng</option>
+                                  <option>Đà Nẵng</option>
+                                  <option>Nha Trang</option>
+                                </select>
+                              </div>
+                              <div class="wp-select">
+                                <label class="label-input-select-mb">
+                                  Quận/Huyện
+                                </label>
+                                <select
+                                  class="form-select multi-select-field"
+                                  id="list-option-district-mb"
+                                  data-placeholder="Chọn Quận/Huyện"
+                                  multiple disabled
+                                >
+                                  <option></option>
+                                  <option>Hà Nội</option>
+                                  <option>Hồ Chí Minh</option>
+                                  <option>Hải Phòng</option>
+                                  <option>Đà Nẵng</option>
+                                  <option>Nha Trang</option>
+                                  <option>Tất cả Tỉnh/Thành phố</option>
+                                  <option>Hà Nội</option>
+                                  <option>Hồ Chí Minh</option>
+                                  <option>Hải Phòng</option>
+                                  <option>Đà Nẵng</option>
+                                  <option>Nha Trang</option>
+                                  <option>Tất cả Tỉnh/Thành phố</option>
+                                  <option>Hà Nội</option>
+                                  <option>Hồ Chí Minh</option>
+                                  <option>Hải Phòng</option>
+                                  <option>Đà Nẵng</option>
+                                  <option>Nha Trang</option>
+                                </select>
+                              </div>
+                              <div class="wp-select">
+                                <label class="label-input-select-mb">
+                                  Xã/Phường
+                                </label>
+                                <select
+                                  class="form-select multi-select-field"
+                                  id="list-option-ward-mb"
+                                  data-placeholder="Chọn Xã/Phường"
+                                  multiple disabled
+                                >
+                                  <option></option>
+                                  <option>Hà Nội</option>
+                                  <option>Hồ Chí Minh</option>
+                                  <option>Hải Phòng</option>
+                                  <option>Đà Nẵng</option>
+                                  <option>Nha Trang</option>
+                                  <option>Tất cả Tỉnh/Thành phố</option>
+                                  <option>Hà Nội</option>
+                                  <option>Hồ Chí Minh</option>
+                                  <option>Hải Phòng</option>
+                                  <option>Đà Nẵng</option>
+                                  <option>Nha Trang</option>
+                                  <option>Tất cả Tỉnh/Thành phố</option>
+                                  <option>Hà Nội</option>
+                                  <option>Hồ Chí Minh</option>
+                                  <option>Hải Phòng</option>
+                                  <option>Đà Nẵng</option>
+                                  <option>Nha Trang</option>
+                                </select>
+                              </div>
+                              <div class="wp-select">
+                                <label class="label-input-select-mb">
+                                  Đường/Phố
+                                </label>
+                                <select
+                                  class="form-select multi-select-field"
+                                  id="list-option-street-mb"
+                                  data-placeholder="Chọn Đường/Phố"
+                                  multiple disabled
+                                >
+                                  <option></option>
+                                  <option>Hà Nội</option>
+                                  <option>Hồ Chí Minh</option>
+                                  <option>Hải Phòng</option>
+                                  <option>Đà Nẵng</option>
+                                  <option>Nha Trang</option>
+                                  <option>Tất cả Tỉnh/Thành phố</option>
+                                  <option>Hà Nội</option>
+                                  <option>Hồ Chí Minh</option>
+                                  <option>Hải Phòng</option>
+                                  <option>Đà Nẵng</option>
+                                  <option>Nha Trang</option>
+                                  <option>Tất cả Tỉnh/Thành phố</option>
+                                  <option>Hà Nội</option>
+                                  <option>Hồ Chí Minh</option>
+                                  <option>Hải Phòng</option>
+                                  <option>Đà Nẵng</option>
+                                  <option>Nha Trang</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="modal-footer">
+                              <div class="bottom-wp-option-mb">
+                                <div class="btn-clear-select me-3">
+                                  <i class="fad fa-reply-all pe-1"></i>
+                                  <span>Đặt lại</span>
+                                </div>
+                                <div class="btn-apply">
+                                  <i class="far fa-check-double"></i>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="price-wrapper-mb">
+                      <label class="label-input-select-mb" for="price-property"
+                        >Mức giá</label
+                      >
+                      <select
+                        class="form-select multi-select-field"
+                        id="list-option-price-mb"
+                        data-placeholder="Chọn mức giá"
+                        multiple
+                      >
+                        <option></option>
+                        <option>Tất cả mức giá</option>
+                        <option>20 - 30tr</option>
+                        <option>20 - 30tr</option>
+                        <option>20 - 30tr</option>
+                        <option>20 - 30tr</option>
+                        <option>20 - 30tr</option>
+                        <option>Hà Nội</option>
+                        <option>Hồ Chí Minh</option>
+                        <option>Hải Phòng</option>
+                        <option>Đà Nẵng</option>
+                        <option>Nha Trang</option>
+                        <option>Tất cả Tỉnh/Thành phố</option>
+                        <option>Hà Nội</option>
+                        <option>Hồ Chí Minh</option>
+                        <option>Hải Phòng</option>
+                        <option>Đà Nẵng</option>
+                      </select>
+                    </div>
+
+                    <div class="size-wrapper-mb">
+                      <label class="label-input-select-mb" for="size-property"
+                        >Diện tích</label
+                      >
+                      <select
+                        class="form-select multi-select-field"
+                        id="list-option-size-mb"
+                        data-placeholder="Chọn diên tích"
+                        multiple
+                      >
+                        <option></option>
+                        <option>Tất cả các diện tích</option>
+                        <option>40 - 50 m2</option>
+                        <option>Hà Nội</option>
+                        <option>Hồ Chí Minh</option>
+                        <option>Hải Phòng</option>
+                        <option>Đà Nẵng</option>
+                        <option>Nha Trang</option>
+                        <option>Tất cả Tỉnh/Thành phố</option>
+                        <option>Hà Nội</option>
+                        <option>Hồ Chí Minh</option>
+                        <option>Hải Phòng</option>
+                        <option>Đà Nẵng</option>
+                      </select>
+                    </div>
+
+                    <div class="status-wrapper-mb d-none">
+                      <label class="label-input-select-mb" for="y"
+                        >Trạng thái</label
+                      >
+                      <select
+                        class="form-select multi-select-field"
+                        id="list-option-status-mb"
+                        data-placeholder="Chọn trạng thái"
+                        multiple
+                      >
+                        <option></option>
+                        <option>Sắp mở bán</option>
+                        <option>Đang mở bán</option>
+                        <option>Đã bàn giao</option>
+                      </select>
+                    </div>
+
+                  </form>
+                </div>
+                <div class="wp-button-submit-mb">
+                  <span class="btn-clear-mb">Đặt lại</span>
+                  <span class="btn-action-search"
+                    ><i class="far fa-search"></i> Tìm kiếm</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="wp-content">
+        <div class="wp-list-news">
+          <div class="container-home mr-mb">
+            <div class="head-news">
+              <h2>Tin tức bất động sản</h2>
+            </div>
+            <div class="list-news">
+              <ul>
+                <li>
+                  <a href="">
+                    <div class="thumb-post">
+                      <img src="asset/images/house_nice-525x328.jpg" alt="" />
+                    </div>
+                    <div class="detail-post">
+                      <h3 class="title">
+                        Người mua nhà Hà Nội "cụt hứng" do loạt dự án căn hộ mới
+                        có giá quá cao
+                      </h3>
+                      <span class="date">03/08/2022</span>
+                      <div class="desc">
+                        <p>
+                          Sau một thời gian dài vắng bóng nguồn cung mới, Hà Nội
+                          xuất hiện một số dự án mới được giới thiệu hoặc mở bán
+                          chính thức trên thị trường trong 3 tháng gần đây. Tuy
+                          nhiên
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <div class="thumb-post">
+                      <img src="asset/images/house_nice_2-525x328.jpg" alt="" />
+                    </div>
+                    <div class="detail-post">
+                      <h3 class="title">
+                        Người mua nhà Hà Nội "cụt hứng" do loạt dự án căn hộ mới
+                        có giá quá cao
+                      </h3>
+                      <span class="date">03/08/2022</span>
+                      <div class="desc">
+                        <p>
+                          Sau một thời gian dài vắng bóng nguồn cung mới, Hà Nội
+                          xuất hiện một số dự án mới được giới thiệu hoặc mở bán
+                          chính thức trên thị trường trong 3 tháng gần đây. Tuy
+                          nhiên, nguồn cung mới này không giải quyết được cơn
+                          khát nhà ở của thị trường do giá bán cao so với thu
+                          nhập của phần đông dân chúng.
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <div class="thumb-post">
+                      <img src="asset/images/pexels-3.jpg" alt="" />
+                    </div>
+                    <div class="detail-post">
+                      <h3 class="title">
+                        Người mua nhà Hà Nội "cụt hứng" do loạt dự án căn hộ mới
+                        có giá quá cao
+                      </h3>
+                      <span class="date">03/08/2022</span>
+                      <div class="desc">
+                        <p>
+                          Sau một thời gian dài vắng bóng nguồn cung mới, Hà Nội
+                          xuất hiện một số dự án mới được giới thiệu hoặc mở bán
+                          chính thức trên thị trường trong 3 tháng gần đây. Tuy
+                          nhiên, nguồn cung mới này không giải quyết được cơn
+                          khát nhà ở của thị trường do giá bán cao so với thu
+                          nhập của phần đông dân chúng. nguồn cung mới này không
+                          giải quyết được cơn khát nhà ở của thị trường do giá
+                          bán cao so với thu nhập của phần đông dân chúng.
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <div class="thumb-post">
+                      <img src="asset/images/house_nice_2-525x328.jpg" alt="" />
+                    </div>
+                    <div class="detail-post">
+                      <h3 class="title">
+                        Người mua nhà Hà Nội "cụt hứng" do loạt dự án căn hộ mới
+                        có giá quá cao
+                      </h3>
+                      <span class="date">03/08/2022</span>
+                      <div class="desc">
+                        <p>
+                          Sau một thời gian dài vắng bóng nguồn cung mới, Hà Nội
+                          xuất hiện một số dự án mới được giới thiệu hoặc mở bán
+                          chính thức trên thị trường trong 3 tháng gần đây. Tuy
+                          nhiên, nguồn cung mới này không giải quyết được cơn
+                          khát nhà ở của thị trường do giá bán cao so với thu
+                          nhập của phần đông dân chúng.
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <div class="thumb-post">
+                      <img src="asset/images/pexels-3.jpg" alt="" />
+                    </div>
+                    <div class="detail-post">
+                      <h3 class="title">
+                        Người mua nhà Hà Nội "cụt hứng" do loạt dự án căn hộ mới
+                        có giá quá cao
+                      </h3>
+                      <span class="date">03/08/2022</span>
+                      <div class="desc">
+                        <p>
+                          Sau một thời gian dài vắng bóng nguồn cung mới, Hà Nội
+                          xuất hiện một số dự án mới được giới thiệu hoặc mở bán
+                          chính thức trên thị trường trong 3 tháng gần đây. Tuy
+                          nhiên, nguồn cung mới này không giải quyết được cơn
+                          khát nhà ở của thị trường do giá bán cao so với thu
+                          nhập của phần đông dân chúng.
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <div class="thumb-post">
+                      <img src="asset/images/house_nice-525x328.jpg" alt="" />
+                    </div>
+                    <div class="detail-post">
+                      <h3 class="title">
+                        Người mua nhà Hà Nội "cụt hứng" do loạt dự án căn hộ mới
+                        có giá quá cao do loạt dự án căn hộ mới có giá quá cao
+                      </h3>
+                      <span class="date">03/08/2022</span>
+                      <div class="desc">
+                        <p>
+                          Sau một thời gian dài vắng bóng nguồn cung mới, Hà Nội
+                          xuất hiện một số dự án mới được giới thiệu hoặc mở bán
+                          chính thức trên thị trường trong 3 tháng gần đây. Tuy
+                          nhiên, nguồn cung mới này không giải quyết được cơn
+                          khát nhà ở của thị trường do giá bán cao so với thu
+                          nhập của phần đông dân chúng.
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="show-category">
+              <a href="" class="btn-redirect">Xem các bài viết khác</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="footer">
+        <div class="wp-body-footer">
+          <div class="container-footer">
+            <div class="body-footer">
+              <div class="logo-footer">
+                <div class="image-logo">
+                  <a href="">
+                    <img src="asset/images/logo-text-white.png" alt="" />
+                  </a>
+                </div>
+                <div class="location">
+                  <div class="address">
+                    <i class="fal fa-map-marker-alt me-2"></i>
+                    <span>21 Lý Tự Trọng - Hồng Bàng - Hải Phòng</span>
+                  </div>
+                  <div class="phone">
+                    <i class="fal fa-phone-alt me-2"></i>
+                    <span>0982 659 446</span>
+                  </div>
+                </div>
+                <div class="register-email">
+                  <h4>Đăng ký nhận tin</h4>
+                  <form action="" class="form">
+                    <input
+                      type="text"
+                      name="email"
+                      required
+                      class="form-control"
+                      placeholder="Nhập email của bạn"
+                    />
+                    <button><i class="fal fa-mail-bulk"></i></button>
+                  </form>
+                </div>
+              </div>
+              <div class="contact-menu">
+                <div class="contact">
+                  <div class="hotline">
+                    <a href="">
+                      <i class="fal fa-phone-alt me-2"></i> Hotline
+                      <strong class="ms-2">1900 1000</strong>
+                    </a>
+                  </div>
+                  <div class="mail-support">
+                    <a href="">
+                      <i class="fal fa-headphones-alt me-2"></i>
+                      <span>
+                        <p>Chăm sóc khách hàng</p>
+                        <strong>hotro.batdongsan@gmail.com</strong>
+                      </span>
+                    </a>
+                  </div>
+                </div>
+                <div class="menu-footer">
+                  <div class="regulations mb-3">
+                    <h3 class="title">Quy định</h3>
+                    <ul class="list-regulations">
+                      <li><a href="">Quy định đăng tin</a></li>
+                      <li><a href="">Quy chế hoạt động</a></li>
+                      <li><a href="">Điều khoản thỏa thuận</a></li>
+                      <li><a href="">Chính sách bảo mật</a></li>
+                      <li><a href="">Giải quyết khiếu nại</a></li>
+                    </ul>
+                  </div>
+                  <div class="guide">
+                    <h3 class="title">Hướng dẫn</h3>
+                    <ul class="list-guide">
+                      <li><a href="">Báo giá & hỗ trợ</a></li>
+                      <li><a href="">Câu hỏi thường gặp</a></li>
+                      <li><a href="">Thông báo</a></li>
+                      <li><a href="">Liên hệ</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="coppyright">
+            <div class="container-footer">
+              <p>Copyright © 2023 Trung Dung</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <a href="#" id="back-to-top" class="back-to-top d-none"><i class="far fa-chevron-double-up"></i></a>
+    </div>
+
+    <script src="asset/lib/newHome/jquery.min.js"></script>
+    <script src="asset/lib/newHome/main.min.js"></script>
+    <script src="asset/lib/newHomeCarousel/dist/owl.carousel.min.js"></script>
+    <script src="asset/lib/jquery-custom-scrollbar-0.5.5/jquery.custom-scrollbar.min.js"></script>
+    <script src="asset/lib/jquery-scroll-lock/dist/jquery-scrollLock.min.js"></script>
+    <script src="asset/lib/select2/select2.min.js"></script>
+    <script src="asset/js/header-home.js"></script>
+    <script src="asset/js/placeholder-input.js"></script>
+  </body>
+</html>
